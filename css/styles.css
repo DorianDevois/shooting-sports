@@ -727,7 +727,7 @@ svg {
 
 /* MAIN Content */
 .page-main {
-  padding-top: calc(var(--header-height) + env(safe-area-inset-top));
+  padding-top: 60px;
 }
 
 /* START - Hero Section */
@@ -1599,6 +1599,10 @@ svg {
     gap: 1.25rem;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .page-main {
+    padding-top: 80px;
   }
 
   .about-us__detailed {
