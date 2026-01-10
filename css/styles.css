@@ -245,10 +245,6 @@ svg {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.btn>svg {
-  fill: currentColor;
-}
-
 /* START - Site Contacts */
 .contacts {
   display: flex;
@@ -397,17 +393,13 @@ svg {
 /* START ===== PAGE HEADER ===== */
 .page-header {
   position: fixed;
-  top: env(safe-area-inset-top);
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
 
   display: flex;
-  height: var(--header-height);
-
-  padding-top: env(safe-area-inset-top);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
+  min-height: 60px;
 
   border-bottom: 1px solid var(--color-divider);
 
@@ -877,6 +869,11 @@ svg {
   margin-top: 1.25rem;
 }
 
+.about-us__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-us__content {
   margin-top: 1.25rem;
 }
@@ -1146,7 +1143,8 @@ svg {
   background-color: transparent;
 }
 
-.competitions__show-all:hover {
+.competitions__show-all:hover,
+.competitions__show-all:focus {
   color: var(--color-text-inverse);
 
   border: 1px solid var(--color-border-dark);
@@ -1197,7 +1195,8 @@ svg {
   transition: background-color 350ms ease, color 350ms ease;
 }
 
-.competitions__see-more:hover {
+.competitions__see-more:hover,
+.competitions__see-more:focus {
 
   border: 1px solid var(--color-border-dark);
 
@@ -1519,6 +1518,10 @@ svg {
   text-align: center;
 }
 
+.newsletter__btn-icon {
+  fill: currentColor;
+}
+
 .page-footer__copyright {
   margin-top: 0;
   margin-bottom: 0;
@@ -1537,10 +1540,6 @@ svg {
 
 /* Планшет / малий десктоп 768 - 1024px */
 @media (min-width: 768px) {
-  :root {
-    --header-height: 80px;
-  }
-
   h1 {
     font-size: 2rem;
     line-height: 1.2;
@@ -1582,9 +1581,9 @@ svg {
     padding-left: 1.5rem;
   }
 
-  /* .page-header {
+  .page-header {
     min-height: 80px;
-  } */
+  }
 
   .brand-logo__image {
     width: 4rem;
@@ -1605,6 +1604,11 @@ svg {
   .about-us__detailed {
     display: flex;
     align-items: flex-start;
+  }
+
+  .about-us__image {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .about-us__content {
