@@ -216,6 +216,38 @@ svg {
 }
 
 /*! ========================================================================================================================= */
+/* START Button component */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  min-width: 12.5rem;
+  min-height: 3.125rem;
+  padding: 0.625rem;
+
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-text-inverse);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  background-color: var(--color-bg-accent);
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn>svg {
+  fill: currentColor;
+}
+
 /* START - Site Contacts */
 .contacts {
   display: flex;
@@ -255,11 +287,6 @@ svg {
 
 /* START - Newsletter subscription */
 .newsletter {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-
   /* outline: 1px dashed lightcoral; */
 }
 
@@ -290,21 +317,23 @@ svg {
   padding-bottom: 0;
   padding-left: 1rem;
 
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
   width: 14.25rem;
   height: 2.5rem;
 
-  border: 1px solid rgba(220, 53, 69, 0.1)
+  font-size: 0.75rem;
+  color: var(--color-text-inverse);
+
+  background-color: inherit;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: border-color var(--duration) var(--timing-func);
 }
 
-.newsletter__btn {
-  display: flex;
-
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-
-  border: 1px solid transparent;
+.newsletter__input:focus {
+  border-color: var(--color-border-accent);
 }
 
 /*! ========================================================================================================================= */
@@ -1454,7 +1483,7 @@ svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 4.5rem;
 
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1475,6 +1504,18 @@ svg {
 
 .page-footer__contacts-list {
   margin-top: 1.25rem;
+}
+
+.page-footer__social .social__title {
+  text-align: center;
+}
+
+.page-footer__social .social__title {
+  text-align: center;
+}
+
+.page-footer__newsletter .newsletter__call-to-action {
+  text-align: center;
 }
 
 .page-footer__copyright {
