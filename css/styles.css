@@ -1489,6 +1489,12 @@ svg {
   padding-bottom: 6rem;
 }
 
+/* page-footer__address */
+.page-footer__address {
+  max-width: 14rem;
+}
+
+
 .page-footer__logo {
   /* outline: 1px dashed lightgreen; */
 }
@@ -1504,10 +1510,6 @@ svg {
 
 .page-footer__contacts-list {
   margin-top: 1.25rem;
-}
-
-.page-footer__social .social__title {
-  text-align: center;
 }
 
 .page-footer__social .social__title {
@@ -1633,10 +1635,19 @@ svg {
     width: calc((100% - 2.5rem) / 3);
   }
 
-  .newsletter__form {
+  .page-footer__social .social__title {
+    text-align: left;
+  }
+
+  .page-footer__newsletter .newsletter__call-to-action {
+    text-align: left;
+  }
+
+  .page-footer__newsletter .newsletter__form {
     flex-direction: row;
     gap: 1.25rem;
   }
+
 }
 
 /* Ноут / Desktop 1024 - 1440px */
@@ -1658,6 +1669,7 @@ svg {
   .partners__item {
     width: calc((100% - 6.25rem) / 6);
   }
+
 }
 
 /* Великий Desktop 1440 - 1920px */
