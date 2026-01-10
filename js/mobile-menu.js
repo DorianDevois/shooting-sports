@@ -16,7 +16,7 @@
     document.body.classList.remove('mobile-menu-open');
     mobileMenuContainer.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', 'false');
-    openMenuBtn.focus();
+    // openMenuBtn.focus();
   };
 
   openMenuBtn.addEventListener('click', openMobileMenu);
