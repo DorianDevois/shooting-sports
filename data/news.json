@@ -1,0 +1,82 @@
+[
+  {
+    "id": "news-1",
+    "categoryId": "events",
+    "title": "News article 1",
+    "slug": "news-article-1",
+    "competitionId": "comp-1",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "news-2",
+    "categoryId": "events",
+    "title": "News article 2",
+    "slug": "news-article-2",
+    "competitionId": "comp-2",
+    "date": "2025-01-02"
+  },
+  {
+    "id": "news-3",
+    "categoryId": "events",
+    "title": "News article 3",
+    "slug": "news-article-3",
+    "competitionId": "comp-3",
+    "date": "2025-01-03"
+  },
+  {
+    "id": "news-4",
+    "categoryId": "events",
+    "title": "News article 4",
+    "slug": "news-article-4",
+    "competitionId": "comp-4",
+    "date": "2025-01-04"
+  },
+  {
+    "id": "news-5",
+    "categoryId": "events",
+    "title": "News article 5",
+    "slug": "news-article-5",
+    "competitionId": "comp-5",
+    "date": "2025-01-05"
+  },
+  {
+    "id": "news-6",
+    "categoryId": "events",
+    "title": "News article 6",
+    "slug": "news-article-6",
+    "competitionId": "comp-6",
+    "date": "2025-01-06"
+  },
+  {
+    "id": "news-7",
+    "categoryId": "events",
+    "title": "News article 7",
+    "slug": "news-article-7",
+    "competitionId": "comp-7",
+    "date": "2025-01-07"
+  },
+  {
+    "id": "news-8",
+    "categoryId": "events",
+    "title": "News article 8",
+    "slug": "news-article-8",
+    "competitionId": "comp-8",
+    "date": "2025-01-08"
+  },
+  {
+    "id": "news-9",
+    "categoryId": "events",
+    "title": "News article 9",
+    "slug": "news-article-9",
+    "competitionId": "comp-9",
+    "date": "2025-01-09"
+  },
+  {
+    "id": "news-10",
+    "categoryId": "events",
+    "title": "News article 10",
+    "slug": "news-article-10",
+    "competitionId": "comp-10",
+    "date": "2025-01-10"
+  }
+]

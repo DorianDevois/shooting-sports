@@ -1,0 +1,72 @@
+[
+  {
+    "id": "aze-shooting-center",
+    "name": "Azerbaijan Shooting Center",
+    "city": "Baku",
+    "countryId": "az",
+    "address": "123 Sport Street"
+  },
+  {
+    "id": "issf-munich",
+    "name": "ISSF Olympic Shooting Range",
+    "city": "Munich",
+    "countryId": "de",
+    "address": "Olympic Park"
+  },
+  {
+    "id": "tokyo-range",
+    "name": "Tokyo Shooting Arena",
+    "city": "Tokyo",
+    "countryId": "jp",
+    "address": "1 Chome-1"
+  },
+  {
+    "id": "usa-colorado",
+    "name": "USA Shooting Center",
+    "city": "Colorado Springs",
+    "countryId": "us",
+    "address": "Tejon St"
+  },
+  {
+    "id": "rome-arena",
+    "name": "Rome Shooting Arena",
+    "city": "Rome",
+    "countryId": "it",
+    "address": "Via Roma 45"
+  },
+  {
+    "id": "paris-shooting",
+    "name": "Paris Shooting Complex",
+    "city": "Paris",
+    "countryId": "fr",
+    "address": "Rue Sport"
+  },
+  {
+    "id": "ankara-range",
+    "name": "Ankara Shooting Range",
+    "city": "Ankara",
+    "countryId": "tr",
+    "address": "Ataturk Blvd"
+  },
+  {
+    "id": "seoul-center",
+    "name": "Seoul Shooting Center",
+    "city": "Seoul",
+    "countryId": "kr",
+    "address": "Gangnam Rd"
+  },
+  {
+    "id": "lviv-center",
+    "name": "Lviv Shooting Complex",
+    "city": "Lviv",
+    "countryId": "ua",
+    "address": "Shevchenko 21"
+  },
+  {
+    "id": "london-range",
+    "name": "London Olympic Range",
+    "city": "London",
+    "countryId": "gb",
+    "address": "Queen Street"
+  }
+]

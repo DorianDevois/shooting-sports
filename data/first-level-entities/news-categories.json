@@ -1,0 +1,42 @@
+[
+  {
+    "id": "federation",
+    "name": "Federation News"
+  },
+  {
+    "id": "issf",
+    "name": "ISSF News"
+  },
+  {
+    "id": "events",
+    "name": "Event Coverage"
+  },
+  {
+    "id": "results",
+    "name": "Results"
+  },
+  {
+    "id": "interviews",
+    "name": "Interviews"
+  },
+  {
+    "id": "announcements",
+    "name": "Announcements"
+  },
+  {
+    "id": "athletes",
+    "name": "Athlete Stories"
+  },
+  {
+    "id": "coaches",
+    "name": "Coaches"
+  },
+  {
+    "id": "features",
+    "name": "Features"
+  },
+  {
+    "id": "press",
+    "name": "Press Releases"
+  }
+]

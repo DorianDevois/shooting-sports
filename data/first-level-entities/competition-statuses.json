@@ -1,0 +1,18 @@
+[
+  {
+    "id": "scheduled",
+    "name": "Scheduled"
+  },
+  {
+    "id": "ongoing",
+    "name": "Ongoing"
+  },
+  {
+    "id": "completed",
+    "name": "Completed"
+  },
+  {
+    "id": "cancelled",
+    "name": "Cancelled"
+  }
+]

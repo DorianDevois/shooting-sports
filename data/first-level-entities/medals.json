@@ -1,0 +1,14 @@
+[
+  {
+    "id": "gold",
+    "name": "Gold"
+  },
+  {
+    "id": "silver",
+    "name": "Silver"
+  },
+  {
+    "id": "bronze",
+    "name": "Bronze"
+  }
+]

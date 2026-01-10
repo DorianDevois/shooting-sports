@@ -1,0 +1,90 @@
+[
+  {
+    "id": "az",
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "alpha2": "az",
+    "alpha3": "aze",
+    "flag": "assets/images/flags/az.svg"
+  },
+  {
+    "id": "ua",
+    "name": "Ukraine",
+    "code": "UA",
+    "alpha2": "ua",
+    "alpha3": "ukr",
+    "flag": "assets/images/flags/ua.svg"
+  },
+  {
+    "id": "tr",
+    "name": "Türkiye",
+    "code": "TR",
+    "alpha2": "tr",
+    "alpha3": "tur",
+    "flag": "assets/images/flags/tr.svg"
+  },
+  {
+    "id": "us",
+    "name": "United States",
+    "code": "US",
+    "alpha2": "us",
+    "alpha3": "usa",
+    "flag": "assets/images/flags/us.svg"
+  },
+  {
+    "id": "de",
+    "name": "Germany",
+    "code": "DE",
+    "alpha2": "de",
+    "alpha3": "deu",
+    "flag": "assets/images/flags/de.svg"
+  },
+  {
+    "id": "fr",
+    "name": "France",
+    "code": "FR",
+    "alpha2": "fr",
+    "alpha3": "fra",
+    "flag": "assets/images/flags/fr.svg"
+  },
+  {
+    "id": "it",
+    "name": "Italy",
+    "code": "IT",
+    "alpha2": "it",
+    "alpha3": "ita",
+    "flag": "assets/images/flags/it.svg"
+  },
+  {
+    "id": "jp",
+    "name": "Japan",
+    "code": "JP",
+    "alpha2": "jp",
+    "alpha3": "jpn",
+    "flag": "assets/images/flags/jp.svg"
+  },
+  {
+    "id": "kr",
+    "name": "South Korea",
+    "code": "KR",
+    "alpha2": "kr",
+    "alpha3": "kor",
+    "flag": "assets/images/flags/kr.svg"
+  },
+  {
+    "id": "gb",
+    "name": "United Kingdom",
+    "code": "GB",
+    "alpha2": "gb",
+    "alpha3": "gbr",
+    "flag": "assets/images/flags/gb.svg"
+  },
+  {
+    "id": "cn",
+    "name": "China",
+    "code": "CN",
+    "alpha2": "cn",
+    "alpha3": "chn",
+    "flag": "assets/images/flags/cn.svg"
+  }
+]

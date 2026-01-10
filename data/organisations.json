@@ -1,0 +1,52 @@
+[
+  {
+    "id": "aze-shooting",
+    "name": "Azerbaijan Shooting Federation",
+    "countryId": "az"
+  },
+  {
+    "id": "issf",
+    "name": "International Shooting Sport Federation",
+    "countryId": "de"
+  },
+  {
+    "id": "usa-shooting",
+    "name": "USA Shooting",
+    "countryId": "us"
+  },
+  {
+    "id": "jpn-shooting",
+    "name": "Japan Shooting Federation",
+    "countryId": "jp"
+  },
+  {
+    "id": "ukr-shooting",
+    "name": "Ukrainian Shooting Federation",
+    "countryId": "ua"
+  },
+  {
+    "id": "ger-shooting",
+    "name": "German Shooting Federation",
+    "countryId": "de"
+  },
+  {
+    "id": "fra-shooting",
+    "name": "French Shooting Federation",
+    "countryId": "fr"
+  },
+  {
+    "id": "ita-shooting",
+    "name": "Italian Shooting Federation",
+    "countryId": "it"
+  },
+  {
+    "id": "kor-shooting",
+    "name": "Korean Shooting Federation",
+    "countryId": "kr"
+  },
+  {
+    "id": "tur-shooting",
+    "name": "Turkish Shooting Federation",
+    "countryId": "tr"
+  }
+]

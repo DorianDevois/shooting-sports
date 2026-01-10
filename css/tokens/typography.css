@@ -1,0 +1,118 @@
+/* ===========================
+  TYPOGRAPHY TOKENS
+  Mobile first (280-767px)
+  =========================== */
+
+:root {
+  /* Font family */
+  --font-sans-serif: "Roboto", Verdana, sans-serif;
+
+  /* Base text */
+  --font-size-body: 1rem;
+  /* 16px */
+  --line-height-body: 1.6;
+
+  /* 12px */
+  --font-size-xs: 0.75rem;
+  /* 14px */
+  --font-size-sm: 0.875rem;
+  /* 16px */
+  --font-size-md: 1rem;
+  /* 20px */
+  --font-size-lg: 1.25rem;
+  /* 24px */
+  --font-size-xl: 1.5rem;
+  /* 32px */
+  --font-size-3xl: 2rem;
+
+  /* Line Height */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-sm: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.02em;
+  --letter-spacing-wider: 0.04em;
+
+  /* Headings */
+  /* 32px */
+  --font-size-h1: 2rem;
+  --line-height-h1: 1.2;
+
+  /* 24px */
+  --font-size-h2: 1.5rem;
+  --line-height-h2: 1.25;
+
+  /* 20px */
+  --font-size-h3: 1.25rem;
+  --line-height-h3: 1.35;
+
+  /* 18px */
+  --font-size-h4: 1.125rem;
+  --line-height-h4: 1.4;
+
+  /* 16px */
+  --font-size-h5: 1rem;
+  --line-height-h5: 1.45;
+
+  /* 14px */
+  --font-size-h6: 0.875rem;
+  --line-height-h6: 1.5;
+}
+
+/* ===========================
+  TYPOGRAPHY TOKENS
+  Tablet (≥ 768px)
+  =========================== */
+
+@media (min-width: 768px) {
+  :root {
+    /* 40px */
+    --font-size-h1: 2.5rem;
+    --line-height-h1: 1.15;
+
+    /* 32px */
+    --font-size-h2: 2rem;
+    --line-height-h2: 1.2;
+
+    /* 24px */
+    --font-size-h3: 1.5rem;
+    --line-height-h3: 1.3;
+
+    /* 20px */
+    --font-size-h4: 1.25rem;
+    --line-height-h4: 1.35;
+  }
+}
+
+
+/* ===========================
+  TYPOGRAPHY TOKENS
+  Desktop (≥ 1440px)
+  =========================== */
+
+@media (min-width: 1440px) {
+  :root {
+    /* 48px */
+    --font-size-h1: 3rem;
+    --line-height-h1: 1.1;
+
+    /* 36px */
+    --font-size-h2: 2.25rem;
+    --line-height-h2: 1.15;
+
+    /* 28px */
+    --font-size-h3: 1.75rem;
+    --line-height-h3: 1.25;
+
+    /* 22px */
+    --font-size-h4: 1.375rem;
+    --line-height-h4: 1.3;
+
+    /* 15px */
+    --font-size-sm: 0.9375rem;
+    --line-height-sm: 1.65;
+  }
+}

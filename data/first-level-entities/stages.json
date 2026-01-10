@@ -1,0 +1,30 @@
+[
+  {
+    "id": "qualification",
+    "name": "Qualification",
+    "shortName": "Q",
+    "order": 1,
+    "hasSeries": true
+  },
+  {
+    "id": "semifinal",
+    "name": "Semifinal",
+    "shortName": "SF",
+    "order": 2,
+    "hasSeries": false
+  },
+  {
+    "id": "final",
+    "name": "Final",
+    "shortName": "F",
+    "order": 3,
+    "hasSeries": false
+  },
+  {
+    "id": "medal-match",
+    "name": "Medal Match",
+    "shortName": "MM",
+    "order": 4,
+    "hasSeries": false
+  }
+]

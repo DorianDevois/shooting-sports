@@ -1,0 +1,42 @@
+[
+  {
+    "id": "athlete",
+    "name": "Athlete"
+  },
+  {
+    "id": "coach",
+    "name": "Coach"
+  },
+  {
+    "id": "assistant-coach",
+    "name": "Assistant Coach"
+  },
+  {
+    "id": "head-coach",
+    "name": "Head Coach"
+  },
+  {
+    "id": "physio",
+    "name": "Physiotherapist"
+  },
+  {
+    "id": "manager",
+    "name": "Team Manager"
+  },
+  {
+    "id": "official",
+    "name": "Official"
+  },
+  {
+    "id": "judge",
+    "name": "Judge"
+  },
+  {
+    "id": "referee",
+    "name": "Referee"
+  },
+  {
+    "id": "doctor",
+    "name": "Team Doctor"
+  }
+]

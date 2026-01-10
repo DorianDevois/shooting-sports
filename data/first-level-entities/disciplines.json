@@ -1,0 +1,42 @@
+[
+  {
+    "id": "10m-air-pistol-men",
+    "name": "10m Air Pistol Men"
+  },
+  {
+    "id": "10m-air-pistol-women",
+    "name": "10m Air Pistol Women"
+  },
+  {
+    "id": "10m-air-rifle-men",
+    "name": "10m Air Rifle Men"
+  },
+  {
+    "id": "10m-air-rifle-women",
+    "name": "10m Air Rifle Women"
+  },
+  {
+    "id": "trap-men",
+    "name": "Trap Men"
+  },
+  {
+    "id": "trap-women",
+    "name": "Trap Women"
+  },
+  {
+    "id": "skeet-men",
+    "name": "Skeet Men"
+  },
+  {
+    "id": "skeet-women",
+    "name": "Skeet Women"
+  },
+  {
+    "id": "10m-air-rifle-mixed-team",
+    "name": "10m Air Rifle Mixed Team"
+  },
+  {
+    "id": "50m-rifle-3pos",
+    "name": "50m Rifle 3 Positions"
+  }
+]

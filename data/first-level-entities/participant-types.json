@@ -1,0 +1,22 @@
+[
+  {
+    "id": "individual",
+    "label": "Individual"
+  },
+  {
+    "id": "team",
+    "label": "Team"
+  },
+  {
+    "id": "mixed",
+    "label": "Mixed Team"
+  },
+  {
+    "id": "junior",
+    "label": "Junior Category"
+  },
+  {
+    "id": "senior",
+    "label": "Senior Category"
+  }
+]

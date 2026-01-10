@@ -1,0 +1,92 @@
+[
+  {
+    "id": "team-1",
+    "competitionId": "comp-1",
+    "name": "Team 1",
+    "members": [
+      "p1",
+      "p2"
+    ]
+  },
+  {
+    "id": "team-2",
+    "competitionId": "comp-2",
+    "name": "Team 2",
+    "members": [
+      "p1",
+      "p2",
+      "p3"
+    ]
+  },
+  {
+    "id": "team-3",
+    "competitionId": "comp-3",
+    "name": "Team 3",
+    "members": [
+      "p1"
+    ]
+  },
+  {
+    "id": "team-4",
+    "competitionId": "comp-4",
+    "name": "Team 4",
+    "members": [
+      "p1",
+      "p2"
+    ]
+  },
+  {
+    "id": "team-5",
+    "competitionId": "comp-5",
+    "name": "Team 5",
+    "members": [
+      "p1",
+      "p2",
+      "p3"
+    ]
+  },
+  {
+    "id": "team-6",
+    "competitionId": "comp-6",
+    "name": "Team 6",
+    "members": [
+      "p1"
+    ]
+  },
+  {
+    "id": "team-7",
+    "competitionId": "comp-7",
+    "name": "Team 7",
+    "members": [
+      "p1",
+      "p2"
+    ]
+  },
+  {
+    "id": "team-8",
+    "competitionId": "comp-8",
+    "name": "Team 8",
+    "members": [
+      "p1",
+      "p2",
+      "p3"
+    ]
+  },
+  {
+    "id": "team-9",
+    "competitionId": "comp-9",
+    "name": "Team 9",
+    "members": [
+      "p1"
+    ]
+  },
+  {
+    "id": "team-10",
+    "competitionId": "comp-10",
+    "name": "Team 10",
+    "members": [
+      "p1",
+      "p2"
+    ]
+  }
+]

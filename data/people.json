@@ -1,0 +1,22 @@
+[
+  {
+    "id": "coach-hans-muller",
+    "firstName": "Hans",
+    "lastName": "Müller",
+    "countryId": "de",
+    "genderId": "men",
+    "roleId": "coach"
+  },
+  {
+    "id": "ath-lihao-sheng",
+    "firstName": "Lihao",
+    "lastName": "Sheng",
+    "nickName": "Sharp Shooter",
+    "countryId": "cn",
+    "roleId": "athlete",
+    "genderId": "men",
+    "dateOfBirth": "1990-05-15",
+    "photo": "assets/images/people/john_doe.jpg",
+    "disciplineId": ["10m-air-rifle-men", "10m-air-rifle-mixed-team", "50m-rifle-3pos"]
+  }
+]

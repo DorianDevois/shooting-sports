@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Base href для власного домена -->
+    <!-- <base href="/" /> -->
+    <!-- Base href for GitHub Pages -->
+    <base href="/shooting-sports/" />
+
+    <!-- Charset -->
+    <meta charset="UTF-8" />
+
+    <!-- Viewport для мобільних пристроїв -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Page Title -->
+    <title>Azerbaijan Shooting Federation</title>
+
+    <!-- SEO Meta tags -->
+    <meta
+      name="description"
+      content="Official website of the Azerbaijan Shooting Federation. Competitions, news, athletes and results." />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Azerbaijan Shooting Federation" />
+    <meta
+      property="og:description"
+      content="Official website of the Azerbaijan Shooting Federation. Competitions, news, athletes and results." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://doriandevois.github.io/shooting-sports/" />
+    <meta property="og:image" content="assets/images/social/social-preview-1200x630.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Azerbaijan Shooting Federation" />
+    <meta
+      name="twitter:description"
+      content="Official website of the Azerbaijan Shooting Federation. Competitions, news, athletes and results." />
+    <meta name="twitter:image" content="assets/images/social/social-preview-1200x630.jpg" />
+
+    <!-- Google Fonts (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Modern-Normalize Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- FAVICONS -->
+    <!-- Класичний .ico для старих браузерів -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <!-- Основний favicon для десктопних браузерів -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <!-- Apple iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+
+    <!-- Android / Chrome PWA / Дублювання в manifest.json -->
+    <!-- <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png" /> -->
+    <!-- PWA: універсальний режим -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- PWA: iOS підтримка -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ASF - Azerbaijan Shooting Federation" />
+    <meta name="theme-color" content="#0b1c2d" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnect (якщо є шрифти або API) -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+  </head>
+
+  <body>
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="page-header__container container">
+        <!-- Navigation -->
+        <nav class="navigation">
+          <!-- Site Logo -->
+          <a class="page-header__logo brand-logo" href="" aria-label="Shooting Sports Home">
+            <svg class="brand-logo__image" width="48" height="48">
+              <use href="assets/icons/logos/sprite-logos.svg#logo-asf"></use>
+            </svg>
+            <p class="brand-logo__text">
+              <span class="brand-logo__title">
+                Shooting<br />
+                Sports
+              </span>
+              <span class="brand-logo__tagline">Federation</span>
+            </p>
+          </a>
+
+          <!-- Mobile Menu -->
+          <div class="mobile-menu">
+            <button
+              class="js-open-mobile-menu mobile-menu__toggle"
+              type="button"
+              aria-label="Open mobile menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu-container">
+              <svg class="mobile-menu__open" width="40" height="40" aria-hidden="true">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-burger-menu"></use>
+              </svg>
+            </button>
+
+            <div class="js-mobile-menu-container mobile-menu__container" id="mobile-menu-container">
+              <div class="mobile-menu__header">
+                <a class="page-header__logo brand-logo" href="" aria-label="Shooting Sports Home">
+                  <svg class="brand-logo__image" width="48" height="48">
+                    <use href="assets/icons/logos/sprite-logos.svg#logo-asf"></use>
+                  </svg>
+                  <p class="brand-logo__text">
+                    <span class="brand-logo__title">Shooting<br />Sports</span>
+                    <span class="brand-logo__tagline">International Federation</span>
+                  </p>
+                </a>
+
+                <button class="js-close-mobile-menu mobile-menu__toggle" type="button" aria-label="Close mobile menu">
+                  <svg class="mobile-menu__close" width="40" height="40" aria-hidden="true">
+                    <use href="assets/icons/ui/sprite-ui.svg#ui-burger-close"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="mobile-nav">
+                <li>
+                  <a class="mobile-nav__link" href="pages/competitions/">Competitions</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="pages/disciplines/">Disciplines</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="pages/athletes/">Athletes</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="pages/news/">News</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="pages/gallery/">Gallery</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="pages/contacts/">Contacts</a>
+                </li>
+              </ul>
+
+              <ul class="mobile-contacts mobile-menu__mobile-contacts">
+                <li class="mobile-contacts__item">
+                  <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+994124937060">
+                    <svg class="site-contact__icon" width="24" height="24">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-mobile"></use>
+                    </svg>
+                    <span>(+994) 12 493 70 60</span>
+                  </a>
+                </li>
+                <li class="mobile-contacts__item">
+                  <a class="mobile-contacts__link" href="mailto:info@aze-shooting.org">
+                    <svg class="site-contact__icon" width="24" height="24">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email"></use>
+                    </svg>
+                    <span>info@aze-shooting.org</span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="mobile-social mobile-menu__social">
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="https://www.facebook.com/azeshooting/">Facebook </a>
+                </li>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="https://www.instagram.com/azeshooting/">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="https://www.youtube.com/@azeshooting/">YouTube </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Site Nav -->
+          <ul class="site-nav" aria-label="Main navigation">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current" href="pages/competitions/">Competitions</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="pages/disciplines/">Disciplines</a>
+              <ul class="site-nav__sub-list">
+                <li class="site-nav__sub-item">
+                  <a class="site-nav__sub-link" href="pages/disciplines/pistol/">Pistol</a>
+                </li>
+                <li class="site-nav__sub-item">
+                  <a class="site-nav__sub-link" href="pages/disciplines/rifle/">Rifle</a>
+                </li>
+                <li class="site-nav__sub-item">
+                  <a class="site-nav__sub-link" href="pages/disciplines/trap/">Trap</a>
+                </li>
+                <li class="site-nav__sub-item">
+                  <a class="site-nav__sub-link" href="pages/disciplines/skeet/">Skeet</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="pages/athletes/">Athletes</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="pages/news/">News</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="pages/gallery/">Gallery</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="pages/contacts/">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- Site Contacts -->
+          <ul class="page-header__contacts contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+994124937060">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="assets/icons/ui/sprite-ui.svg#ui-icon-mobile"></use>
+                </svg>
+                <span class="contacts__phone">(+994) 12 493 70 60</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@aze-shooting.org">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email"></use>
+                </svg>
+                <span class="contacts__email">info@aze-shooting.org</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <!-- Hero Section -->
+      <section class="hero" aria-label="Hero Section">
+        <div class="hero__container container">
+          <h1 class="hero__title">
+            Our Goal: A Medal at the Los Angeles 2028<br />
+            Olympic Games
+          </h1>
+          <p class="hero__text">Join our team and take part in the journey towards Olympic success!</p>
+          <button class="hero__button" type="button">Apply to participate</button>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about-us section">
+        <div class="container">
+          <header class="about-us__header">
+            <h2 class="about-us__title">About us</h2>
+            <a href="pages/about-us/" class="about-us__link">
+              <span>More details</span>
+              <span class="visually-hidden">about shooting federation</span>
+              <svg width="16" height="16">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
+              </svg>
+            </a>
+          </header>
+          <p class="about-us__excerpt">
+            Located in the eastern part of Baku, the Azerbaijan Shooting Center has been promoting sports and a healthy
+            lifestyle among the youth since its opening on March 9, 2015.
+          </p>
+
+          <div class="about-us__detailed">
+            <img
+              class="about-us__image"
+              src="assets/images/other/aze-shooting-federation.jpg"
+              alt="Company team collage with the text '25+ years of experience'"
+              width="260"
+              loading="lazy" />
+
+            <div class="about-us__content">
+              <h3 class="about-us__subtitle">The center is distinguished by its functionality.</h3>
+              <p class="about-us__text">
+                The center spans over 123,000 square meters, including shooting lines for up to 80 athletes
+                simultaneously, halls for practical exercises, a doping control hall, weapons storage, a VIP lounge, and
+                a café. It accommodates both professional and amateur shooters, offering facilities for competitions at
+                10, 25, 50, and 300 meters.
+              </p>
+              <p class="about-us__text">
+                The complex features an indoor 10-meter range for 80 athletes, a 300-meter semi-enclosed range for
+                professional competitions with 40 athletes, and multiple trap and skeet shooting ranges equipped with
+                automated target launchers.
+              </p>
+
+              <ul class="about-us__features">
+                <li class="about-us__feature">Providing social protection for athletes and coaches</li>
+                <li class="about-us__feature">Supporting sports veterans</li>
+                <li class="about-us__feature">Advanced training for shooting specialists</li>
+                <li class="about-us__feature">Organizing national and international competitions</li>
+              </ul>
+
+              <a class="about-us__support-link" href="">Get Support</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Disciplines Section -->
+      <section class="disciplines section">
+        <div class="container">
+          <h2 class="disciplines__title">Disciplines</h2>
+          <p class="disciplines__excerpt">
+            Explore our diverse shooting disciplines and find the perfect training path for your skill level and goals.
+          </p>
+
+          <ul class="disciplines__list">
+            <li class="disciplines__item">
+              <article class="discipline-card" aria-labelledby="discipline-pistol-title">
+                <!-- <div class="discipline-card__thumb">
+                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-pistol"></use>
+                  </svg>
+                </div> -->
+
+                <div class="discipline-card__content">
+                  <h3 class="discipline-card__title" id="discipline-pistol-title">Pistol</h3>
+                  <p class="discipline-card__description">
+                    Pistol shooting focuses on precision, control, and concentration. This discipline is ideal for
+                    developing accuracy and consistency, whether you are training recreationally or preparing for
+                    competitions.
+                  </p>
+                </div>
+
+                <a class="discipline-card__link" href="">
+                  Learn more
+                  <span class="visually-hidden">about pistol shooting disciplines and training opportunities.</span>
+                </a>
+              </article>
+            </li>
+
+            <li class="disciplines__item">
+              <article class="discipline-card" aria-labelledby="discipline-rifle-title">
+                <!-- <div class="discipline-card__thumb">
+                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-rifle"></use>
+                  </svg>
+                </div> -->
+
+                <div class="discipline-card__content">
+                  <h3 class="discipline-card__title" id="discipline-rifle-title">Rifle</h3>
+                  <p class="discipline-card__description">
+                    Rifle shooting emphasizes stability, breathing technique, and long-range accuracy. It is suitable
+                    for shooters who want to master technical skills and improve their overall shooting discipline.
+                  </p>
+                </div>
+
+                <a class="discipline-card__link" href="">
+                  Learn more
+                  <span class="visually-hidden">about rifle shooting disciplines and long-range training.</span>
+                </a>
+              </article>
+            </li>
+
+            <li class="disciplines__item">
+              <article class="discipline-card" aria-labelledby="discipline-trap-title">
+                <!-- <div class="discipline-card__thumb">
+                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-trap"></use>
+                  </svg>
+                </div> -->
+
+                <div class="discipline-card__content">
+                  <h3 class="discipline-card__title" id="discipline-trap-title">Trap</h3>
+                  <p class="discipline-card__description">
+                    Trap shooting is a dynamic shotgun discipline where targets are launched away from the shooter at
+                    varying angles. It helps improve reaction time, coordination, and shooting rhythm.
+                  </p>
+                </div>
+
+                <a class="discipline-card__link" href="">
+                  Learn more
+                  <span class="visually-hidden">about trap shooting and clay target training.</span>
+                </a>
+              </article>
+            </li>
+
+            <li class="disciplines__item">
+              <article class="discipline-card" aria-labelledby="discipline-skeet-title">
+                <!-- <div class="discipline-card__thumb">
+                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-skeet"></use>
+                  </svg>
+                </div> -->
+
+                <div class="discipline-card__content">
+                  <h3 class="discipline-card__title" id="discipline-skeet-title">Skeet</h3>
+                  <p class="discipline-card__description">
+                    Skeet shooting challenges shooters with fast-moving targets crossing from different directions. This
+                    discipline is perfect for developing timing, precision, and smooth shooting techniques.
+                  </p>
+                </div>
+
+                <a class="discipline-card__link" href="">
+                  Learn more
+                  <span class="visually-hidden">about skeet shooting and moving target practice.</span>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Competitions Section -->
+      <section class="competitions section">
+        <div class="container">
+          <header class="competitions__header">
+            <h2 class="competitions__title">Competitions</h2>
+
+            <a href="pages/competitions/" class="competitions__show-all">
+              <span>Show all</span>
+              <span class="visually-hidden">shooting competitions</span>
+              <svg width="16" height="16">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
+              </svg>
+            </a>
+          </header>
+          <!-- <p class="competitions__excerpt">
+            Stay updated on upcoming shooting competitions and events – from local tournaments to international
+            championships!
+          </p> -->
+          <ul class="competitions__list">
+            <li class="competitions__item">
+              <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                <!-- MEDIA -->
+                <div class="competition-card__media">
+                  <!-- Image link (клікабельна картинка)-->
+                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="380"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <span class="competition-card__overlay" aria-hidden="true">
+                      <span class="competition-card__overlay-text">View event</span>
+                    </span>
+                  </a>
+
+                  <!-- Competition Categories Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
+                    aria-label="Competition categories">
+                    <li>
+                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                    </li>
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                    </li>
+                  </ul>
+
+                  <!-- Competition Status Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
+                    aria-label="Competition status">
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="competition-card__meta">
+                  <h3 class="competition-card__title">
+                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
+                      Olympic Torch Relay
+                    </a>
+                  </h3>
+
+                  <p class="competition-card__location">
+                    <a
+                      class="competition-card__meta-link"
+                      href="pages/competitions?city=paris&country=france"
+                      data-city="paris"
+                      data-country="france">
+                      Paris, France
+                    </a>
+                  </p>
+
+                  <p class="competition-card__date">
+                    <time datetime="2024-07-26">26 Jul</time> –
+                    <time datetime="2024-08-05">05 Aug 2024</time>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li class="competitions__item">
+              <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                <!-- MEDIA -->
+                <div class="competition-card__media">
+                  <!-- Image link (клікабельна картинка)-->
+                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="380"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <span class="competition-card__overlay" aria-hidden="true">
+                      <span class="competition-card__overlay-text">View event</span>
+                    </span>
+                  </a>
+
+                  <!-- Competition Categories Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
+                    aria-label="Competition categories">
+                    <li>
+                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                    </li>
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                    </li>
+                  </ul>
+
+                  <!-- Competition Status Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
+                    aria-label="Competition status">
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="competition-card__meta">
+                  <h3 class="competition-card__title">
+                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
+                      Olympic Torch Relay
+                    </a>
+                  </h3>
+
+                  <p class="competition-card__location">
+                    <a
+                      class="competition-card__meta-link"
+                      href="pages/competitions?city=paris&country=france"
+                      data-city="paris"
+                      data-country="france">
+                      Paris, France
+                    </a>
+                  </p>
+
+                  <p class="competition-card__date">
+                    <time datetime="2024-07-26">26 Jul</time> –
+                    <time datetime="2024-08-05">05 Aug 2024</time>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li class="competitions__item">
+              <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                <!-- MEDIA -->
+                <div class="competition-card__media">
+                  <!-- Image link (клікабельна картинка)-->
+                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="380"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <span class="competition-card__overlay" aria-hidden="true">
+                      <span class="competition-card__overlay-text">View event</span>
+                    </span>
+                  </a>
+
+                  <!-- Competition Categories Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
+                    aria-label="Competition categories">
+                    <li>
+                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                    </li>
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                    </li>
+                  </ul>
+
+                  <!-- Competition Status Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
+                    aria-label="Competition status">
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="competition-card__meta">
+                  <h3 class="competition-card__title">
+                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
+                      Olympic Torch Relay
+                    </a>
+                  </h3>
+
+                  <p class="competition-card__location">
+                    <a
+                      class="competition-card__meta-link"
+                      href="pages/competitions?city=paris&country=france"
+                      data-city="paris"
+                      data-country="france">
+                      Paris, France
+                    </a>
+                  </p>
+
+                  <p class="competition-card__date">
+                    <time datetime="2024-07-26">26 Jul</time> –
+                    <time datetime="2024-08-05">05 Aug 2024</time>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li class="competitions__item">
+              <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                <!-- MEDIA -->
+                <div class="competition-card__media">
+                  <!-- Image link (клікабельна картинка)-->
+                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="380"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <span class="competition-card__overlay" aria-hidden="true">
+                      <span class="competition-card__overlay-text">View event</span>
+                    </span>
+                  </a>
+
+                  <!-- Competition Categories Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
+                    aria-label="Competition categories">
+                    <li>
+                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                    </li>
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                    </li>
+                  </ul>
+
+                  <!-- Competition Status Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
+                    aria-label="Competition status">
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="competition-card__meta">
+                  <h3 class="competition-card__title">
+                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
+                      Olympic Torch Relay
+                    </a>
+                  </h3>
+
+                  <p class="competition-card__location">
+                    <a
+                      class="competition-card__meta-link"
+                      href="pages/competitions?city=paris&country=france"
+                      data-city="paris"
+                      data-country="france">
+                      Paris, France
+                    </a>
+                  </p>
+
+                  <p class="competition-card__date">
+                    <time datetime="2024-07-26">26 Jul</time> –
+                    <time datetime="2024-08-05">05 Aug 2024</time>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li class="competitions__item">
+              <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                <!-- MEDIA -->
+                <div class="competition-card__media">
+                  <!-- Image link (клікабельна картинка)-->
+                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="380"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <span class="competition-card__overlay" aria-hidden="true">
+                      <span class="competition-card__overlay-text">View event</span>
+                    </span>
+                  </a>
+
+                  <!-- Competition Categories Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
+                    aria-label="Competition categories">
+                    <li>
+                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                    </li>
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                    </li>
+                  </ul>
+
+                  <!-- Competition Status Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
+                    aria-label="Competition status">
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="competition-card__meta">
+                  <h3 class="competition-card__title">
+                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
+                      Olympic Torch Relay
+                    </a>
+                  </h3>
+
+                  <p class="competition-card__location">
+                    <a
+                      class="competition-card__meta-link"
+                      href="pages/competitions?city=paris&country=france"
+                      data-city="paris"
+                      data-country="france">
+                      Paris, France
+                    </a>
+                  </p>
+
+                  <p class="competition-card__date">
+                    <time datetime="2024-07-26">26 Jul</time> –
+                    <time datetime="2024-08-05">05 Aug 2024</time>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li class="competitions__item">
+              <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                <!-- MEDIA -->
+                <div class="competition-card__media">
+                  <!-- Image link (клікабельна картинка)-->
+                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="380"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <span class="competition-card__overlay" aria-hidden="true">
+                      <span class="competition-card__overlay-text">View event</span>
+                    </span>
+                  </a>
+
+                  <!-- Competition Categories Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
+                    aria-label="Competition categories">
+                    <li>
+                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                    </li>
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                    </li>
+                  </ul>
+
+                  <!-- Competition Status Badges -->
+                  <ul
+                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
+                    aria-label="Competition status">
+                    <li>
+                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="competition-card__meta">
+                  <h3 class="competition-card__title">
+                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
+                      Olympic Torch Relay
+                    </a>
+                  </h3>
+
+                  <p class="competition-card__location">
+                    <a
+                      class="competition-card__meta-link"
+                      href="pages/competitions?city=paris&country=france"
+                      data-city="paris"
+                      data-country="france">
+                      Paris, France
+                    </a>
+                  </p>
+
+                  <p class="competition-card__date">
+                    <time datetime="2024-07-26">26 Jul</time> –
+                    <time datetime="2024-08-05">05 Aug 2024</time>
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <footer class="competitions__footer">
+            <button class="competitions__see-more" type="button">See More</button>
+          </footer>
+        </div>
+      </section>
+
+      <!-- World Ranking Section -->
+      <section class="ranking section">
+        <div class="container">
+          <h2 class="ranking__title">World Ranking</h2>
+          <p class="ranking__excerpt">
+            Explore the world rankings featuring top shooters from different disciplines across the globe.
+          </p>
+          <div>World Ranking</div>
+          <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.2190570533717!2d49.7905617!3d40.413323600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40308707fd447613%3A0x7e0a4a6d2a6ad5a!2sBaku%20Shooting%20Center!5e1!3m2!1suk!2saz!4v1768043358472!5m2!1suk!2saz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section class="news section">
+        <div class="container">
+          <h2 class="news__title">Latest News</h2>
+          <p class="news__excerpt">
+            Our development opt in to the projects they genuinely want to work on, committing wholeheartedly to
+            delivering.
+          </p>
+          <ul class="news__list">
+            <li>List Item</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section class="partners section">
+        <div class="container">
+          <h2 class="partners__title">Partners</h2>
+          <!-- <p class="partners__excerpt">Trusted partnerships that support the progress of shooting sports.</p> -->
+          <p class="partners__excerpt">
+            Our partners play a vital role in supporting the growth of shooting sports and the development of athletes
+            at every level.
+          </p>
+
+          <ul class="partners__list">
+            <li class="partners__item">
+              <div class="partner-logo">
+                <a class="partner-logo__link" href="" aria-label="Ministry of Youth and Sports">
+                  <svg width="120" height="60">
+                    <use href="assets/icons/logos/sprite-logos.svg#logo-aze-moyas"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partner-logo">
+                <a class="partner-logo__link" href="" aria-label="National Olympic Committee">
+                  <svg width="60" height="60">
+                    <use href="assets/icons/logos/sprite-logos.svg#logo-nocar"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partner-logo">
+                <a class="partner-logo__link" href="" aria-label="International Shooting Sport Federation">
+                  <svg width="60" height="60">
+                    <use href="assets/icons/logos/sprite-logos.svg#logo-issf"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partner-logo">
+                <a class="partner-logo__link" href="" aria-label="Azerbaijan National Anti-Doping Agency">
+                  <svg width="120" height="60">
+                    <use href="assets/icons/logos/sprite-logos.svg#logo-amada"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__main">
+          <!-- Contact -->
+          <div class="page-footer__address">
+            <!-- Site Logo -->
+            <a class="page-footer__logo brand-logo" href="" aria-label="Shooting Sports Home">
+              <svg class="brand-logo__image" width="48" height="48">
+                <use href="assets/icons/logos/sprite-logos.svg#logo-asf"></use>
+              </svg>
+              <p class="brand-logo__text">
+                <span class="brand-logo__title">
+                  Shooting<br />
+                  Sports
+                </span>
+                <span class="brand-logo__tagline">Federation</span>
+              </p>
+            </a>
+
+            <!-- Contact List in FOOTER-->
+            <address class="page-footer__contacts">
+              <!-- Site Contacts -->
+              <ul class="page-footer__contacts-list contacts">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+994124937060">
+                    <svg class="contacts__icon" width="16" height="16" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-mobile"></use>
+                    </svg>
+                    <span class="contacts__phone">(+994) 12 493 70 60</span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mailto:info@aze-shooting.org">
+                    <svg class="contacts__icon" width="16" height="16" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email"></use>
+                    </svg>
+                    <span class="contacts__email">info@aze-shooting.org</span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="https://www.google.com/maps?q=3D+Silk+Way+highway,+Baku"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class="contacts__icon" width="16" height="16" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-pin-location"></use>
+                    </svg>
+                    <span class="contacts__location">3D Silk Way highway, Baku</span>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Social Media in FOOTER -->
+          <div class="page-footer__social social">
+            <h3 class="social__title">Social media</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="Instagram">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                    <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="X (Twitter)">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                    <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="Facebook">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                    <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="LinkedIn">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                    <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="YouTube">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                    <use href="assets/icons/social/sprite-social.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter subscription in FOOTER -->
+          <div class="page-footer__newsletter newsletter">
+            <h3 class="newsletter__call-to-action">Subscribe</h3>
+
+            <form class="newsletter__form" action="" autocomplete="off">
+              <label for="newsletter-email" class="visually-hidden">Email address</label>
+
+              <input
+                class="newsletter__input"
+                type="email"
+                id="newsletter-email"
+                name="email"
+                placeholder="Email"
+                autocomplete="email"
+                inputmode="email"
+                required />
+
+              <button class="newsletter__btn" type="submit">
+                Subscribe
+                <svg class="newsletter__btn-icon" width="16" height="16" aria-hidden="true">
+                  <use href="assets/icons/ui/sprite-ui.svg#ui-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="page-footer__bottom">
+          <p class="page-footer__copyright">
+            &copy; 2026 Azerbaijan Shooting Federation<br />
+            All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/mobile-menu.js"></script>
+    <!-- <script type="module" src="js/load-more-grid.js"></script> -->
+  </body>
+</html>

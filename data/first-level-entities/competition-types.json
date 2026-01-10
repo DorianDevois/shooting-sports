@@ -1,0 +1,42 @@
+[
+  {
+    "id": "world-championship",
+    "name": "World Championship"
+  },
+  {
+    "id": "world-cup",
+    "name": "World Cup"
+  },
+  {
+    "id": "grand-prix",
+    "name": "Grand Prix"
+  },
+  {
+    "id": "continental",
+    "name": "Continental Championship"
+  },
+  {
+    "id": "regional",
+    "name": "Regional Cup"
+  },
+  {
+    "id": "national",
+    "name": "National Championship"
+  },
+  {
+    "id": "junior-world-cup",
+    "name": "Junior World Cup"
+  },
+  {
+    "id": "european-games",
+    "name": "European Games"
+  },
+  {
+    "id": "asian-games",
+    "name": "Asian Games"
+  },
+  {
+    "id": "open",
+    "name": "Open Championship"
+  }
+]
