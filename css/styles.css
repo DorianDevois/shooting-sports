@@ -1154,7 +1154,7 @@ svg {
   border: 1px solid var(--color-border-dark);
   border-radius: 9999px;
   cursor: pointer;
-  background-color: var(--color-bg-primary);
+  background-color: transparent;
 
   transition: background-color 350ms ease, color 350ms ease;
 }
