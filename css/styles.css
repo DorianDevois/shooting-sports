@@ -64,7 +64,9 @@
   --color-bg-secondary: #F5F4FA;
   --color-bg-accent: #2196F3;
   --color-bg-dark: #2E2F42;
-  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  --color-bg-overlay-40: rgba(0, 0, 0, 0.4);
+  --color-bg-overlay-50: rgba(0, 0, 0, 0.5);
 
   /* Border colours */
   --color-border-default: #E7E9FC;
@@ -85,11 +87,11 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-xs: 0 1px 1px rgba(0, 0, 0, 0.06);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.16);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+  --shadow-text-xs: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  /* --shadow-text-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-text-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-text-lg: 0 10px 30px rgba(0, 0, 0, 0.16);
+  --shadow-text-xl: 0 20px 40px rgba(0, 0, 0, 0.2); */
 
   --card-set-gap: 1.25rem;
   --header-height: 60px;
@@ -617,6 +619,10 @@ svg {
   color: var(--color-text-accent);
 }
 
+.mobile-contacts__icon {
+  fill: currentColor;
+}
+
 /* START - Mobile Social*/
 .mobile-social {
   display: flex;
@@ -725,29 +731,48 @@ svg {
   display: none;
 }
 
-/* MAIN Content */
+/* START - Block MAIN*/
 .page-main {
   padding-top: 60px;
 }
 
 /* START - Hero Section */
 .hero {
+  width: 100%;
+  min-height: 20rem;
+
   text-align: center;
-  background-color: var(--color-bg-secondary);
+
+  background-color: var(--color-bg-dark);
+  background-image:
+    linear-gradient(to right,
+      var(--color-bg-overlay-50),
+      var(--color-bg-overlay-50)),
+    url(../assets/images/main/aze-shooting-center-1600x800.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__container {
-  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  /* dev prop */
-  background-color: rgba(46, 47, 66, .8);
-  /* outline: 1px dashed darkred; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  min-height: inherit;
+
+  outline: 1px dashed darkred;
 }
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 0;
 
+  text-shadow: var(--shadow-text-xs);
+  font-weight: 900;
   color: var(--color-text-inverse);
 }
 
@@ -755,6 +780,7 @@ svg {
   margin-top: 0;
   margin-bottom: 0;
 
+  text-shadow: var(--shadow-text-xs);
   font-weight: 500;
   color: var(--color-text-inverse);
 }
@@ -776,14 +802,18 @@ svg {
   border-radius: 9999px;
 
   margin-top: 1.875rem;
+  margin-right: auto;
+  margin-left: auto;
 
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--color-text-inverse);
+  text-shadow: var(--shadow-text-xs);
 
   cursor: pointer;
   background-color: transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   transition:
     border var(--duration) var(--timing-func),
@@ -979,8 +1009,6 @@ svg {
 }
 
 .disciplines__item {
-  background-color: var(--color-bg-secondary);
-
   /* outline: 1px dashed #9EEAF9; */
 }
 
@@ -990,6 +1018,11 @@ svg {
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  background-color: var(--color-bg-secondary);
 }
 
 .discipline-card__title {
@@ -1049,6 +1082,8 @@ svg {
   padding-right: 0.625rem;
   padding-bottom: 0.25rem;
   padding-left: 0.625rem;
+
+  border: 1px solid transparent;
   border-radius: 999px;
 
   font-size: 0.75rem;
@@ -1056,8 +1091,16 @@ svg {
   color: var(--color-text-inverse);
   white-space: nowrap;
   text-decoration: none;
+  text-shadow: var(--shadow-text-xs);
 
   background-color: var(--color-bg-dark);
+
+  transition: all var(--duration) var(--timing-func);
+}
+
+.badge:hover {
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.35);
+  border-color: var(--color-border-muted);
 }
 
 /* Badge Statuses */
