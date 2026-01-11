@@ -211,6 +211,12 @@ svg {
   padding-bottom: 3.75rem;
 }
 
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -245,6 +251,47 @@ svg {
   cursor: pointer;
 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+  padding-top: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.625rem;
+
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-full);
+
+  font-size: 0.75rem;
+  line-height: 1.2;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+
+  background-color: transparent;
+
+  transition:
+    color var(--duration) var(--timing-func),
+    background-color var(--duration) var(--timing-func);
+}
+
+.section-link-button:hover,
+.section-link-button:focus-visible {
+  color: var(--color-text-inverse);
+  background-color: var(--color-bg-dark);
+}
+
+.section-link-button__icon {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
 }
 
 /* START - Site Contacts */
@@ -835,11 +882,6 @@ svg {
   /* outline: 1px dashed darkorange; */
 }
 
-.about-us__header {
-  display: flex;
-  align-items: center;
-}
-
 .about-us__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -965,6 +1007,167 @@ svg {
   background-color: var(--color-bg-dark);
 }
 
+/* START - Our Team Section */
+.our-team {
+  background-color: var(--color-bg-secondary);
+}
+
+.our-team__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-text-title);
+}
+
+.our-team__link {
+  margin-left: auto;
+}
+
+.our-team__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  padding-left: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.our-team__item {
+  display: flex;
+  justify-content: center;
+}
+
+/* START - Team Card */
+.team-card {
+  border-radius: 0 0 4px 4px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+  /* background-color: #F5B5B5; */
+}
+
+.team-card__media {
+  position: relative;
+}
+
+.team-card__thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card__image {
+  width: 100%;
+}
+
+.team-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding-inline: 1rem;
+  padding-bottom: 2rem;
+
+  /* background-color: #155724; */
+}
+
+.team-card__meta {
+  text-align: center;
+}
+
+.team-card__name {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.team-card__name-link {
+  color: var(--color-text-title);
+  text-decoration: none;
+}
+
+.team-card__name-link:hover,
+.team-card__name-link:focus-visible {
+  text-decoration: underline;
+}
+
+.team-card__location,
+.team-card__age {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.team-card__disciplines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-left: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.team-card__discipline-link {
+  color: inherit;
+  text-decoration: none;
+
+  transition: color var(--duration) var(--timing-func);
+}
+
+.team-card__discipline-link:hover,
+.team-card__discipline-link:focus-visible {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+}
+
+.our-team__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.our-team__btn {
+  padding-top: 0.25rem;
+  padding-right: 0.625rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.625rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+
+  border: 1px solid var(--color-border-dark);
+  border-radius: 9999px;
+  cursor: pointer;
+  background-color: var(--color-bg-primary);
+
+  transition: background-color 350ms ease, color 350ms ease;
+}
+
+.our-team__btn:hover,
+.our-team__btn:focus {
+
+  border: 1px solid var(--color-border-dark);
+
+  color: var(--color-text-inverse);
+  background-color: var(--color-bg-dark);
+}
+
 /* START - Disciplines Section */
 .disciplines {
   background-color: var(--color-bg-primary);
@@ -1073,8 +1276,43 @@ svg {
   background-color: var(--color-bg-dark)
 }
 
-/* START - Badge component */
-.badge {
+/* START - Badges component */
+.badges {
+  position: absolute;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding-left: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.badges--position-top-right {
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.badges--position-bottom-right {
+  right: 0.75rem;
+  bottom: 0.75rem;
+}
+
+.badges--position-top-left {
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+.badges--position-bottom-left {
+  bottom: 0.75rem;
+  left: 0.75rem;
+}
+
+.badges__link {
   display: inline-flex;
   align-items: center;
 
@@ -1093,66 +1331,78 @@ svg {
   text-decoration: none;
   text-shadow: var(--shadow-text-xs);
 
-  background-color: var(--color-bg-dark);
+  background-color: transparent;
 
   transition: all var(--duration) var(--timing-func);
 }
 
-.badge:hover {
+.badges__link:hover,
+.badges__link:focus {
   box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.35);
   border-color: var(--color-border-muted);
 }
 
 /* Badge Statuses */
-.badge[data-status="scheduled"] {
+.badges__link[data-status="scheduled"] {
   background-color: #d1ecf1;
   color: #0c5460;
 }
 
-.badge[data-status="ongoing"] {
+.badges__link[data-status="ongoing"] {
   background-color: #cce5ff;
   color: #9f5f1f;
 }
 
-.badge[data-status="completed"] {
+.badges__link[data-status="completed"] {
   background-color: #d4edda;
   color: #155724;
 }
 
-.badge[data-status="cancelled"] {
+.badges__link[data-status="cancelled"] {
   background-color: #f8d7da;
   color: #721c24;
 }
 
 /* Badge Types */
-.badge[data-type="world-cup"] {
+.badges__link[data-type="world-cup"] {
   background-color: #fff3cd;
   color: #856404;
 }
 
-.badge[data-type="world-championship"] {
+.badges__link[data-type="world-championship"] {
   background-color: #e2e3e5;
   color: #383d41;
 }
 
 /* Badge Stages */
-.badge[data-stages="final"] {
+.badges__link[data-stages="final"] {
   background-color: #d4edda;
   color: #0c5460;
+}
+
+.badges__item--role .badges__link {
+  background-color: var(--color-bg-dark);
+}
+
+.badges__item--country {
+  display: flex;
+}
+
+.badges__item--country .badges__link {
+  padding: 0;
+
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.badges__item--country .badges__icon {
+  width: 3rem;
 }
 
 /* START - Competitions Section */
 .competitions {
   background-color: var(--color-bg-secondary);
-}
-
-.competitions>.container {
-  /* outline: 1px dashed darkred; */
-}
-
-.competitions__header {
-  display: flex;
-  align-items: center;
 }
 
 .competitions__title {
@@ -1161,47 +1411,6 @@ svg {
 
   line-height: 1.5;
   text-transform: uppercase;
-}
-
-.competitions__show-all {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  padding-top: 0.25rem;
-  padding-right: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.625rem;
-  margin-left: auto;
-
-  font-size: 0.75rem;
-  line-height: 1.2;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--color-text-secondary);
-
-  border: 1px solid var(--color-border-dark);
-  border-radius: 9999px;
-
-  background-color: transparent;
-}
-
-.competitions__show-all:hover,
-.competitions__show-all:focus {
-  color: var(--color-text-inverse);
-
-  border: 1px solid var(--color-border-dark);
-  border-radius: 9999px;
-
-  background-color: var(--color-bg-dark);
-}
-
-.competitions__show-all>svg {
-  width: 1rem;
-  height: 1rem;
-
-  display: block;
-  fill: currentColor;
 }
 
 .competitions__list {
@@ -1319,37 +1528,6 @@ svg {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
-}
-
-/* Badges (overlay) */
-.competition-card__badges {
-  position: absolute;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  list-style: none;
-}
-
-.competition-card__badges--top {
-  top: 12px;
-}
-
-.competition-card__badges--right {
-  right: 12px;
-}
-
-.competition-card__badges--bottom {
-  bottom: 12px;
-}
-
-.competition-card__badges--left {
-  left: 12px;
 }
 
 /* Competition Card Content */
@@ -1663,6 +1841,15 @@ svg {
     margin-left: 1.25rem;
   }
 
+  .our-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .our-team__item {
+    width: calc((100% - 1.25rem) / 2);
+  }
+
   .disciplines__list {
     display: flex;
     flex-direction: row;
@@ -1712,6 +1899,10 @@ svg {
     font-size: 0.75rem;
   }
 
+  .our-team__item {
+    width: calc((100% - 2.5rem) / 3);
+  }
+
   .competitions__item {
     width: calc((100% - 4rem) / 3);
   }
@@ -1734,6 +1925,10 @@ svg {
 
   .page-header__contacts .contacts__link {
     font-size: 0.875rem;
+  }
+
+  .our-team__item {
+    width: calc((100% - 3.75rem) / 4);
   }
 
   .disciplines__item {

@@ -78,6 +78,9 @@ class LoadMoreGrid {
   }
 }
 
+// Ініціалізація для Our Team Section
+new LoadMoreGrid('.our-team__list', '.our-team__btn', { batchSizes: { mobile: 2, tablet: 4, desktop: 6, large: 8 } });
+
 // Ініціалізація для Competitions
 new LoadMoreGrid('.competitions__list', '.competitions__see-more');
 

@@ -263,7 +263,7 @@
       <!-- About Us Section -->
       <section class="about-us section">
         <div class="container">
-          <header class="about-us__header">
+          <header class="section-header about-us__header">
             <h2 class="about-us__title">About us</h2>
             <a href="pages/about-us/" class="about-us__link">
               <span>More details</span>
@@ -313,10 +313,843 @@
         </div>
       </section>
 
+      <!-- Our Team -->
+      <section class="our-team section">
+        <div class="container">
+          <header class="section-header our-team__header">
+            <h2 class="our-team__title">Our Team</h2>
+
+            <a class="section-link-button our-team__link" href="pages/team/">
+              Show all
+              <span class="visually-hidden">team</span>
+              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
+              </svg>
+            </a>
+          </header>
+          <p class="our-team__excerpt">
+            Behind every result is a person. Our team brings together talented athletes, skilled coaches, and committed
+            specialists who share the same values, passion for sport, and pursuit of excellence.
+          </p>
+
+          <ul class="our-team__list">
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/"> Lihao Sheng </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="head-coach">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-1x.webp 1x,
+                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-2x.webp 2x,
+                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-1x.jpg 1x,
+                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-2x.jpg 2x,
+                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-3x.jpg 3x
+                      "
+                      src="assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-1x.jpg"
+                      alt="Head coach Serhii Kulish"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=head-coach" data-roles="head-coach">Head Coach</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=ua"
+                        data-country="ua"
+                        aria-label="Filter by country: Ukraine">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-ua"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/"> Serhii Kulish </a>
+                    </h3>
+                    <p class="team-card__age">32 years</p>
+                    <p class="team-card__location">Kyiv, Ukraine</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="our-team__item">
+              <article class="team-card" data-roles="athlete">
+                <!-- MEDIA -->
+                <div class="team-card__media">
+                  <!-- Thumbnail / Image -->
+                  <picture class="team-card__thumbnail">
+                    <source
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.webp 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.webp 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.webp 3x
+                      "
+                      type="image/webp" />
+
+                    <img
+                      class="team-card__image"
+                      loading="lazy"
+                      srcset="
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg 1x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-2x.jpg 2x,
+                        assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-3x.jpg 3x
+                      "
+                      src="assets/images/team/ath-lihao-sheng/product-designer-igor-demyanenko-1x.jpg"
+                      alt="Athlete Sheng Lihao"
+                      width="260"
+                      height="260" />
+                  </picture>
+
+                  <!-- Role Badge -->
+                  <ul class="badges badges--position-top-right" aria-label="Team role">
+                    <li class="badges__item badges__item--role">
+                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
+                    </li>
+                  </ul>
+
+                  <!-- Country Badge -->
+                  <ul class="badges badges--position-top-left" aria-label="Country badge">
+                    <li class="badges__item badges__item--country">
+                      <a
+                        class="badges__link"
+                        href="pages/team/?country=az"
+                        data-country="az"
+                        aria-label="Filter by country: Azerbaijan">
+                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="team-card__content">
+                  <!-- Meta -->
+                  <div class="team-card__meta">
+                    <h3 class="team-card__name">
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">
+                        Lihao Sheng (Sharp Shooter)
+                      </a>
+                    </h3>
+                    <p class="team-card__age">25 years</p>
+                    <p class="team-card__location">Baku, Azerbaijan</p>
+                  </div>
+
+                  <!-- Disciplines -->
+                  <!-- <span>Disciplines:</span> -->
+                  <ul class="team-card__disciplines" aria-label="Disciplines">
+                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <footer class="our-team__footer">
+            <button class="our-team__btn" type="button">See More</button>
+          </footer>
+        </div>
+      </section>
+
       <!-- Disciplines Section -->
       <section class="disciplines section">
         <div class="container">
-          <h2 class="disciplines__title">Disciplines</h2>
+          <header class="section-header disciplines__header">
+            <h2 class="disciplines__title">Disciplines</h2>
+
+            <a class="section-link-button disciplines__link" href="pages/disciplines/">
+              See all
+              <span class="visually-hidden">disciplines</span>
+              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
+              </svg>
+            </a>
+          </header>
           <p class="disciplines__excerpt">
             Explore our diverse shooting disciplines and find the perfect training path for your skill level and goals.
           </p>
@@ -421,13 +1254,13 @@
       <!-- Competitions Section -->
       <section class="competitions section">
         <div class="container">
-          <header class="competitions__header">
+          <header class="section-header competitions__header">
             <h2 class="competitions__title">Competitions</h2>
 
-            <a href="pages/competitions/" class="competitions__show-all">
-              <span>Show all</span>
+            <a class="section-link-button competitions__link" href="pages/competitions/">
+              Show all
               <span class="visually-hidden">shooting competitions</span>
-              <svg width="16" height="16">
+              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
@@ -457,23 +1290,23 @@
                   </a>
 
                   <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
+                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
                     <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                        >World Cup</a
+                      >
                     </li>
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
                     </li>
                   </ul>
 
                   <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
+                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                        >Ongoing</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -524,23 +1357,23 @@
                   </a>
 
                   <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
+                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
                     <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                        >World Cup</a
+                      >
                     </li>
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
                     </li>
                   </ul>
 
                   <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
+                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                        >Ongoing</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -591,23 +1424,23 @@
                   </a>
 
                   <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
+                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
                     <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                        >World Cup</a
+                      >
                     </li>
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
                     </li>
                   </ul>
 
                   <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
+                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                        >Ongoing</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -658,23 +1491,23 @@
                   </a>
 
                   <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
+                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
                     <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                        >World Cup</a
+                      >
                     </li>
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
                     </li>
                   </ul>
 
                   <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
+                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                        >Ongoing</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -725,23 +1558,23 @@
                   </a>
 
                   <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
+                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
                     <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                        >World Cup</a
+                      >
                     </li>
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
                     </li>
                   </ul>
 
                   <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
+                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                        >Ongoing</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -792,23 +1625,23 @@
                   </a>
 
                   <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
+                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
                     <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
+                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                        >World Cup</a
+                      >
                     </li>
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
                     </li>
                   </ul>
 
                   <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
+                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
                     <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
+                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                        >Ongoing</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -868,13 +1701,13 @@
       <!-- News Section -->
       <section class="news section">
         <div class="container">
-          <header class="competitions__header">
+          <header class="section-header news__header">
             <h2 class="news__title">Latest News</h2>
 
-            <a href="pages/competitions/" class="competitions__show-all">
-              <span>Show all</span>
-              <span class="visually-hidden">shooting competitions</span>
-              <svg width="16" height="16">
+            <a class="section-link-button news__link" href="pages/news/">
+              Show all
+              <span class="visually-hidden">news</span>
+              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
@@ -884,412 +1717,8 @@
             delivering.
           </p>
 
-          <ul class="news__list">
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <!-- Image link (клікабельна картинка)-->
-                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
-                    <img
-                      class="competition-card__image"
-                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                      alt="Olympic Torch Relay Paris 2024"
-                      width="380"
-                      loading="lazy" />
-
-                    <!-- Overlay -->
-                    <span class="competition-card__overlay" aria-hidden="true">
-                      <span class="competition-card__overlay-text">View event</span>
-                    </span>
-                  </a>
-
-                  <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
-                    <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
-                    </li>
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
-
-                  <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
-
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <!-- Image link (клікабельна картинка)-->
-                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
-                    <img
-                      class="competition-card__image"
-                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                      alt="Olympic Torch Relay Paris 2024"
-                      width="380"
-                      loading="lazy" />
-
-                    <!-- Overlay -->
-                    <span class="competition-card__overlay" aria-hidden="true">
-                      <span class="competition-card__overlay-text">View event</span>
-                    </span>
-                  </a>
-
-                  <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
-                    <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
-                    </li>
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
-
-                  <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
-
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <!-- Image link (клікабельна картинка)-->
-                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
-                    <img
-                      class="competition-card__image"
-                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                      alt="Olympic Torch Relay Paris 2024"
-                      width="380"
-                      loading="lazy" />
-
-                    <!-- Overlay -->
-                    <span class="competition-card__overlay" aria-hidden="true">
-                      <span class="competition-card__overlay-text">View event</span>
-                    </span>
-                  </a>
-
-                  <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
-                    <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
-                    </li>
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
-
-                  <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
-
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <!-- Image link (клікабельна картинка)-->
-                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
-                    <img
-                      class="competition-card__image"
-                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                      alt="Olympic Torch Relay Paris 2024"
-                      width="380"
-                      loading="lazy" />
-
-                    <!-- Overlay -->
-                    <span class="competition-card__overlay" aria-hidden="true">
-                      <span class="competition-card__overlay-text">View event</span>
-                    </span>
-                  </a>
-
-                  <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
-                    <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
-                    </li>
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
-
-                  <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
-
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <!-- Image link (клікабельна картинка)-->
-                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
-                    <img
-                      class="competition-card__image"
-                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                      alt="Olympic Torch Relay Paris 2024"
-                      width="380"
-                      loading="lazy" />
-
-                    <!-- Overlay -->
-                    <span class="competition-card__overlay" aria-hidden="true">
-                      <span class="competition-card__overlay-text">View event</span>
-                    </span>
-                  </a>
-
-                  <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
-                    <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
-                    </li>
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
-
-                  <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
-
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <!-- Image link (клікабельна картинка)-->
-                  <a class="competition-card__image-link" href="pages/competitions/competition-1/">
-                    <img
-                      class="competition-card__image"
-                      src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                      alt="Olympic Torch Relay Paris 2024"
-                      width="380"
-                      loading="lazy" />
-
-                    <!-- Overlay -->
-                    <span class="competition-card__overlay" aria-hidden="true">
-                      <span class="competition-card__overlay-text">View event</span>
-                    </span>
-                  </a>
-
-                  <!-- Competition Categories Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--top"
-                    aria-label="Competition categories">
-                    <li>
-                      <a class="badge" href="pages/competitions/?type=world-cup" data-type="world-cup">World Cup</a>
-                    </li>
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
-
-                  <!-- Competition Status Badges -->
-                  <ul
-                    class="competition-card__badges competition-card__badges--right competition-card__badges--bottom"
-                    aria-label="Competition status">
-                    <li>
-                      <a class="badge" href="pages/competitions/?status=ongoing" data-status="ongoing">Ongoing</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
-
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-          </ul>
-
-          <footer class="competitions__footer">
-            <button class="competitions__see-more" type="button">See More</button>
+          <footer class="news__footer">
+            <button class="news__see-more" type="button">See More</button>
           </footer>
         </div>
       </section>
