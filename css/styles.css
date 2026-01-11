@@ -811,7 +811,7 @@ svg {
 
   min-height: inherit;
 
-  outline: 1px dashed darkred;
+  /* outline: 1px dashed darkred; */
 }
 
 .hero__title {
