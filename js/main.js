@@ -1,89 +1,20 @@
-class LoadMoreGrid {
-  /**
-   * @param {string} listSelector - CSS-селектор для контейнера з елементами (ul, div)
-   * @param {string} buttonSelector - CSS-селектор для кнопки "See More"
-   * @param {Object} options - додаткові налаштування
-   *    options.batchSizes: {mobile, tablet, desktop, large} - кількість елементів на початку
-   */
-  constructor(listSelector, buttonSelector, options = {}) {
-    this.list = document.querySelector(listSelector);
-    this.button = document.querySelector(buttonSelector);
-    if (!this.list || !this.button) return;
+const header = document.querySelector('.page-header');
 
-    this.items = Array.from(this.list.children);
+const updateHeaderOffset = () => {
+  document.documentElement.style.setProperty('--page-header-height', `${header.offsetHeight}px`);
+};
 
-    // стандартні batch size
-    this.batchSizes = Object.assign(
-      {
-        mobile: 2, // <768px
-        tablet: 2, // 768-1023px
-        desktop: 3, // 1024-1439px
-        large: 4, // >=1440px
-      },
-      options.batchSizes || {}
-    );
+updateHeaderOffset();
 
-    // Ховаємо всі елементи
-    this.items.forEach(item => (item.style.display = 'none'));
+new ResizeObserver(updateHeaderOffset).observe(header);
 
-    // Початковий рендер
-    this.updateVisibleCount();
+// Вивід даних у консоль отриманих з форми зворотнього зв`язку
+(() => {
+  document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+    e.preventDefault();
 
-    // Кнопка "See More"
-    this.button.addEventListener('click', () => this.showMore());
+    new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
 
-    // Resize: адаптивно змінюємо видимі картки
-    window.addEventListener('resize', () => this.updateVisibleCount());
-  }
-
-  getBatchSize() {
-    const width = window.innerWidth;
-    if (width >= 1440) return this.batchSizes.large;
-    if (width >= 1024) return this.batchSizes.desktop;
-    if (width >= 768) return this.batchSizes.tablet;
-    return this.batchSizes.mobile;
-  }
-
-  updateVisibleCount() {
-    const targetCount = this.getBatchSize();
-
-    // Показуємо або ховаємо картки залежно від нового розміру
-    this.items.forEach((item, index) => {
-      item.style.display = index < targetCount ? 'flex' : 'none';
-    });
-
-    // Оновлюємо лічильник видимих карток
-    this.visibleCount = targetCount;
-
-    // Кнопка "See More"
-    if (this.visibleCount >= this.items.length) {
-      this.button.style.display = 'none';
-    } else {
-      this.button.style.display = 'inline-block';
-    }
-  }
-
-  showMore() {
-    const batchSize = this.getBatchSize();
-    const nextItems = this.items.slice(this.visibleCount, this.visibleCount + batchSize);
-
-    nextItems.forEach(item => (item.style.display = 'flex'));
-
-    this.visibleCount += nextItems.length;
-
-    // Ховаємо кнопку, якщо всі картки показані
-    if (this.visibleCount >= this.items.length) {
-      this.button.style.display = 'none';
-    }
-  }
-}
-
-// Ініціалізація для Our Team Section
-new LoadMoreGrid('.our-team__list', '.our-team__btn', { batchSizes: { mobile: 2, tablet: 2, desktop: 3, large: 4 } });
-
-// Ініціалізація для Competitions
-new LoadMoreGrid('.competitions__list', '.competitions__see-more');
-
-// new LoadMoreGrid('.news__list', '.news__load-more', {
-//   batchSizes: { mobile: 3, tablet: 4, desktop: 5, large: 6 },
-// });
+    e.currentTarget.reset();
+  });
+})();

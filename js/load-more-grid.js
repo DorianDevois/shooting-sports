@@ -1,12 +1,10 @@
-/**
- * LoadMoreGrid - універсальний компонент для пагінації елементів у сітці
- * @param {string} listSelector - CSS-селектор для контейнера з елементами (ul, div)
- * @param {string} buttonSelector - CSS-селектор для кнопки "See More"
- * @param {Object} [options] - додаткові налаштування
- *    options.batchSizes: {mobile: number, tablet: number, desktop: number, large: number}
- */
-
 class LoadMoreGrid {
+  /**
+   * @param {string} listSelector - CSS-селектор для контейнера з елементами (ul, div)
+   * @param {string} buttonSelector - CSS-селектор для кнопки "See More"
+   * @param {Object} options - додаткові налаштування
+   *    options.batchSizes: {mobile, tablet, desktop, large} - кількість елементів на початку
+   */
   constructor(listSelector, buttonSelector, options = {}) {
     this.list = document.querySelector(listSelector);
     this.button = document.querySelector(buttonSelector);
@@ -17,13 +15,16 @@ class LoadMoreGrid {
     // стандартні batch size
     this.batchSizes = Object.assign(
       {
-        mobile: 4, // <768px
-        tablet: 4, // 768-1023px
-        desktop: 6, // 1024-1439px
-        large: 8, // >=1440px
+        mobile: 2, // <768px
+        tablet: 2, // 768-1023px
+        desktop: 3, // 1024-1439px
+        large: 4, // >=1440px
       },
       options.batchSizes || {}
     );
+
+    // Ховаємо всі елементи
+    this.items.forEach(item => (item.style.display = 'none'));
 
     // Початковий рендер
     this.updateVisibleCount();
@@ -77,8 +78,11 @@ class LoadMoreGrid {
   }
 }
 
+// Ініціалізація для Our Team Section
+new LoadMoreGrid('.our-team__list', '.our-team__btn', { batchSizes: { mobile: 2, tablet: 2, desktop: 3, large: 4 } });
+
 // Ініціалізація для Competitions
-new LoadMoreGrid('.competitions__list', '.competitions__load-more');
+new LoadMoreGrid('.competitions__list', '.competitions__see-more');
 
 // new LoadMoreGrid('.news__list', '.news__load-more', {
 //   batchSizes: { mobile: 3, tablet: 4, desktop: 5, large: 6 },

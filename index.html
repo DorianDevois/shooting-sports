@@ -191,7 +191,7 @@
           <!-- Site Nav -->
           <ul class="site-nav" aria-label="Main navigation">
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="pages/competitions/">Competitions</a>
+              <a class="site-nav__link is-current" href="pages/competitions/">Competitions</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="pages/disciplines/">Disciplines</a>
@@ -247,7 +247,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main>
       <!-- Hero Section -->
       <section class="hero" aria-label="Hero Section">
         <div class="hero__container container">
@@ -256,7 +256,9 @@
             Olympic Games
           </h1>
           <p class="hero__text">Join our team and take part in the journey towards Olympic success!</p>
-          <button class="hero__button" type="button">Apply to participate</button>
+          <button class="hero__button" type="button" data-modal-open data-modal-type="competitions">
+            Apply to participate
+          </button>
         </div>
       </section>
 
@@ -389,9 +391,9 @@
                   <!-- Meta -->
                   <div class="team-card__meta">
                     <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/competitions/competition-1/"> Lihao Sheng </a>
+                      <a class="team-card__name-link" href="pages/competitions/competition-1/">Lunev Ruslan</a>
                     </h3>
-                    <p class="team-card__age">25 years</p>
+                    <!-- <p class="team-card__age">25 years</p> -->
                     <p class="team-card__location">Baku, Azerbaijan</p>
                   </div>
 
@@ -469,7 +471,7 @@
                     <h3 class="team-card__name">
                       <a class="team-card__name-link" href="pages/competitions/competition-1/"> Serhii Kulish </a>
                     </h3>
-                    <p class="team-card__age">32 years</p>
+                    <!-- <p class="team-card__age">32 years</p> -->
                     <p class="team-card__location">Kyiv, Ukraine</p>
                   </div>
 
@@ -533,7 +535,7 @@
                         data-country="az"
                         aria-label="Filter by country: Azerbaijan">
                         <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
+                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-tr"></use>
                         </svg>
                       </a>
                     </li>
@@ -1889,7 +1891,7 @@
                 class="newsletter__input"
                 type="email"
                 id="newsletter-email"
-                name="email"
+                name="uesr-email"
                 placeholder="Email"
                 autocomplete="email"
                 inputmode="email"
@@ -1914,8 +1916,82 @@
       </div>
     </footer>
 
+    <!-- Backdrop + Modal -->
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" role="dialog" aria-modal="true">
+        <!-- Modal Close Button -->
+        <button type="button" class="modal__close-btn" data-modal-close aria-label="Modal close button">
+          <svg width="16" height="16">
+            <use href="assets/icons/ui/sprite-ui.svg#ui-icon-close"></use>
+          </svg>
+        </button>
+
+        <!-- Modal Content -->
+        <div class="modal__content" data-modal-content>
+          <!-- Callback Form -->
+          <form
+            class="js-speaker-form callback modal__form modal__form--callback"
+            autocomplete="off"
+            data-form="callback">
+            <h2>Feedback Request</h2>
+            <p>Leave your details and we'll contact you back</p>
+
+            <div class="callback__input-group">
+              <span class="callback__label">Name</span>
+              <label class="callback__field">
+                <input class="callback__input" type="text" name="user-name" placeholder=" " required />
+                <svg class="callback__icon" width="18px" height="18px">
+                  <use href="assets/icons/ui/sprite-ui.svg#ui-icon-person"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="callback__input-group">
+              <span class="callback__label">Phone</span>
+              <label class="callback__field">
+                <input class="callback__input" type="tel" name="user-phone" placeholder=" " required />
+                <svg class="callback__icon" width="18px" height="18px">
+                  <use href="assets/icons/ui/sprite-ui.svg#ui-icon-phone-2"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="callback__input-group">
+              <span class="callback__label">Email</span>
+              <label class="callback__field">
+                <input class="callback__input" type="email" name="user-email" placeholder=" " required />
+                <svg class="callback__icon" width="18px" height="18px">
+                  <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email-2"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="callback__comment">
+              <span class="callback__label">Message</span>
+              <label class="callback__field">
+                <textarea class="callback__textarea" name="user-comment" placeholder="Leave your message"></textarea>
+              </label>
+            </div>
+
+            <div class="callback__policy">
+              <label class="callback__field">
+                <input class="callback__checkbox" type="checkbox" name="user-policy" required />
+                <span class="callback__custom-checkbox"></span>
+                <span class="callback__text"
+                  >I accept the <a class="callback__link" href="">Terms & Conditions</a> and subscribe to updates</span
+                >
+              </label>
+            </div>
+
+            <button class="btn callback__btn modal__submit" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/mobile-menu.js"></script>
-    <!-- <script type="module" src="js/load-more-grid.js"></script> -->
+    <script type="module" src="js/modal.js"></script>
+    <script type="module" src="js/load-more-grid.js"></script>
   </body>
 </html>
