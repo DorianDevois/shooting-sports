@@ -635,12 +635,12 @@ svg {
   height: calc(var(--vh, 1vh) * 100);
 
   padding: 2rem;
-  padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom) + 3rem);
 
 
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: var(--color-bg-status-info);
+  background-color: var(--color-bg-primary);
 
   opacity: 0;
   transform: translateX(-100%);
