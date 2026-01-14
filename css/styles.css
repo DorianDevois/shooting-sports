@@ -629,10 +629,10 @@ svg {
   justify-content: space-between;
 
   width: 100vw;
-  height: 100vh;
   /* fallback для старих браузерів */
-  height: 100svh;
+  height: 100vh;
   /* сучасні мобільні браузери */
+  height: calc(var(--vh, 1vh) * 100);
 
   padding: 2rem;
 
