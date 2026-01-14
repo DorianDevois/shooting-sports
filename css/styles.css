@@ -638,8 +638,9 @@ svg {
   padding-bottom: calc(2rem + env(safe-area-inset-bottom));
 
 
-  overflow-y: scroll;
-  background-color: var(--color-bg-status-warning);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--color-bg-status-info);
 
   opacity: 0;
   transform: translateX(-100%);
