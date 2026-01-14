@@ -637,8 +637,9 @@ svg {
   padding: 2rem;
   padding-bottom: calc(2rem + env(safe-area-inset-bottom));
 
+
   overflow-y: scroll;
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-status-warning);
 
   opacity: 0;
   transform: translateX(-100%);
