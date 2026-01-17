@@ -33,6 +33,7 @@
   --bright-red: #DC3545;
   --white: #FFFFFF;
   --dark-orange: #9a6700;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
 
   /* Notification colours */
   --color-status-info: #0DCAF0;
@@ -407,8 +408,9 @@ svg {
   top: 50%;
   left: 50%;
 
-  max-width: 90vw;
-  max-height: 90vh;
+  width: 95vw;
+  max-width: 28rem;
+  max-height: 95vh;
   overflow-y: auto;
 
   padding: 2rem;
@@ -462,6 +464,168 @@ svg {
 
 .modal__close-btn>svg {
   fill: currentColor;
+}
+
+/*! =========================================================================================  */
+
+.callback-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  margin-top: 1.25rem;
+}
+
+.callback-form__field {
+  position: relative;
+
+  display: flex;
+
+  color: var(--color-text-primary);
+  font-size: 0.875rem;
+}
+
+.callback-form__field:focus-within {
+  color: var(--color-text-accent);
+}
+
+.callback-form__field--input {}
+
+.callback-form__field--textarea {
+  flex-direction: column;
+}
+
+.callback-form__field--checkbox {
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.callback-form__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.callback-form__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.callback-form__input {
+  width: 100%;
+  height: 2.5rem;
+
+  padding-left: 2.125rem;
+
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-primary);
+
+  transition: border-color var(--duration) var(--timing-func);
+}
+
+.callback-form__input:focus {
+  border-color: var(--color-border-accent);
+  outline: none;
+}
+
+.callback-form__field--input .callback-form__label {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+
+  display: inline-block;
+
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+
+  font-size: 0.875rem;
+  line-height: 1;
+  color: inherit;
+
+  background-color: var(--color-bg-primary);
+
+  transform: translateY(-50%);
+
+  transition:
+    transform var(--duration) var(--timing-func),
+    color var(--duration) var(--timing-func);
+
+}
+
+.callback-form__field--input:focus-within .callback-form__label,
+.callback-form__input:not(:placeholder-shown)+.callback-form__label {
+  transform: translateY(-1.875rem);
+  color: inherit;
+}
+
+.callback-form__field--input .callback-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+
+  transform: translateY(-50%);
+
+  transition: fill var(--duration) var(--timing-func);
+}
+
+
+.callback-form__field--input:focus-within .callback-form__icon {
+  fill: currentColor;
+}
+
+.callback-form__textarea {
+  width: 100%;
+  height: 7.25rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-primary);
+  outline: none;
+  resize: none;
+}
+
+.callback-form__textarea:focus {
+  border-color: var(--color-border-accent);
+}
+
+/* Policy Checkbox */
+.callback-form__checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.callback-form__checkbox-custom {
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+
+  border: 2px solid var(--navy-blue-modal);
+  border-radius: var(--radius-sm);
+
+  background-color: transparent;
+
+  transition:
+    background-color var(--duration) var(--timing-func),
+    border-color var(--duration) var(--timing-func);
+}
+
+.callback-form__checkbox:checked+.callback-form__checkbox-custom {
+  border-color: #4D5AE5;
+
+  background-color: #4D5AE5;
+  background-image: url(../assets/icons/ui/svg/checkbox.svg);
+  background-origin: border-box;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.callback-form__submit {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -635,11 +799,10 @@ svg {
   height: calc(var(--vh, 1vh) * 100);
 
   padding: 2rem;
-  padding-bottom: calc(2rem + env(safe-area-inset-bottom) + 5rem);
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom) + 6rem);
 
 
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   background-color: var(--color-bg-primary);
 
   opacity: 0;

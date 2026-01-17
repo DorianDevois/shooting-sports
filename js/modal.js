@@ -1,4 +1,10 @@
-import { competitionsTemplate, contactTemplate, loginTemplate, defaultTemplate } from './modal-templates.js';
+import {
+  competitionsTemplate,
+  contactTemplate,
+  loginTemplate,
+  defaultTemplate,
+  callbackTemplate,
+} from './modal-templates.js';
 
 (() => {
   // =====================
@@ -8,6 +14,12 @@ import { competitionsTemplate, contactTemplate, loginTemplate, defaultTemplate }
     competitions: competitionsTemplate,
     contact: contactTemplate,
     login: loginTemplate,
+    callback: callbackTemplate,
+  };
+
+  const CLASSES = {
+    HIDDEN: 'is-hidden',
+    BODY_LOCK: 'modal-open',
   };
 
   // =====================
@@ -25,34 +37,55 @@ import { competitionsTemplate, contactTemplate, loginTemplate, defaultTemplate }
     return;
   }
 
+  // helpers
   // Перевірка наявності класу is-hidden на backdrop (чи відкрито модалку/бекдроп) - return true/false
   function isModalOpen() {
-    return !refs.backdrop.classList.contains('is-hidden');
+    return !refs.backdrop.classList.contains(CLASSES.HIDDEN);
+  }
+
+  function getTemplate(type) {
+    const template = templates[type] || defaultTemplate;
+
+    if (typeof template !== 'function') {
+      console.error('Modal template must be a function:', template);
+      return null;
+    }
+
+    return template;
   }
 
   // render function
   function renderModalContent(type) {
-    const template = templates[type] || defaultTemplate;
-
-    if (typeof template !== 'function') {
-      console.error('Template is not a function', template);
-      return;
-    }
+    const template = getTemplate(type);
+    if (!template) return;
 
     refs.content.innerHTML = template();
   }
 
   // controller
   function openModal(type) {
+    if (isModalOpen()) return;
+
     renderModalContent(type);
 
-    refs.backdrop.classList.remove('is-hidden');
-    refs.body.classList.add('modal-open');
+    refs.backdrop.classList.remove(CLASSES.HIDDEN);
+    refs.body.classList.add(CLASSES.BODY_LOCK);
+
+    // Вивід даних у консоль отриманих з форми зворотнього зв`язку
+    document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+      e.preventDefault();
+
+      new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+
+      e.currentTarget.reset();
+    });
   }
 
   function closeModal() {
-    refs.backdrop.classList.add('is-hidden');
-    refs.body.classList.remove('modal-open');
+    if (!isModalOpen()) return;
+
+    refs.backdrop.classList.add(CLASSES.HIDDEN);
+    refs.body.classList.remove(CLASSES.BODY_LOCK);
 
     setTimeout(() => {
       refs.content.innerHTML = '';
@@ -63,18 +96,26 @@ import { competitionsTemplate, contactTemplate, loginTemplate, defaultTemplate }
   function onDocumentClick(event) {
     const openBtn = event.target.closest('[data-modal-open]');
     const closeBtn = event.target.closest('[data-modal-close]');
-    const isBackdrop = event.target === refs.backdrop;
+    const isBackdropClick = event.target === refs.backdrop;
 
-    if (!openBtn && !closeBtn && !isBackdrop) return;
+    if (!openBtn && !closeBtn && !isBackdropClick) return;
 
     if (openBtn) {
       event.preventDefault();
-      openModal(openBtn.dataset.modalType);
+
+      const modalType = openBtn.dataset.modalType;
+
+      if (!modalType) {
+        console.warn('data-modal-type is missing on:', openBtn);
+        return;
+      }
+
+      openModal(modalType);
 
       return;
     }
 
-    if (closeBtn || event.target === refs.backdrop) {
+    if (closeBtn || isBackdropClick) {
       closeModal();
     }
   }

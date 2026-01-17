@@ -64,3 +64,59 @@ export function defaultTemplate() {
     <p class="modal__text">Template not found</p>
   `;
 }
+
+export function callbackTemplate() {
+  return `
+        <!-- Callback Form -->
+        <div class="callback-form">
+          <h2 class="callback-form__title">Feedback Request</h2>
+          <p class="callback-form__description">Leave your details and we'll contact you back</p>
+
+          <form class="js-speaker-form callback-form__form" autocomplete="off" data-form="callback">
+            <!-- Name Field -->
+            <label class="callback-form__field callback-form__field--input">
+              <input class="callback-form__input" type="text" name="user-name" placeholder=" " required />
+              <span class="callback-form__label">Name</span>
+              <svg class="callback-form__icon" width="16px" height="16px">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-person"></use>
+              </svg>
+            </label>
+
+            <!-- Phone Field -->
+            <label class="callback-form__field callback-form__field--input">
+              <input class="callback-form__input" type="tel" name="user-phone" placeholder=" " required />
+              <span class="callback-form__label">Phone</span>
+              <svg class="callback-form__icon" width="16px" height="16px">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-phone-2"></use>
+              </svg>
+            </label>
+
+            <!-- Email Field -->
+            <label class="callback-form__field callback-form__field--input">
+              <input class="callback-form__input" type="email" name="user-email" placeholder=" " required />
+              <span class="callback-form__label">Email</span>
+              <svg class="callback-form__icon" width="16px" height="16px">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email-2"></use>
+              </svg>
+            </label>
+
+            <!-- Message Field -->
+            <label class="callback-form__field callback-form__field--textarea">
+              <span class="callback-form__label">Comment</span>
+              <textarea class="callback-form__textarea" name="user-comment" placeholder="Message"></textarea>
+            </label>
+
+            <!-- Policy Checkbox -->
+            <label class="callback-form__field callback-form__field--checkbox">
+              <input class="callback-form__checkbox" type="checkbox" name="user-policy" required />
+              <span class="callback-form__checkbox-custom"></span>
+              <span class="callback-form__checkbox-label">
+                I accept the terms and conditions of the <a class="callback-form__link" href="">Privacy Policy</a>
+              </span>
+            </label>
+
+            <button class="btn callback-form__submit" type="submit">Send</button>
+          </form>
+        </div>
+  `;
+}
