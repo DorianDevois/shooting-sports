@@ -76,6 +76,7 @@
   --color-border-accent: #2196F3;
   --color-border-dark: #2E2F42;
   --color-border-inverse: #FFFFFF;
+  --color-border-modal: rgba(46, 47, 66, 0.4);
   --color-divider: #E5E5E5;
 
   /* Border Radius */
@@ -467,6 +468,16 @@ svg {
 }
 
 /*! =========================================================================================  */
+/* Callback Form */
+.callback-form__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.callback-form__call-to-action {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .callback-form__form {
   display: flex;
@@ -481,55 +492,24 @@ svg {
 
   display: flex;
 
-  color: var(--color-text-primary);
   font-size: 0.875rem;
+  color: var(--color-text-primary);
+
+  transition: color var(--duration) var(--timing-func);
 }
 
 .callback-form__field:focus-within {
   color: var(--color-text-accent);
 }
 
-.callback-form__field--input {}
-
-.callback-form__field--textarea {
-  flex-direction: column;
+/* -------------------------- */
+/* Floating Label (for input) */
+/* -------------------------- */
+.callback-form__field--floating-label {
+  /* default: flex row */
 }
 
-.callback-form__field--checkbox {
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.callback-form__title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.callback-form__description {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.callback-form__input {
-  width: 100%;
-  height: 2.5rem;
-
-  padding-left: 2.125rem;
-
-  border: 1px solid var(--color-border-dark);
-  border-radius: var(--radius-sm);
-
-  color: var(--color-text-primary);
-
-  transition: border-color var(--duration) var(--timing-func);
-}
-
-.callback-form__input:focus {
-  border-color: var(--color-border-accent);
-  outline: none;
-}
-
-.callback-form__field--input .callback-form__label {
+.callback-form__field--floating-label .callback-form__label {
   position: absolute;
   top: 50%;
   left: 2rem;
@@ -549,48 +529,80 @@ svg {
 
   transition:
     transform var(--duration) var(--timing-func),
-    color var(--duration) var(--timing-func);
-
+    color var(--duration) var(--timing-func),
+    background-color var(--duration) var(--timing-func);
 }
 
-.callback-form__field--input:focus-within .callback-form__label,
+.callback-form__field--floating-label:focus-within .callback-form__label,
 .callback-form__input:not(:placeholder-shown)+.callback-form__label {
   transform: translateY(-1.875rem);
   color: inherit;
 }
 
-.callback-form__field--input .callback-form__icon {
+.callback-form__field--floating-label .callback-form__icon {
   position: absolute;
   top: 50%;
   left: 0.5rem;
+
+  fill: currentColor;
 
   transform: translateY(-50%);
 
   transition: fill var(--duration) var(--timing-func);
 }
 
-
-.callback-form__field--input:focus-within .callback-form__icon {
-  fill: currentColor;
-}
-
+.callback-form__input,
 .callback-form__textarea {
   width: 100%;
-  height: 7.25rem;
-  padding: 1rem;
-  border: 1px solid var(--color-border-dark);
+
+  border: 1px solid var(--color-border-modal);
   border-radius: var(--radius-sm);
 
   color: var(--color-text-primary);
+
+  transition: border-color var(--duration) var(--timing-func);
+}
+
+.callback-form__input {
+  height: 2.5rem;
+
+  padding-left: 2.125rem;
+  padding-right: 1rem;
+}
+
+.callback-form__input:focus {
+  border-color: var(--color-border-accent);
   outline: none;
+}
+
+/* ---------------------------- */
+/* Stacked Label (for textarea) */
+/* ---------------------------- */
+.callback-form__field--stacked-label {
+  flex-direction: column;
+}
+
+.callback-form__textarea {
+  height: 7.25rem;
+
+  padding: 1rem;
+
   resize: none;
 }
 
 .callback-form__textarea:focus {
   border-color: var(--color-border-accent);
+  outline: none;
 }
 
-/* Policy Checkbox */
+/* --------------------------- */
+/* Inline Label (for checkbox) */
+/* --------------------------- */
+.callback-form__field--inline-label {
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .callback-form__checkbox {
   position: absolute;
   appearance: none;
@@ -606,6 +618,7 @@ svg {
   border-radius: var(--radius-sm);
 
   background-color: transparent;
+  cursor: pointer;
 
   transition:
     background-color var(--duration) var(--timing-func),
@@ -613,9 +626,9 @@ svg {
 }
 
 .callback-form__checkbox:checked+.callback-form__checkbox-custom {
-  border-color: #4D5AE5;
+  border-color: transparent;
 
-  background-color: #4D5AE5;
+  background-color: var(--color-bg-accent);
   background-image: url(../assets/icons/ui/svg/checkbox.svg);
   background-origin: border-box;
   background-size: contain;
@@ -627,7 +640,6 @@ svg {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 /*! ========================================================================================================================= */
 /* START - Social Links */
