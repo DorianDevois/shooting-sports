@@ -100,7 +100,7 @@
 
   /* CSS Переходи transition */
   --timing-func: cubic-bezier(0.4, 0, 0.2, 1);
-  --duration: 350ms;
+  --duration: 250ms;
 }
 
 /*! ========================================================================================================================= */
@@ -226,6 +226,24 @@ svg {
   margin-bottom: 0;
 
   color: var(--color-text-title);
+}
+
+.points {
+  /* вмикає спец layout */
+  display: -webkit-box;
+
+  /* вертикальні рядки */
+  -webkit-box-orient: vertical;
+
+  /* максимум 6 рядків */
+  -webkit-line-clamp: 6;
+
+  /* ховає зайве */
+  overflow: hidden;
+
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+
 }
 
 /*! ========================================================================================================================= */
@@ -506,6 +524,7 @@ svg {
 /* Floating Label (for input) */
 /* -------------------------- */
 .callback-form__field--floating-label {
+  color: inherit;
   /* default: flex row */
 }
 
@@ -528,15 +547,12 @@ svg {
   transform: translateY(-50%);
 
   transition:
-    transform var(--duration) var(--timing-func),
-    color var(--duration) var(--timing-func),
-    background-color var(--duration) var(--timing-func);
+    transform var(--duration) var(--timing-func);
 }
 
 .callback-form__field--floating-label:focus-within .callback-form__label,
 .callback-form__input:not(:placeholder-shown)+.callback-form__label {
   transform: translateY(-1.875rem);
-  color: inherit;
 }
 
 .callback-form__field--floating-label .callback-form__icon {
@@ -811,7 +827,7 @@ svg {
   height: calc(var(--vh, 1vh) * 100);
 
   padding: 2rem;
-  padding-bottom: calc(2rem + env(safe-area-inset-bottom) + 6rem);
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom));
 
 
   overflow-y: auto;
@@ -1412,7 +1428,7 @@ svg {
   cursor: pointer;
   background-color: transparent;
 
-  transition: background-color 350ms ease, color 350ms ease;
+  transition: background-color var(--duration) var(--timing-func), color var(--duration) var(--timing-func);
 }
 
 .our-team__btn:hover,
@@ -1700,7 +1716,7 @@ svg {
   cursor: pointer;
   background-color: var(--color-bg-primary);
 
-  transition: background-color 350ms ease, color 350ms ease;
+  transition: background-color var(--duration) var(--timing-func), color var(--duration) var(--timing-func);
 }
 
 .competitions__see-more:hover,
@@ -1753,7 +1769,7 @@ svg {
   width: 100%;
   height: auto;
 
-  transition: transform 350ms ease;
+  transition: transform var(--duration) var(--timing-func);
 }
 
 .competition-card__overlay {
@@ -1767,7 +1783,7 @@ svg {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
 
-  transition: opacity 350ms ease;
+  transition: opacity var(--duration) var(--timing-func);
 }
 
 .competition-card__image-link:focus-visible .competition-card__overlay {
