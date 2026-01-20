@@ -86,6 +86,11 @@ new LoadMoreGrid('.competitions__list', '.competitions__see-more', {
   batchSizes: { mobile: 2, tablet: 2, desktop: 3, large: 3 },
 });
 
+// Ініціалізація для News
+new LoadMoreGrid('.news__set', '.news__load-more', {
+  batchSizes: { mobile: 2, tablet: 2, desktop: 3, large: 4 },
+});
+
 // new LoadMoreGrid('.news__list', '.news__load-more', {
 //   batchSizes: { mobile: 3, tablet: 4, desktop: 5, large: 6 },
 // });

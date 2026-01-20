@@ -701,6 +701,8 @@ svg {
 
 .social__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.625rem;
 
   padding-left: 0;
@@ -716,10 +718,10 @@ svg {
   align-items: center;
   justify-content: center;
 
-  padding-top: 0.75rem;
-  padding-right: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 0.75rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
 
   border: 1px solid transparent;
   border-radius: 50%;
@@ -729,11 +731,14 @@ svg {
 
   background-color: rgba(255, 255, 255, .1);
 
-  transition: all var(--duration) var(--timing-func);
+  transition:
+    color var(--duration) var(--timing-func),
+    background-color var(--duration) var(--timing-func);
 }
 
 .social__link:hover,
 .social__link:focus {
+  color: var(--color-text-inverse);
   background-color: var(--color-bg-accent);
 }
 
@@ -1264,8 +1269,32 @@ svg {
 }
 
 .about-us__features {
+  padding-left: 1.25rem;
+
   margin-top: 1.25rem;
   margin-bottom: 0;
+
+  list-style: none;
+}
+
+.about-us__feature::before {
+  display: inline-block;
+  content: '';
+  width: 0.875rem;
+  height: 0.875rem;
+
+  margin-right: 0.5rem;
+
+  background-image: url(../assets/icons/ui/svg/bullet.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-us__feature-mark {
+  display: inline-block;
+
+  fill: var(--color-text-accent);
 }
 
 .about-us__support-link {
@@ -1400,7 +1429,7 @@ svg {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .team-card__name-link {
@@ -1419,6 +1448,10 @@ svg {
   margin-bottom: 0;
 
   font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.team-card__social {
   color: var(--color-text-light);
 }
 
@@ -1841,7 +1874,8 @@ svg {
   opacity: 1;
 }
 
-.competition-card__overlay-text {
+.competition-card__overlay-link {
+  display: inline-block;
   padding: 0.5rem 1rem;
   border: 1px solid #fff;
   border-radius: 9999px;
@@ -1850,10 +1884,11 @@ svg {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fff;
+  text-decoration: none;
+  color: var(--color-text-inverse);
 }
 
-.competition-card__overlay-text:hover {
+.competition-card__overlay-link:hover {
   border-color: var(--color-border-accent);
   background-color: var(--color-bg-accent);
 }
@@ -2500,6 +2535,10 @@ svg {
 
   .disciplines__item {
     /* width: calc((100% - 3.75rem) / 4); */
+  }
+
+  .news__item {
+    flex-basis: calc((100% - 3.75rem) / 4);
   }
 
 }
