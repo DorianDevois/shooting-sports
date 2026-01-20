@@ -79,10 +79,12 @@ class LoadMoreGrid {
 }
 
 // Ініціалізація для Our Team Section
-new LoadMoreGrid('.our-team__list', '.our-team__btn', { batchSizes: { mobile: 2, tablet: 2, desktop: 3, large: 4 } });
+new LoadMoreGrid('.our-team__list', '.our-team__btn', { batchSizes: { mobile: 2, tablet: 3, desktop: 4, large: 5 } });
 
 // Ініціалізація для Competitions
-new LoadMoreGrid('.competitions__list', '.competitions__see-more');
+new LoadMoreGrid('.competitions__list', '.competitions__see-more', {
+  batchSizes: { mobile: 2, tablet: 2, desktop: 3, large: 3 },
+});
 
 // new LoadMoreGrid('.news__list', '.news__load-more', {
 //   batchSizes: { mobile: 3, tablet: 4, desktop: 5, large: 6 },

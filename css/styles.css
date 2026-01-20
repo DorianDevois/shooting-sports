@@ -68,6 +68,8 @@
 
   --color-bg-overlay-40: rgba(0, 0, 0, 0.4);
   --color-bg-overlay-50: rgba(0, 0, 0, 0.5);
+  --color-bg-overlay-60: rgba(0, 0, 0, 0.6);
+  --color-bg-overlay-70: rgba(0, 0, 0, 0.7);
 
   /* Border colours */
   --color-border-default: #E7E9FC;
@@ -236,7 +238,7 @@ svg {
   -webkit-box-orient: vertical;
 
   /* максимум 6 рядків */
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 3;
 
   /* ховає зайве */
   overflow: hidden;
@@ -314,6 +316,31 @@ svg {
   width: 1rem;
   height: 1rem;
   fill: currentColor;
+}
+
+.load-more-btn {
+  padding-top: 0.25rem;
+  padding-right: 0.625rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.625rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+
+  border: 1px solid var(--color-border-dark);
+  border-radius: 9999px;
+  cursor: pointer;
+  background-color: transparent;
+
+  transition: background-color var(--duration) var(--timing-func), color var(--duration) var(--timing-func);
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
+
+  border: 1px solid var(--color-border-dark);
+
+  color: var(--color-text-inverse);
+  background-color: var(--color-bg-dark);
 }
 
 /* START - Site Contacts */
@@ -1318,6 +1345,9 @@ svg {
 
 /* START - Team Card */
 .team-card {
+  min-width: 14.75rem;
+  max-width: 26.25rem;
+
   border-radius: 0 0 4px 4px;
 
   overflow: hidden;
@@ -1338,10 +1368,18 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 .team-card__image {
+  display: block;
   width: 100%;
+  height: 100%;
+
+  object-position: center;
+  object-fit: cover;
 }
 
 .team-card__content {
@@ -1349,8 +1387,7 @@ svg {
   flex-direction: column;
   gap: 0.5rem;
 
-  padding-inline: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
 
   /* background-color: #155724; */
 }
@@ -1360,8 +1397,10 @@ svg {
 }
 
 .team-card__name {
-  margin-top: 1.25rem;
+  margin-top: 0;
   margin-bottom: 0;
+
+  font-size: 1rem;
 }
 
 .team-card__name-link {
@@ -1612,6 +1651,8 @@ svg {
 .badges__link:focus {
   box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.35);
   border-color: var(--color-border-muted);
+
+  text-decoration: underline;
 }
 
 /* Badge Statuses */
@@ -1669,7 +1710,7 @@ svg {
 }
 
 .badges__item--country .badges__icon {
-  width: 3rem;
+  width: 2.5rem;
 }
 
 /* START - Competitions Section */
@@ -1687,8 +1728,9 @@ svg {
 
 .competitions__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 
   margin-top: 1.25rem;
   margin-bottom: 0;
@@ -1714,7 +1756,7 @@ svg {
   border: 1px solid var(--color-border-dark);
   border-radius: 9999px;
   cursor: pointer;
-  background-color: var(--color-bg-primary);
+  background-color: transparent;
 
   transition: background-color var(--duration) var(--timing-func), color var(--duration) var(--timing-func);
 }
@@ -1733,10 +1775,13 @@ svg {
   display: flex;
   flex-direction: column;
 
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  min-width: 16.25rem;
+  max-width: 26.25rem;
+
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-sm);
+  border-bottom-left-radius: var(--radius-sm);
   overflow: hidden;
 
   background-color: var(--color-bg-primary);
@@ -1757,19 +1802,24 @@ svg {
 /* Competition Card Media section */
 .competition-card__media {
   position: relative;
-  overflow: hidden;
-}
 
-.competition-card__image-link {
-  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .competition-card__image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+
+  object-position: center;
+  object-fit: cover;
 
   transition: transform var(--duration) var(--timing-func);
+}
+
+.competition-card:hover .competition-card__image {
+  transform: scale(1.02);
 }
 
 .competition-card__overlay {
@@ -1786,7 +1836,8 @@ svg {
   transition: opacity var(--duration) var(--timing-func);
 }
 
-.competition-card__image-link:focus-visible .competition-card__overlay {
+.competition-card:hover .competition-card__overlay,
+.competition-card:focus-visible .competition-card__overlay {
   opacity: 1;
 }
 
@@ -1800,6 +1851,11 @@ svg {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
+}
+
+.competition-card__overlay-text:hover {
+  border-color: var(--color-border-accent);
+  background-color: var(--color-bg-accent);
 }
 
 /* Competition Card Content */
@@ -1865,13 +1921,235 @@ svg {
   margin-bottom: 0;
 }
 
-.news__list {
+.news__set {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
   padding-left: 0;
 
   margin-top: 1.25rem;
   margin-bottom: 0;
 
   list-style: none;
+}
+
+.news__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.news-card {
+  min-width: 16.25rem;
+  max-width: 26.25rem;
+
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-sm);
+  border-bottom-left-radius: var(--radius-sm);
+  overflow: hidden;
+
+  background-color: var(--color-bg-primary);
+
+  box-shadow:
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  transform: translateY(0);
+
+  transition:
+    transform var(--duration) var(--timing-func),
+    box-shadow var(--duration) var(--timing-func);
+}
+
+.news-card:hover,
+.news-card:focus-within {
+  box-shadow: 1px 12px 10px 0 rgba(0, 0, 0, 0.12);
+
+  transform: translateY(-2px);
+}
+
+.news-card__thumbnail {
+  position: relative;
+
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.news-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transform: scale(1);
+
+  transition: transform var(--duration) var(--timing-func);
+}
+
+.news-card:hover .news-card__image,
+.news-card:focus-within .news-card__image {
+  transform: scale(1.02);
+}
+
+.news-card__overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  padding-top: 1.5rem;
+
+  font-size: 0.875rem;
+  color: var(--color-text-inverse);
+
+  background-color: var(--color-bg-overlay-70);
+
+  transform: translateY(100%);
+
+  transition: transform var(--duration) var(--timing-func);
+}
+
+.news-card:hover .news-card__overlay,
+.news-card:focus-within .news-card__overlay {
+  transform: translateY(0);
+}
+
+.news-card__summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+
+  opacity: 0;
+
+  transition: opacity var(--duration) var(--timing-func) var(--duration);
+}
+
+.news-card:hover .news-card__summary,
+.news-card:focus-within .news-card__summary {
+  opacity: 1;
+}
+
+.news-card__readmore {
+  display: inline-block;
+
+  padding: 0.25rem 0.5rem;
+  margin-top: auto;
+  align-self: flex-end;
+
+  border: 1px solid currentColor;
+  border-radius: var(--radius-full);
+
+  line-height: 1;
+  color: inherit;
+  text-decoration: none;
+
+  background-color: transparent;
+
+  transform: translateX(120%);
+  transition: transform var(--duration) var(--timing-func) 500ms;
+}
+
+.news-card__readmore:hover,
+.news-card__readmore:focus {
+  border-color: transparent;
+  text-decoration: underline;
+}
+
+.news-card:hover .news-card__readmore,
+.news-card:focus-within .news-card__readmore {
+  transform: translateX(0);
+}
+
+.news-card__content {
+  padding: 1rem;
+}
+
+.news-card__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.news-card__title-link {
+  color: var(--color-text-title);
+
+  text-decoration: none;
+}
+
+.news-card__title-link:focus,
+.news-card__title-link:hover {
+  text-decoration: underline;
+}
+
+.news-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.news-card__date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  line-height: 1;
+}
+
+.news-card__date-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+
+  fill: currentColor;
+}
+
+.news-card__date-text {}
+
+.news-card__category-link {
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    color var(--duration) var(--timing-func),
+    border-color var(--duration) var(--timing-func);
+}
+
+.news-card__category-link:hover,
+.news-card__category-link:focus {
+  color: var(--color-text-primary);
+  border-color: currentColor;
+  /* text-decoration: underline; */
 }
 
 /* START - Ranking Section */
@@ -2021,13 +2299,22 @@ svg {
   text-align: center;
 }
 
-@media (hover: hover) {
-  .competition-card:hover .competition-card__image {
-    transform: scale(1.02);
+
+@media (max-width: 319.9px) {
+  .news-card__summary {
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+  }
+}
+
+@media (min-width: 560px) {
+  .our-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .competition-card__image-link:hover .competition-card__overlay {
-    opacity: 1;
+  .our-team__item {
+    width: calc((100% - 1.25rem) / 2);
   }
 }
 
@@ -2070,8 +2357,6 @@ svg {
 
   .container {
     max-width: 900px;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
   }
 
   .page-header {
@@ -2113,13 +2398,8 @@ svg {
     margin-left: 1.25rem;
   }
 
-  .our-team__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .our-team__item {
-    width: calc((100% - 1.25rem) / 2);
+    width: calc((100% - 2.5rem) / 3);
   }
 
   .disciplines__list {
@@ -2133,11 +2413,22 @@ svg {
   }
 
   .competitions__list {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
   }
 
   .competitions__item {
-    width: calc((100% - 2rem) / 2);
+    width: calc((100% - 1.25rem) / 2);
+  }
+
+  .news__set {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .news__item {
+    flex-basis: calc((100% - 1.25rem) / 2);
   }
 
   .partners__item {
@@ -2172,11 +2463,15 @@ svg {
   }
 
   .our-team__item {
-    width: calc((100% - 2.5rem) / 3);
+    width: calc((100% - 3.75rem) / 4);
   }
 
   .competitions__item {
-    width: calc((100% - 4rem) / 3);
+    width: calc((100% - 2.5rem) / 3);
+  }
+
+  .news__item {
+    flex-basis: calc((100% - 2.5rem) / 3);
   }
 
   .partners__item {
@@ -2200,14 +2495,11 @@ svg {
   }
 
   .our-team__item {
-    width: calc((100% - 3.75rem) / 4);
+    width: calc((100% - 5rem) / 5);
   }
 
   .disciplines__item {
     /* width: calc((100% - 3.75rem) / 4); */
   }
 
-  .competitions__item {
-    width: calc((100% - 6rem) / 4);
-  }
 }
