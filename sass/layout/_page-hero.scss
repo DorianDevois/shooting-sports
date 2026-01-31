@@ -1,5 +1,5 @@
 .page-hero {
-  --hero-bg-image: url(../assets/images/placeholders/image-placeholder-1600x800.png);
+  --hero-bg-image: url(assets/images/placeholders/image-placeholder-1600x800.png);
 
   min-height: 320px;
 
@@ -15,31 +15,31 @@
   background-repeat: no-repeat;
 
   &--disciplines {
-    --hero-bg-image: url(../assets/images/disciplines/aze-shooting-disciplines.jpg);
+    --hero-bg-image: url(assets/images/disciplines/aze-shooting-disciplines.jpg);
   }
 
   &--competitions {
-    --hero-bg-image: url(../assets/images/competitions/aze-shooting-competitions-1600.jpg);
+    --hero-bg-image: url(assets/images/competitions/aze-shooting-competitions-1600.jpg);
   }
 
   &--team {
-    --hero-bg-image: url(../assets/images/team/aze-shooting-athlets-page.jpg);
+    --hero-bg-image: url(assets/images/team/aze-shooting-athlets-page.jpg);
   }
 
   &--news {
-    --hero-bg-image: url(../assets/images/news/aze-news-page.jpg);
+    --hero-bg-image: url(assets/images/news/aze-news-page.jpg);
   }
 
   &--gallery {
-    --hero-bg-image: url(../assets/images/gallery/shooting-sports-hero-gallery.jpg);
+    --hero-bg-image: url(assets/images/gallery/shooting-sports-hero-gallery.jpg);
   }
 
   &--about-us {
-    --hero-bg-image: url(../assets/images/about-us/aze-about-shooting-center-1600x800.jpg);
+    --hero-bg-image: url(assets/images/about-us/aze-about-shooting-center-1600x800.jpg);
   }
 
   &--contacts {
-    --hero-bg-image: url(../assets/images/contacts/baku-shooting-center-1600x800.jpg);
+    --hero-bg-image: url(assets/images/contacts/baku-shooting-center-1600x800.jpg);
   }
 }
 
