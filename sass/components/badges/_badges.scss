@@ -1,0 +1,125 @@
+@use '../../abstracts/mixins/reset';
+
+.badges {
+  @include reset.list-reset;
+  position: absolute;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+
+  &--top-left {
+    top: var(--space-md);
+    left: var(--space-md);
+  }
+
+  &--top-right {
+    top: var(--space-md);
+    right: var(--space-md);
+  }
+
+  &--bottom-right {
+    right: var(--space-md);
+    bottom: var(--space-md);
+  }
+
+  &--bottom-left {
+    left: var(--space-md);
+    bottom: var(--space-md);
+  }
+}
+
+.badges__link {
+  @include reset.link-reset;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-md);
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--badge-color, var(--color-text-inverse));
+
+  background-color: var(--badge-bg, var(--color-bg-dark));
+
+  text-shadow: var(--shadow-text-xs);
+
+  transition:
+    border-color var(--duration-normal) var(--timing-cubic),
+    background-color var(--duration-normal) var(--timing-cubic),
+    box-shadow var(--duration-normal) var(--timing-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-inverse);
+    box-shadow: var(--shadow-box-lg);
+
+    text-decoration: underline;
+  }
+
+  .badges__item--country & {
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+
+    background-color: transparent;
+
+    overflow: hidden;
+  }
+
+  /* Badge Statuses */
+  // Потрібно переробити всю систему кольорів бейджів під цей стиль
+  &[data-status='scheduled'] {
+    --badge-bg: var(--badges-bg-status-scheduled);
+    --badge-color: var(--badges-text-status-scheduled);
+  }
+
+  &[data-status='ongoing'] {
+    background-color: #cce5ff;
+    color: #9f5f1f;
+  }
+
+  &[data-status='completed'] {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  &[data-status='cancelled'] {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
+  /* Badge Types */
+  &[data-type='world-cup'] {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+
+  &[data-type='world-championship'] {
+    background-color: #e2e3e5;
+    color: #383d41;
+  }
+
+  /* Badge Stages */
+  &[data-stages='final'] {
+    background-color: #d4edda;
+    color: #0c5460;
+  }
+}
+
+.badges__icon {
+  width: var(--badge-icon-size, auto);
+
+  .badges__item--country & {
+    --badge-icon-size: 2.5rem;
+  }
+}

@@ -1,0 +1,49 @@
+.mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-sticky);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-2xl);
+
+  width: 100vw;
+  // fallback для старих браузерів
+  height: 100vh;
+  // сучасні мобільні браузери
+  height: calc(var(--vh, 1vh) * 100);
+
+  padding: var(--space-xl);
+  padding-bottom: calc(var(--space-2xl) + env(safe-area-inset-bottom));
+
+  overflow-y: auto;
+  background-color: var(--color-bg-primary);
+
+  opacity: 0;
+  transform: translateX(-100%);
+
+  transition:
+    opacity var(--duration-normal) var(--timing-cubic),
+    transform var(--duration-normal) var(--timing-cubic);
+
+  &.is-open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-container__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mobile-container__footer {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: auto;
+  gap: var(--space-2xl);
+}

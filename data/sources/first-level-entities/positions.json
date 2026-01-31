@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kneeling",
+    "name": "Kneeling",
+    "order": 1
+  },
+  {
+    "id": "prone",
+    "name": "Prone",
+    "order": 2
+  },
+  {
+    "id": "standing",
+    "name": "Standing",
+    "order": 3
+  }
+]

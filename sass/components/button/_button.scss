@@ -1,0 +1,59 @@
+@use '../../abstracts/mixins/reset';
+
+.button {
+  @include reset.button-reset;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-md);
+
+  border: 1px solid currentColor;
+  border-radius: var(--radius-full);
+
+  line-height: 1;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-ui);
+  color: inherit;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  text-shadow: var(--shadow-text-sm);
+  box-shadow: none;
+
+  transition:
+    color var(--duration-normal) var(--timing-cubic),
+    background-color var(--duration-normal) var(--timing-cubic),
+    border-color var(--duration-normal) var(--timing-cubic),
+    box-shadow var(--duration-normal) var(--timing-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-inverse);
+    background-color: var(--color-bg-dark);
+    border-color: var(--color-border-dark);
+    box-shadow: var(--shadow-box-md);
+  }
+}
+
+.button--primary,
+.button--secondary {
+  min-width: 10rem;
+  padding-block: var(--space-md);
+}
+
+.button--primary {
+  // color: var(--color-text-inverse);
+  // background-color: var(--color-bg-accent);
+  // border-color: var(--color-border-accent);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-accent);
+    border-color: var(--color-border-accent);
+    box-shadow: var(--shadow-box-md);
+  }
+}

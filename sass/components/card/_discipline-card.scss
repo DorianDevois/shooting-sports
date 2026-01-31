@@ -1,0 +1,26 @@
+.discipline-card {
+  padding: var(--space-lg);
+
+  border-radius: var(--radius-md);
+  overflow: hidden;
+
+  background-color: var(--color-bg-secondary);
+}
+
+.discipline-card__title {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-normal);
+}
+
+.discipline-card__description {
+  margin-top: var(--space-lg);
+}
+
+.discipline-card__footer {
+  display: flex;
+  margin-top: var(--space-lg);
+}
+
+.discipline-card__link {
+  margin-left: auto;
+}

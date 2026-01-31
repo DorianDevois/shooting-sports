@@ -1,0 +1,29 @@
+// base
+@mixin flex-align($direction: null, $justify: null, $align: null, $gap: null) {
+  display: flex;
+
+  @if $direction != null {
+    flex-direction: $direction;
+  }
+
+  @if $justify != null {
+    justify-content: $justify;
+  }
+
+  @if $align != null {
+    align-items: $align;
+  }
+
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+
+// semantic helpers
+@mixin flex-row($justify: center, $align: center, $gap: null) {
+  @include flex-align($direction: row, $justify: $justify, $align: $align, $gap: $gap);
+}
+
+@mixin flex-column($justify: center, $align: center, $gap: null) {
+  @include flex-align($direction: column, $justify: $justify, $align: $align, $gap: $gap);
+}

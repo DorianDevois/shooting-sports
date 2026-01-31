@@ -67,10 +67,10 @@ export function defaultTemplate() {
 
 export function callbackTemplate() {
   return `
-        <!-- Callback Form -->
+        <!-- Contact Us Form -->
         <div class="callback-form">
-          <h2 class="callback-form__title">Feedback Request</h2>
-          <p class="callback-form__call-to-action">Leave your details and we'll contact you back</p>
+          <h2 class="callback-form__title">Contact Us</h2>
+          <p class="callback-form__call-to-action">Leave your message and we'll contact you back</p>
 
           <form class="js-speaker-form callback-form__form" autocomplete="off" data-form="callback">
             <!-- Name Field -->
@@ -111,11 +111,11 @@ export function callbackTemplate() {
               <input class="callback-form__checkbox" type="checkbox" name="user-policy" required />
               <span class="callback-form__checkbox-custom"></span>
               <span class="callback-form__checkbox-label">
-                I accept the terms and conditions of the <a class="callback-form__link" href="">Privacy Policy</a>
+                I agree to the <a class="callback-form__link" href="">Privacy Policy</a>
               </span>
             </label>
 
-            <button class="btn callback-form__submit" type="submit">Send</button>
+            <button class="button button--primary callback-form__submit" type="submit">Send Message</button>
           </form>
         </div>
   `;

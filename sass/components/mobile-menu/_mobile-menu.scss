@@ -1,0 +1,34 @@
+.mobile-menu {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu__toggle {
+  display: flex;
+
+  padding: 0;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition:
+    color var(--duration-normal) var(--timing-cubic),
+    background-color var(--duration-normal) var(--timing-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+    background-color: var(--color-bg-overlay-dark-10);
+  }
+}
+
+.mobile-menu__toggle-icon {
+  flex-shrink: 0;
+  fill: currentColor;
+}

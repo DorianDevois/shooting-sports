@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: var(--page-header-height);
+
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-wide);
+  letter-spacing: var(--tracking-text);
+  color: var(--color-text-primary);
+
+  background-color: var(--color-bg-primary);
+
+  &.mobile-menu-open,
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+:root {
+  --container-padding: var(--space-lg);
+  --card-gap: var(--space-lg);
+  --font-size-base: var(--font-size-sm);
+  --news-line-clamp: 4;
+
+  @media screen and (max-width: 319.98px) {
+    --container-padding: var(--space-md);
+  }
+
+  @media screen and (min-width: 1024px) {
+    --container-padding: var(--space-xl);
+    --card-gap: var(--space-xl);
+    --font-size-base: var(--font-size-md);
+  }
+
+  @media screen and (min-width: 1440px) {
+    --card-gap: var(--space-2xl);
+  }
+}

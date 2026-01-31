@@ -1,0 +1,35 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+
+  min-width: 10rem;
+  min-height: 2.5rem;
+
+  padding: var(--space-sm);
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-none);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-text-inverse);
+
+  background-color: var(--color-bg-accent);
+  box-shadow: var(--shadow-box-md);
+
+  transition: background-color var(--duration-normal) var(--timing-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-accent-hover);
+  }
+}
+
+.btn__icon {
+  fill: currentColor;
+}

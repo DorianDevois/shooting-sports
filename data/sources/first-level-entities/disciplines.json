@@ -1,0 +1,83 @@
+[
+  {
+    "id": "10m-air-pistol-men",
+    "name": "10m Air Pistol Men",
+    "distanceId": "10m",
+    "weaponId": "pistol",
+    "genderId": "men",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "10m-air-pistol-women",
+    "name": "10m Air Pistol Women",
+    "distanceId": "10m",
+    "weaponId": "pistol",
+    "genderId": "women",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "10m-air-rifle-men",
+    "name": "10m Air Rifle Men",
+    "distanceId": "10m",
+    "weaponId": "rifle",
+    "genderId": "men",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "10m-air-rifle-women",
+    "name": "10m Air Rifle Women",
+    "distanceId": "10m",
+    "weaponId": "rifle",
+    "genderId": "women",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "trap-men",
+    "name": "Trap Men",
+    "distanceId": null,
+    "weaponId": "shotgun",
+    "genderId": "men",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "trap-women",
+    "name": "Trap Women",
+    "distanceId": null,
+    "weaponId": "shotgun",
+    "genderId": "women",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "skeet-men",
+    "name": "Skeet Men",
+    "distanceId": null,
+    "weaponId": "shotgun",
+    "genderId": "men",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "skeet-women",
+    "name": "Skeet Women",
+    "distanceId": null,
+    "weaponId": "shotgun",
+    "genderId": "women",
+    "participantTypeId": "individual"
+  },
+  {
+    "id": "10m-air-rifle-mixed-team",
+    "name": "10m Air Rifle Mixed Team",
+    "distanceId": "10m",
+    "weaponId": "rifle",
+    "genderId": "mixed",
+    "participantTypeId": "team"
+  },
+  {
+    "id": "50m-rifle-3pos",
+    "name": "50m Rifle 3 Positions",
+    "distanceId": "50m",
+    "weaponId": "rifle",
+    "genderId": "mixed",
+    "participantTypeId": "individual",
+    "positionIds": ["kneeling", "prone", "standing"]
+  }
+]

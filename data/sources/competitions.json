@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comp-sample-1",
+    "title": "Sample Competition 1",
+    "typeId": "world-cup",
+    "statusId": "scheduled",
+    "venueId": "aze-shooting-center",
+    "location": {
+      "city": "Baku",
+      "countryId": "az"
+    },
+    "startDate": "2025-01-10",
+    "endDate": "2025-01-15",
+    "image": "assets/images/competitions/comp-sample-1.jpg",
+    "link": "pages/competitions/competition-1/"
+  }
+]

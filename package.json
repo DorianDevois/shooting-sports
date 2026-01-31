@@ -1,0 +1,18 @@
+{
+  "name": "shooting-sports",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:competitions": "node scripts/build-competitions.js",
+    "build:disciplines": "node scripts/build-disciplines.js",
+    "build:results": "node scripts/build-results.js",
+    "build:all": "npm run build:competitions && npm run build:disciplines && npm run build:results"
+  },
+  "keywords": [],
+  "author": "Dorian Devua <dorian.devua@gmail.com>",
+  "license": "ISC",
+  "dependencies": {}
+}

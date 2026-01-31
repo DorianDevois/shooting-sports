@@ -1,0 +1,9 @@
+@use '../abstracts/mixins';
+
+.u-visually-hidden {
+  @include mixins.visually-hidden; // викликаємо mixin для consistency
+}
+
+// .u-hidden {
+//   display: none;
+// }

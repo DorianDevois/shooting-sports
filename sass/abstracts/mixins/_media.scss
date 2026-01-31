@@ -1,0 +1,17 @@
+@mixin media($min: null, $max: null) {
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $min != null {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else if $max != null {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @warn "No min or max value provided to @include respond().";
+  }
+}

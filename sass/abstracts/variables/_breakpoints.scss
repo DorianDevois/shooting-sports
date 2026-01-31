@@ -1,0 +1,22 @@
+// ===== Extra small =====
+// phone - extra small devices (<320px)
+// used for minimum layout safety
+$phone: 319.98px; // <= 319.9
+
+// mobile-layout - layout breakpoint
+// used when mobile layout can switch to 2 collumns
+// ===== Small =====
+$mobile-min: 320px; // >= 320
+$mobile-layout: 560px; // >= 560
+$mobile-max: 767.98px; // <= 767.98
+
+// ===== Medium (tablet) =====
+$tablet-min: 768px; // >= 768
+$tablet-max: 1023.98px; // <= 1023.98
+
+// ===== Large (desktop) =====
+$laptop-min: 1024px; // >= 1024
+$laptop-max: 1439.98px; // <= 1439.98
+
+// ===== Extra large =====
+$desktop-min: 1440px; // >= 1440

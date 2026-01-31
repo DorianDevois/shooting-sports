@@ -1,0 +1,75 @@
+.about-us__layout {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-lg);
+  }
+}
+
+.about-us__media {
+  flex-shrink: 0;
+  margin-inline: auto;
+}
+
+.about-us__content {
+  @media (max-width: 767.98px) {
+    margin-top: var(--space-lg);
+  }
+}
+
+.about-us__subtitle {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-title);
+}
+
+.about-us__text {
+  & + & {
+    margin-top: var(--space-lg);
+  }
+}
+
+.about-us__features {
+  padding-left: var(--space-xl);
+  margin-top: var(--space-lg);
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.about-us__feature {
+  display: flex;
+  align-items: flex-start;
+
+  // В даному випадку ::before = flex-item
+  // Керування геометрією через: width / height; margin-top; align-items;
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    // display: inline-block; ← не потрібно (коли це flex-item)
+
+    width: 0.875rem;
+    height: 0.875rem;
+
+    margin-top: var(--space-xs);
+    margin-right: var(--space-sm);
+
+    background-image: url(../assets/icons/ui/svg/bullet.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__feature-mark {
+  display: inline-block;
+
+  fill: var(--color-text-accent);
+}
+
+.about-us__actions {
+  margin-top: var(--space-xl);
+}

@@ -1,0 +1,45 @@
+@use '../../abstracts/mixins/reset';
+
+.site-contacts {
+  @include reset.list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+
+  @media (max-width: 1023.98px) {
+    display: none;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    gap: var(--space-xl);
+  }
+}
+
+.site-contacts__link {
+  @include reset.link-reset;
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+
+  font-weight: var(--font-weight-medium);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-xs);
+  }
+
+  @media (min-width: 1440px) {
+    font-size: var(--font-size-sm);
+  }
+}
+
+.site-contacts__icon {
+  fill: currentColor;
+}

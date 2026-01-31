@@ -1,0 +1,57 @@
+@use '../../abstracts/mixins/reset';
+
+.breadcrumbs {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.breadcrumbs__list {
+  @include reset.list-reset;
+
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+
+  /* separator */
+  &:not(:last-child)::after {
+    content: '/';
+    margin-inline: var(--space-xs);
+    color: var(--color-text-light);
+  }
+}
+
+.breadcrumbs__link {
+  @include reset.link-reset;
+
+  color: var(--color-text-inverse-60);
+
+  font-weight: var(--font-weight-medium);
+
+  transition: color var(--duration-normal) var(--timing-cubic);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-text-inverse);
+    text-decoration: underline;
+  }
+}
+
+.breadcrumbs__current {
+  // font-weight: var(--font-weight-medium);
+  color: var(--color-text-inverse-90);
+  // color: red;
+  // text-decoration: underline;
+
+  /* захист від дуже довгих назв */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

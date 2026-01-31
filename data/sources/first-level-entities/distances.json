@@ -1,0 +1,37 @@
+[
+  {
+    "id": "10m",
+    "meters": 10,
+    "label": "10 m"
+  },
+  {
+    "id": "15m",
+    "meters": 15,
+    "label": "15 m"
+  },
+  {
+    "id": "16m",
+    "meters": 16,
+    "label": "16 m"
+  },
+  {
+    "id": "25m",
+    "meters": 25,
+    "label": "25 m"
+  },
+  {
+    "id": "50m",
+    "meters": 50,
+    "label": "50 m"
+  },
+  {
+    "id": "100m",
+    "meters": 100,
+    "label": "100 m"
+  },
+  {
+    "id": "300m",
+    "meters": 300,
+    "label": "300 m"
+  }
+]

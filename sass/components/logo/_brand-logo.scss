@@ -1,0 +1,23 @@
+/* Brand Logo Container */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Brand Logo Image */
+.brand-logo__image {
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* Brend Logo Text */
+.brand-logo__text {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-ui);
+  text-transform: uppercase;
+  white-space: nowrap;
+}

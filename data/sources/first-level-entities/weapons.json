@@ -1,0 +1,14 @@
+[
+  {
+    "id": "pistol",
+    "name": "Pistol"
+  },
+  {
+    "id": "rifle",
+    "name": "Rifle"
+  },
+  {
+    "id": "shotgun",
+    "name": "Shotgun"
+  }
+]

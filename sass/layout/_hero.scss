@@ -1,0 +1,38 @@
+.hero {
+  min-height: 320px;
+
+  text-align: center;
+  color: var(--color-text-inverse);
+
+  background-color: var(--color-bg-dark);
+  background-image:
+    linear-gradient(to right, var(--color-bg-overlay-dark-60), var(--color-bg-overlay-dark-50)),
+    url(../assets/images/main/aze-shooting-center-1600x800.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  padding-block: var(--space-4xl);
+}
+
+.hero__title,
+.hero__text {
+  text-shadow: var(--shadow-text-sm);
+}
+
+.hero__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-heavy);
+}
+
+.hero__text {
+  margin-top: var(--space-md);
+  font-weight: var(--font-weight-medium);
+}
+
+.hero__button {
+  margin-top: var(--space-2xl);
+  margin-inline: auto;
+}

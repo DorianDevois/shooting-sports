@@ -1,0 +1,68 @@
+/* RADIO CONTROLS */
+.tabs__control {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+/* NAVIGATION */
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* TAB LABELS */
+.tabs__trigger {
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+  border-bottom: 2px solid transparent;
+
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+
+  transition:
+    color var(--duration-normal) var(--timing-cubic),
+    border-color var(--duration-normal) var(--timing-cubic);
+
+  /* Hover */
+  &:hover {
+    color: var(--color-text-accent);
+  }
+}
+
+/* ACTIVE TAB */
+#tab-overview:checked ~ .tabs__nav label[for='tab-overview'],
+#tab-schedule:checked ~ .tabs__nav label[for='tab-schedule'],
+#tab-results:checked ~ .tabs__nav label[for='tab-results'],
+#tab-info:checked ~ .tabs__nav label[for='tab-info'],
+#tab-news:checked ~ .tabs__nav label[for='tab-news'],
+#tab-gallery:checked ~ .tabs__nav label[for='tab-gallery'] {
+  color: var(--color-text-accent); /* колір активного табу */
+  border-bottom-color: var(--color-border-accent); /* підкреслення */
+  font-weight: var(--font-weight-bold); /* жирний шрифт */
+}
+
+/* TAB PANELS */
+.tabs__panel {
+  display: none;
+  padding-block: var(--space-lg);
+}
+
+/* SHOW ACTIVE PANEL */
+#tab-overview:checked ~ #panel-overview,
+#tab-schedule:checked ~ #panel-schedule,
+#tab-results:checked ~ #panel-results,
+#tab-info:checked ~ #panel-info,
+#tab-news:checked ~ #panel-news,
+#tab-gallery:checked ~ #panel-gallery {
+  display: block;
+}

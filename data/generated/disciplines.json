@@ -1,0 +1,229 @@
+[
+  {
+    "id": "10m-air-pistol-men",
+    "name": "10m Air Pistol Men",
+    "distance": {
+      "id": "10m",
+      "meters": 10,
+      "label": "10 m"
+    },
+    "weapon": {
+      "id": "pistol",
+      "name": "Pistol"
+    },
+    "gender": {
+      "id": "men",
+      "name": "Men"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "10m-air-pistol-women",
+    "name": "10m Air Pistol Women",
+    "distance": {
+      "id": "10m",
+      "meters": 10,
+      "label": "10 m"
+    },
+    "weapon": {
+      "id": "pistol",
+      "name": "Pistol"
+    },
+    "gender": {
+      "id": "women",
+      "name": "Women"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "10m-air-rifle-men",
+    "name": "10m Air Rifle Men",
+    "distance": {
+      "id": "10m",
+      "meters": 10,
+      "label": "10 m"
+    },
+    "weapon": {
+      "id": "rifle",
+      "name": "Rifle"
+    },
+    "gender": {
+      "id": "men",
+      "name": "Men"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "10m-air-rifle-women",
+    "name": "10m Air Rifle Women",
+    "distance": {
+      "id": "10m",
+      "meters": 10,
+      "label": "10 m"
+    },
+    "weapon": {
+      "id": "rifle",
+      "name": "Rifle"
+    },
+    "gender": {
+      "id": "women",
+      "name": "Women"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "trap-men",
+    "name": "Trap Men",
+    "distance": {
+      "id": "15m",
+      "meters": 15,
+      "label": "15 m"
+    },
+    "weapon": {
+      "id": "shotgun",
+      "name": "Shotgun"
+    },
+    "gender": {
+      "id": "men",
+      "name": "Men"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "trap-women",
+    "name": "Trap Women",
+    "distance": {
+      "id": "15m",
+      "meters": 15,
+      "label": "15 m"
+    },
+    "weapon": {
+      "id": "shotgun",
+      "name": "Shotgun"
+    },
+    "gender": {
+      "id": "women",
+      "name": "Women"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "skeet-men",
+    "name": "Skeet Men",
+    "distance": {
+      "id": "16m",
+      "meters": 16,
+      "label": "16 m"
+    },
+    "weapon": {
+      "id": "shotgun",
+      "name": "Shotgun"
+    },
+    "gender": {
+      "id": "men",
+      "name": "Men"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "skeet-women",
+    "name": "Skeet Women",
+    "distance": {
+      "id": "16m",
+      "meters": 16,
+      "label": "16 m"
+    },
+    "weapon": {
+      "id": "shotgun",
+      "name": "Shotgun"
+    },
+    "gender": {
+      "id": "women",
+      "name": "Women"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    }
+  },
+  {
+    "id": "10m-air-rifle-mixed-team",
+    "name": "10m Air Rifle Mixed Team",
+    "distance": {
+      "id": "10m",
+      "meters": 10,
+      "label": "10 m"
+    },
+    "weapon": {
+      "id": "rifle",
+      "name": "Rifle"
+    },
+    "gender": {
+      "id": "mixed",
+      "name": "Mixed"
+    },
+    "participantType": {
+      "id": "team",
+      "label": "Team"
+    }
+  },
+  {
+    "id": "50m-rifle-3pos",
+    "name": "50m Rifle 3 Positions",
+    "distance": {
+      "id": "50m",
+      "meters": 50,
+      "label": "50 m"
+    },
+    "weapon": {
+      "id": "rifle",
+      "name": "Rifle"
+    },
+    "gender": {
+      "id": "mixed",
+      "name": "Mixed"
+    },
+    "participantType": {
+      "id": "individual",
+      "label": "Individual"
+    },
+    "positions": [
+      {
+        "id": "kneeling",
+        "name": "Kneeling",
+        "order": 1
+      },
+      {
+        "id": "prone",
+        "name": "Prone",
+        "order": 2
+      },
+      {
+        "id": "standing",
+        "name": "Standing",
+        "order": 3
+      }
+    ]
+  }
+]

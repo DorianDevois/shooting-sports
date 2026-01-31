@@ -1,0 +1,614 @@
+[
+  {
+    "id": "comp-olympic-torch-relay",
+    "title": "Olympic Torch Relay",
+    "type": {
+      "id": "world-cup",
+      "name": "World Cup"
+    },
+    "participantTypes": [
+      {
+        "id": "individual",
+        "label": "Individual"
+      },
+      {
+        "id": "team",
+        "label": "Team"
+      },
+      {
+        "id": "mixed",
+        "label": "Mixed Team"
+      }
+    ],
+    "status": {
+      "id": "ongoing",
+      "name": "Ongoing"
+    },
+    "venue": {
+      "id": "aze-shooting-center",
+      "name": "Azerbaijan Shooting Center",
+      "city": "Baku",
+      "countryId": "az",
+      "address": "123 Sport Street",
+      "country": {
+        "id": "az",
+        "name": "Azerbaijan",
+        "code": "AZ",
+        "alpha2": "az",
+        "alpha3": "aze",
+        "flag": "assets/images/flags/az.svg"
+      }
+    },
+    "disciplines": [
+      {
+        "id": "10m-air-pistol-men",
+        "name": "10m Air Pistol Men",
+        "distanceId": "10m",
+        "weaponId": "pistol",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "pistol",
+          "name": "Pistol"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-pistol-women",
+        "name": "10m Air Pistol Women",
+        "distanceId": "10m",
+        "weaponId": "pistol",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "pistol",
+          "name": "Pistol"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-rifle-men",
+        "name": "10m Air Rifle Men",
+        "distanceId": "10m",
+        "weaponId": "rifle",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "rifle",
+          "name": "Rifle"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-rifle-women",
+        "name": "10m Air Rifle Women",
+        "distanceId": "10m",
+        "weaponId": "rifle",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "rifle",
+          "name": "Rifle"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      }
+    ],
+    "location": {
+      "city": "Baku",
+      "country": {
+        "id": "az",
+        "name": "Azerbaijan"
+      }
+    },
+    "startDate": "2025-01-10",
+    "endDate": "2025-01-15",
+    "image": "assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg",
+    "link": "pages/competitions/"
+  },
+  {
+    "id": "national-championship-2026-baku",
+    "title": "National Championship",
+    "type": {
+      "id": "national",
+      "name": "National Championship"
+    },
+    "participantTypes": [
+      {
+        "id": "individual",
+        "label": "Individual"
+      },
+      {
+        "id": "team",
+        "label": "Team"
+      },
+      {
+        "id": "mixed",
+        "label": "Mixed Team"
+      }
+    ],
+    "status": {
+      "id": "scheduled",
+      "name": "Scheduled"
+    },
+    "venue": {
+      "id": "aze-shooting-center",
+      "name": "Azerbaijan Shooting Center",
+      "city": "Baku",
+      "countryId": "az",
+      "address": "123 Sport Street",
+      "country": {
+        "id": "az",
+        "name": "Azerbaijan",
+        "code": "AZ",
+        "alpha2": "az",
+        "alpha3": "aze",
+        "flag": "assets/images/flags/az.svg"
+      }
+    },
+    "disciplines": [
+      {
+        "id": "10m-air-pistol-men",
+        "name": "10m Air Pistol Men",
+        "distanceId": "10m",
+        "weaponId": "pistol",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "pistol",
+          "name": "Pistol"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-pistol-women",
+        "name": "10m Air Pistol Women",
+        "distanceId": "10m",
+        "weaponId": "pistol",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "pistol",
+          "name": "Pistol"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-rifle-men",
+        "name": "10m Air Rifle Men",
+        "distanceId": "10m",
+        "weaponId": "rifle",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "rifle",
+          "name": "Rifle"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-rifle-women",
+        "name": "10m Air Rifle Women",
+        "distanceId": "10m",
+        "weaponId": "rifle",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "rifle",
+          "name": "Rifle"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "trap-men",
+        "name": "Trap Men",
+        "distanceId": "15m",
+        "weaponId": "shotgun",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "shotgun",
+          "name": "Shotgun"
+        },
+        "distance": {
+          "id": "15m",
+          "meters": 15,
+          "label": "15 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "trap-women",
+        "name": "Trap Women",
+        "distanceId": "15m",
+        "weaponId": "shotgun",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "shotgun",
+          "name": "Shotgun"
+        },
+        "distance": {
+          "id": "15m",
+          "meters": 15,
+          "label": "15 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "skeet-men",
+        "name": "Skeet Men",
+        "distanceId": "16m",
+        "weaponId": "shotgun",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "shotgun",
+          "name": "Shotgun"
+        },
+        "distance": {
+          "id": "16m",
+          "meters": 16,
+          "label": "16 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "skeet-women",
+        "name": "Skeet Women",
+        "distanceId": "16m",
+        "weaponId": "shotgun",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "shotgun",
+          "name": "Shotgun"
+        },
+        "distance": {
+          "id": "16m",
+          "meters": 16,
+          "label": "16 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      }
+    ],
+    "location": {
+      "city": "Baku",
+      "country": {
+        "id": "az",
+        "name": "Azerbaijan"
+      }
+    },
+    "startDate": "2026-03-15",
+    "endDate": "2026-03-20",
+    "image": "assets/images/competitions/national-championship-2026-baku/national-shooting-chemp-1440x650.jpg",
+    "link": "pages/competitions/national-championship-2026-baku/"
+  },
+  {
+    "id": "comp-world-championship-munich",
+    "title": "ISSF World Championship Munich",
+    "type": {
+      "id": "world-championship",
+      "name": "World Championship"
+    },
+    "participantTypes": [
+      {
+        "id": "individual",
+        "label": "Individual"
+      },
+      {
+        "id": "team",
+        "label": "Team"
+      },
+      {
+        "id": "mixed",
+        "label": "Mixed Team"
+      }
+    ],
+    "status": {
+      "id": "scheduled",
+      "name": "Scheduled"
+    },
+    "venue": {
+      "id": "issf-munich",
+      "name": "ISSF Olympic Shooting Range",
+      "city": "Munich",
+      "countryId": "de",
+      "address": "Olympic Park",
+      "country": {
+        "id": "de",
+        "name": "Germany",
+        "code": "DE",
+        "alpha2": "de",
+        "alpha3": "deu",
+        "flag": "assets/images/flags/de.svg"
+      }
+    },
+    "disciplines": [
+      {
+        "id": "10m-air-pistol-men",
+        "name": "10m Air Pistol Men",
+        "distanceId": "10m",
+        "weaponId": "pistol",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "pistol",
+          "name": "Pistol"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-pistol-women",
+        "name": "10m Air Pistol Women",
+        "distanceId": "10m",
+        "weaponId": "pistol",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "pistol",
+          "name": "Pistol"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-rifle-men",
+        "name": "10m Air Rifle Men",
+        "distanceId": "10m",
+        "weaponId": "rifle",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "rifle",
+          "name": "Rifle"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "10m-air-rifle-women",
+        "name": "10m Air Rifle Women",
+        "distanceId": "10m",
+        "weaponId": "rifle",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "rifle",
+          "name": "Rifle"
+        },
+        "distance": {
+          "id": "10m",
+          "meters": 10,
+          "label": "10 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "trap-men",
+        "name": "Trap Men",
+        "distanceId": "15m",
+        "weaponId": "shotgun",
+        "genderId": "men",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "shotgun",
+          "name": "Shotgun"
+        },
+        "distance": {
+          "id": "15m",
+          "meters": 15,
+          "label": "15 m"
+        },
+        "gender": {
+          "id": "men",
+          "name": "Men"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      },
+      {
+        "id": "trap-women",
+        "name": "Trap Women",
+        "distanceId": "15m",
+        "weaponId": "shotgun",
+        "genderId": "women",
+        "participantTypeId": "individual",
+        "weapon": {
+          "id": "shotgun",
+          "name": "Shotgun"
+        },
+        "distance": {
+          "id": "15m",
+          "meters": 15,
+          "label": "15 m"
+        },
+        "gender": {
+          "id": "women",
+          "name": "Women"
+        },
+        "participantType": {
+          "id": "individual",
+          "label": "Individual"
+        }
+      }
+    ],
+    "location": {
+      "city": "Munich",
+      "country": {
+        "id": "de",
+        "name": "Germany"
+      }
+    },
+    "startDate": "2025-08-31",
+    "endDate": "2025-08-10",
+    "image": "assets/images/competitions/comp-world-championship-munich/munich-worlds.jpg",
+    "link": "pages/competitions/"
+  }
+]

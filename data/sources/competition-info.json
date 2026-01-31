@@ -1,0 +1,13 @@
+[
+  {
+    "competitionId": "comp-olympic-torch-relay",
+    "documents": [
+      {
+        "title": "General Regulations",
+        "file": "docs/regulations.pdf"
+      }
+    ],
+    "format": "Qualification + Final",
+    "note": "Local time GMT+4"
+  }
+]

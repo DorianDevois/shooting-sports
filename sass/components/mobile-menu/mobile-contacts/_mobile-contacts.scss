@@ -1,0 +1,33 @@
+@use '../../../abstracts/mixins/reset';
+
+.mobile-contacts {
+  @include reset.list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mobile-contacts__link {
+  @include reset.link-reset;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+
+  font-weight: var(--font-weight-medium);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+    text-decoration: underline;
+  }
+
+  &--accent {
+    color: var(--color-text-accent);
+  }
+}
+
+.mobile-contacts__icon {
+  fill: currentColor;
+}

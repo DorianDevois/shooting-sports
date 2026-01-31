@@ -1,0 +1,13 @@
+// Motion (анімації) transition */
+:root {
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  --timing-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-linear: linear;
+  --timing-ease: ease;
+  --timing-ease-in: ease-in;
+  --timing-ease-out: ease-out;
+  --timing-ease-in-out: ease-in-out;
+}

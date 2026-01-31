@@ -1,0 +1,37 @@
+// Base
+@mixin grid-layout($columns: null, $rows: null, $gap: null, $align: null, $justify: null) {
+  display: grid;
+
+  @if $columns != null {
+    grid-template-columns: $columns;
+  }
+
+  @if $rows != null {
+    grid-template-rows: $rows;
+  }
+
+  @if $gap != null {
+    gap: $gap;
+  }
+
+  @if $align != null {
+    align-items: $align;
+  }
+
+  @if $justify != null {
+    justify-items: $justify;
+  }
+}
+
+// Semantic helpers
+@mixin grid-columns($columns, $gap: null) {
+  @include grid-layout($columns: $columns, $gap: $gap);
+}
+
+@mixin grid-rows($rows, $gap: null) {
+  @include grid-layout($rows: $rows, $gap: $gap);
+}
+
+@mixin grid-auto($min: 200px, $max: 1fr, $gap: null) {
+  @include grid-layout($columns: repeat(auto-fit, minmax($min, $max)), $gap: $gap);
+}

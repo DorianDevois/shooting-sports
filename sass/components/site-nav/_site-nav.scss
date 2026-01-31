@@ -1,0 +1,69 @@
+@use '../../abstracts/mixins/reset';
+
+.site-nav {
+  @include reset.list-reset;
+
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: var(--space-xl);
+  }
+}
+
+.site-nav__link {
+  @include reset.link-reset;
+
+  position: relative;
+
+  display: inline-block;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+
+  transition: color var(--duration-normal) var(--timing-cubic);
+
+  &.is-current,
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    border-radius: var(--radius-xs);
+
+    background-color: var(--color-bg-accent);
+
+    opacity: 0;
+    transform: scaleX(0);
+
+    transition:
+      transform var(--duration-normal) var(--timing-cubic),
+      opacity var(--duration-normal) var(--timing-cubic);
+  }
+
+  &.is-current::after,
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.site-nav__sub-list {
+  display: none;
+}

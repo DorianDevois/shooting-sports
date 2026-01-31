@@ -1,0 +1,60 @@
+[
+  {
+    "id": "comp-olympic-torch-relay",
+    "title": "Olympic Torch Relay",
+    "typeId": "world-cup",
+    "weaponIds": ["pistol", "rifle"],
+    "participantTypeIds": ["individual", "team", "mixed"],
+    "disciplineIds": ["10m-air-pistol-men", "10m-air-pistol-women", "10m-air-rifle-men", "10m-air-rifle-women"],
+    "statusId": "ongoing",
+    "venueId": "aze-shooting-center",
+    "startDate": "2025-01-10",
+    "endDate": "2025-01-15",
+    "image": "assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg",
+    "link": "pages/competitions/comp-olympic-torch-relay/"
+  },
+  {
+    "id": "national-championship-2026-baku",
+    "title": "National Championship",
+    "typeId": "national",
+    "weaponIds": ["pistol", "rifle", "shotgun"],
+    "participantTypeIds": ["individual", "team", "mixed"],
+    "disciplineIds": [
+      "10m-air-pistol-men",
+      "10m-air-pistol-women",
+      "10m-air-rifle-men",
+      "10m-air-rifle-women",
+      "trap-men",
+      "trap-women",
+      "skeet-men",
+      "skeet-women"
+    ],
+    "statusId": "scheduled",
+    "venueId": "aze-shooting-center",
+    "startDate": "2026-03-15",
+    "endDate": "2026-03-20",
+    "image": "assets/images/competitions/national-championship-2026-baku/national-shooting-chemp-1440x650.jpg",
+    "link": "pages/competitions/national-championship-2026-baku/"
+  },
+  {
+    "id": "comp-world-championship-munich",
+    "title": "ISSF World Championship Munich",
+    "typeId": "world-championship",
+    "weaponIds": ["pistol", "rifle", "shotgun"],
+    "participantTypeIds": ["individual", "team", "mixed"],
+    "disciplineIds": [
+      "10m-air-pistol-men",
+      "10m-air-pistol-women",
+      "10m-air-rifle-men",
+      "10m-air-rifle-women",
+      "trap-men",
+      "trap-women"
+    ],
+    "statusId": "scheduled",
+    "venueId": "issf-munich",
+    "startDate": "2025-08-31",
+    "endDate": "2025-08-10",
+    "image": "assets/images/competitions/comp-world-championship-munich/munich-worlds.jpg",
+    "link": "pages/competitions/comp-world-championship-munich/"
+  }
+]

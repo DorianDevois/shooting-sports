@@ -71,14 +71,14 @@ import {
     refs.backdrop.classList.remove(CLASSES.HIDDEN);
     refs.body.classList.add(CLASSES.BODY_LOCK);
 
-    // Вивід даних у консоль отриманих з форми зворотнього зв`язку
-    document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-      e.preventDefault();
+    // Вивід даних у консоль для контролю отриманих з форми зворотнього зв`язку
+    // document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+    //   e.preventDefault();
 
-      new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+    //   new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
 
-      e.currentTarget.reset();
-    });
+    //   e.currentTarget.reset();
+    // });
   }
 
   function closeModal() {

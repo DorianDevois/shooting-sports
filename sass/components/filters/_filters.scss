@@ -1,0 +1,58 @@
+@use '../../abstracts/mixins/reset';
+
+.filters {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.filters__title {
+  margin-bottom: var(--space-lg);
+
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+
+  text-transform: capitalize;
+}
+
+.filters__list {
+  @include reset.list-reset;
+
+  display: flex;
+  flex-wrap: wrap; /* дозволяє перенос на мобілках */
+  gap: var(--space-sm);
+}
+
+.filters__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+
+  border-radius: var(--radius-full); /* pill-форма */
+  border: 1px solid var(--color-border-default);
+
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  background-color: transparent;
+  white-space: nowrap;
+
+  transition:
+    background-color var(--duration-normal) var(--timing-cubic),
+    color var(--duration-normal) var(--timing-cubic),
+    border-color var(--duration-normal) var(--timing-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-overlay-dark-10);
+  }
+
+  &.is-active {
+    background-color: var(--color-bg-accent);
+    color: var(--color-text-inverse);
+    border-color: var(--color-border-accent);
+  }
+}

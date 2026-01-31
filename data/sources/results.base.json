@@ -1,0 +1,23 @@
+[
+  {
+    "id": "result-001",
+
+    "competitionId": "comp-olympic-torch-relay",
+    "disciplineId": "10m-air-rifle-men",
+
+    "stageId": "qualification",
+    "participantTypeId": "individual",
+
+    "athleteId": "ath-lihao-sheng",
+    "teamId": null,
+
+    "score": 635.2,
+    "rank": 1,
+    "medalId": "gold",
+
+    "details": {
+      "shots": 60,
+      "series": [106.5, 104.9, 106.7, 105.0, 106.1, 106.0]
+    }
+  }
+]

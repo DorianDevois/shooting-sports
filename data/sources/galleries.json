@@ -1,0 +1,8 @@
+[
+  {
+    "id": "gallery-001",
+    "competitionId": "comp-olympic-torch-relay",
+    "title": "Day 1 Highlights",
+    "images": ["img1.jpg", "img2.jpg"]
+  }
+]

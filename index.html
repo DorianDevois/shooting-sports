@@ -44,16 +44,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet" />
 
-    <!-- Modern-Normalize Styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/main.min.css" />
 
     <!-- FAVICONS -->
     <!-- Класичний .ico для старих браузерів -->
@@ -90,45 +83,43 @@
         <nav class="navigation">
           <!-- Site Logo -->
           <a class="page-header__logo brand-logo" href="" aria-label="Shooting Sports Home">
-            <svg class="brand-logo__image" width="48" height="48">
+            <svg class="brand-logo__image" width="56" height="56">
               <use href="assets/icons/logos/sprite-logos.svg#logo-asf"></use>
             </svg>
-            <p class="brand-logo__text">
-              <span class="brand-logo__title">
-                Shooting<br />
-                Sports
-              </span>
-              <span class="brand-logo__tagline">Federation</span>
-            </p>
+            <span class="brand-logo__text">
+              Shooting<br />
+              Sports
+            </span>
           </a>
 
           <!-- Mobile Menu -->
-          <div class="mobile-menu">
+          <div class="page-header__menu mobile-menu">
             <button
               class="js-open-mobile-menu mobile-menu__toggle"
               type="button"
               aria-label="Open mobile menu"
               aria-expanded="false"
               aria-controls="mobile-menu-container">
-              <svg class="mobile-menu__open" width="40" height="40" aria-hidden="true">
+              <svg class="mobile-menu__toggle-icon" width="32" height="32" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-burger-menu"></use>
               </svg>
             </button>
 
-            <div class="js-mobile-menu-container mobile-menu__container" id="mobile-menu-container">
-              <div class="mobile-menu__header">
-                <a class="page-header__logo brand-logo" href="" aria-label="Shooting Sports Home">
-                  <svg class="brand-logo__image" width="48" height="48">
+            <div class="js-mobile-menu-container mobile-container" id="mobile-menu-container">
+              <div class="mobile-container__header">
+                <!-- Site Logo -->
+                <a class="brand-logo" href="" aria-label="Shooting Sports Home">
+                  <svg class="brand-logo__image" width="64" height="64">
                     <use href="assets/icons/logos/sprite-logos.svg#logo-asf"></use>
                   </svg>
-                  <p class="brand-logo__text">
-                    <span class="brand-logo__title">Shooting<br />Sports</span>
-                    <span class="brand-logo__tagline">International Federation</span>
-                  </p>
+                  <span class="brand-logo__text">
+                    Shooting<br />
+                    Sports
+                  </span>
                 </a>
 
                 <button class="js-close-mobile-menu mobile-menu__toggle" type="button" aria-label="Close mobile menu">
-                  <svg class="mobile-menu__close" width="40" height="40" aria-hidden="true">
+                  <svg class="mobile-menu__toggle-icon" width="32" height="32" aria-hidden="true">
                     <use href="assets/icons/ui/sprite-ui.svg#ui-burger-close"></use>
                   </svg>
                 </button>
@@ -155,43 +146,45 @@
                 </li>
               </ul>
 
-              <ul class="mobile-contacts mobile-menu__mobile-contacts">
-                <li class="mobile-contacts__item">
-                  <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+994124937060">
-                    <svg class="mobile-contacts__icon" width="24" height="24">
-                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-mobile"></use>
-                    </svg>
-                    <span>(+994) 12 493 70 60</span>
-                  </a>
-                </li>
-                <li class="mobile-contacts__item">
-                  <a class="mobile-contacts__link" href="mailto:info@aze-shooting.org">
-                    <svg class="mobile-contacts__icon" width="24" height="24">
-                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email"></use>
-                    </svg>
-                    <span>info@aze-shooting.org</span>
-                  </a>
-                </li>
-              </ul>
+              <div class="mobile-container__footer">
+                <ul class="mobile-contacts mobile-menu__contacts">
+                  <li>
+                    <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+994124937060">
+                      <svg class="mobile-contacts__icon" width="24" height="24">
+                        <use href="assets/icons/ui/sprite-ui.svg#ui-icon-mobile"></use>
+                      </svg>
+                      <span>(+994) 12 493 70 60</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-contacts__link" href="mailto:info@aze-shooting.org">
+                      <svg class="mobile-contacts__icon" width="24" height="24">
+                        <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email"></use>
+                      </svg>
+                      <span>info@aze-shooting.org</span>
+                    </a>
+                  </li>
+                </ul>
 
-              <ul class="mobile-social mobile-menu__social">
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="https://www.facebook.com/azeshooting/">Facebook </a>
-                </li>
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="https://www.instagram.com/azeshooting/">Instagram</a>
-                </li>
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="https://www.youtube.com/@azeshooting/">YouTube </a>
-                </li>
-              </ul>
+                <ul class="mobile-social mobile-menu__social">
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="https://www.facebook.com/azeshooting/">Facebook </a>
+                  </li>
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="https://www.instagram.com/azeshooting/">Instagram</a>
+                  </li>
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="https://www.youtube.com/@azeshooting/">YouTube </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
           <!-- Site Nav -->
           <ul class="site-nav" aria-label="Main navigation">
             <li class="site-nav__item">
-              <a class="site-nav__link is-current" href="pages/competitions/">Competitions</a>
+              <a class="site-nav__link" href="pages/competitions/">Competitions</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="pages/disciplines/">Disciplines</a>
@@ -225,21 +218,21 @@
           </ul>
 
           <!-- Site Contacts -->
-          <ul class="page-header__contacts contacts">
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+994124937060">
-                <svg class="contacts__icon" width="16" height="16">
+          <ul class="page-header__contacts site-contacts">
+            <li>
+              <a class="site-contacts__link" href="tel:+994124937060">
+                <svg class="site-contacts__icon" width="16" height="16">
                   <use href="assets/icons/ui/sprite-ui.svg#ui-icon-mobile"></use>
                 </svg>
-                <span class="contacts__phone">(+994) 12 493 70 60</span>
+                <span>(+994) 12 493 70 60</span>
               </a>
             </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@aze-shooting.org">
-                <svg class="contacts__icon" width="16" height="16">
+            <li>
+              <a class="site-contacts__link" href="mailto:info@aze-shooting.org">
+                <svg class="site-contacts__icon" width="16" height="16">
                   <use href="assets/icons/ui/sprite-ui.svg#ui-icon-email"></use>
                 </svg>
-                <span class="contacts__email">info@aze-shooting.org</span>
+                <span>info@aze-shooting.org</span>
               </a>
             </li>
           </ul>
@@ -247,17 +240,15 @@
       </div>
     </header>
 
-    <main>
+    <!-- Page Content -->
+    <main class="page-content">
       <!-- Hero Section -->
-      <section class="hero" aria-label="Hero Section">
+      <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title">
-            Our Goal: A Medal at the Los Angeles 2028<br />
-            Olympic Games
-          </h1>
+          <h1 class="hero__title">Our Goal: <br />A Medal at the Los Angeles 2028 Olympic Games</h1>
           <p class="hero__text">Join our team and take part in the journey towards Olympic success!</p>
-          <button class="hero__button" type="button" data-modal-open data-modal-type="callback">
-            Apply to participate
+          <button class="button button--primary hero__button" type="button" data-modal-open data-modal-type="callback">
+            Contact Us
           </button>
         </div>
       </section>
@@ -265,28 +256,31 @@
       <!-- About Us Section -->
       <section class="about-us section">
         <div class="container">
-          <header class="section-header about-us__header">
-            <h2 class="about-us__title">About us</h2>
-            <a href="pages/about-us/" class="about-us__link">
+          <header class="section__header">
+            <h2 class="section__title">About us</h2>
+            <a href="pages/about-us/" class="section__link">
               <span>More details</span>
-              <span class="visually-hidden">about shooting federation</span>
-              <svg width="16" height="16">
+              <span class="u-visually-hidden">about shooting federation</span>
+              <svg class="section__link-icon" width="16" height="16">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
           </header>
-          <p class="about-us__excerpt">
+
+          <p class="section__excerpt">
             Located in the eastern part of Baku, the Azerbaijan Shooting Center has been promoting sports and a healthy
             lifestyle among the youth since its opening on March 9, 2015.
           </p>
 
-          <div class="about-us__detailed">
-            <img
-              class="about-us__image"
-              src="assets/images/other/aze-shooting-federation.jpg"
-              alt="Company team collage with the text '25+ years of experience'"
-              width="260"
-              loading="lazy" />
+          <div class="section__body about-us__layout">
+            <div class="about-us__media">
+              <img
+                class="about-us__image"
+                src="assets/images/other/aze-shooting-federation.jpg"
+                alt="Company team collage with the text '25+ years of experience'"
+                width="240"
+                loading="lazy" />
+            </div>
 
             <div class="about-us__content">
               <h3 class="about-us__subtitle">The center is distinguished by its functionality.</h3>
@@ -309,247 +303,231 @@
                 <li class="about-us__feature">Organizing national and international competitions</li>
               </ul>
 
-              <a class="about-us__support-link" href="">Get Support</a>
+              <div class="about-us__actions">
+                <button type="button" class="button button--secondary">Get Support</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Our Team -->
-      <section class="our-team section">
+      <section class="our-team section section--team">
         <div class="container">
-          <header class="section-header our-team__header">
-            <h2 class="our-team__title">Our Team</h2>
+          <header class="section__header">
+            <h2 class="section__title">Shooting Team</h2>
 
-            <a class="section-link-button our-team__link" href="pages/team/">
+            <a class="section__link" href="pages/athletes/">
               Show all
-              <span class="visually-hidden">team</span>
-              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
+              <span class="u-visually-hidden">shooting team</span>
+              <svg class="section__link-icon" width="16" height="16" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
           </header>
-          <p class="our-team__excerpt">
+          <p class="section__excerpt">
             Behind every result is a person. Our team brings together talented athletes, skilled coaches, and committed
             specialists who share the same values, passion for sport, and pursuit of excellence.
           </p>
 
-          <ul class="our-team__list">
-            <li class="our-team__item">
-              <article class="team-card" data-roles="athlete">
-                <!-- MEDIA -->
-                <div class="team-card__media">
-                  <!-- Thumbnail / Image -->
-                  <picture class="team-card__thumbnail">
+          <div class="section__body">
+            <ul class="our-team__list section__card-set">
+              <li class="section__card-item">
+                <article class="team-card" data-roles="athlete">
+                  <!-- Thumbnail -->
+                  <div class="team-card__thumbnail">
                     <img
                       class="team-card__image"
                       loading="lazy"
                       src="assets/images/team/ath-lunev-ruslan/ath-lunev-ruslan.jpg"
                       alt="Athlete Sheng Lihao"
-                      width="160"
-                      height="160" />
-                  </picture>
+                      width="560"
+                      height="560" />
 
-                  <!-- Role Badge -->
-                  <ul class="badges badges--position-top-right" aria-label="Team role">
-                    <li class="badges__item badges__item--role">
-                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
-                    </li>
-                  </ul>
-
-                  <!-- Country Badge -->
-                  <ul class="badges badges--position-top-left" aria-label="Country badge">
-                    <li class="badges__item badges__item--country">
-                      <a
-                        class="badges__link"
-                        href="pages/team/?country=az"
-                        data-country="az"
-                        aria-label="Filter by country: Azerbaijan">
-                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="team-card__content">
-                  <!-- Meta -->
-                  <div class="team-card__meta">
-                    <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/competitions/competition-1/">Lunev Ruslan</a>
-                    </h3>
-                    <!-- <p class="team-card__age">25 years</p> -->
-                    <p class="team-card__location">Baku, Azerbaijan</p>
-                  </div>
-
-                  <div class="team-card__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Instagram">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
+                    <!-- Role Badge -->
+                    <ul class="badges badges--top-right" aria-label="Team role">
+                      <li class="badges__item badges__item--role">
+                        <a class="badges__link" href="pages/athletes/?roles=athlete" data-roles="athlete">Athlete</a>
                       </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="X (Twitter)">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Facebook">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="LinkedIn">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </ul>
+
+                    <!-- Country Badge -->
+                    <ul class="badges badges--top-left" aria-label="Country badge">
+                      <li class="badges__item badges__item--country">
+                        <a
+                          class="badges__link"
+                          href="pages/athletes/?country=az"
+                          data-country="az"
+                          aria-label="Filter by country: Azerbaijan">
+                          <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                            <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
                           </svg>
                         </a>
                       </li>
                     </ul>
                   </div>
 
-                  <!-- Disciplines -->
-                  <!-- <span>Disciplines:</span> -->
-                  <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
-                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
-                  </ul> -->
-                </div>
-              </article>
-            </li>
+                  <!-- CONTENT -->
+                  <div class="team-card__content">
+                    <!-- Meta -->
+                    <div class="team-card__meta">
+                      <h3 class="team-card__name">
+                        <a class="team-card__name-link" href="pages/athletes/">Lunev Ruslan</a>
+                      </h3>
+                      <!-- <p class="team-card__age">25 years</p> -->
+                      <p class="team-card__location">Baku, Azerbaijan</p>
+                    </div>
 
-            <li class="our-team__item">
-              <article class="team-card" data-roles="head-coach">
-                <!-- MEDIA -->
-                <div class="team-card__media">
-                  <!-- Thumbnail / Image -->
-                  <picture class="team-card__thumbnail">
-                    <source
-                      srcset="
-                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-1x.webp 1x,
-                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-2x.webp 2x,
-                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-3x.webp 3x
-                      "
-                      type="image/webp" />
+                    <div class="team-card__social social">
+                      <ul class="social__list" aria-label="Social links">
+                        <li>
+                          <a class="social__link" href="" aria-label="Instagram">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="social__link" href="" aria-label="X (Twitter)">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="social__link" href="" aria-label="Facebook">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="social__link" href="" aria-label="LinkedIn">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
 
+                    <!-- Disciplines -->
+                    <!-- <span>Disciplines:</span> -->
+                    <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
+                      <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                    </ul> -->
+                  </div>
+                </article>
+              </li>
+
+              <li class="section__card-item">
+                <article class="team-card" data-roles="head-coach">
+                  <!-- MEDIA -->
+                  <div class="team-card__thumbnail">
                     <img
                       class="team-card__image"
                       loading="lazy"
-                      srcset="
-                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-1x.jpg 1x,
-                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-2x.jpg 2x,
-                        assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-3x.jpg 3x
-                      "
                       src="assets/images/team/coach-serhii-kulish/ui-designer-mihailo-ermakov-1x.jpg"
                       alt="Head coach Serhii Kulish"
                       width="160"
                       height="160" />
-                  </picture>
 
-                  <!-- Role Badge -->
-                  <ul class="badges badges--position-top-right" aria-label="Team role">
-                    <li class="badges__item badges__item--role">
-                      <a class="badges__link" href="pages/team/?roles=head-coach" data-roles="head-coach">Head Coach</a>
-                    </li>
-                  </ul>
-
-                  <!-- Country Badge -->
-                  <ul class="badges badges--position-top-left" aria-label="Country badge">
-                    <li class="badges__item badges__item--country">
-                      <a
-                        class="badges__link"
-                        href="pages/team/?country=ua"
-                        data-country="ua"
-                        aria-label="Filter by country: Ukraine">
-                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-ua"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="team-card__content">
-                  <!-- Meta -->
-                  <div class="team-card__meta">
-                    <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/competitions/competition-1/"> Serhii Kulish </a>
-                    </h3>
-                    <!-- <p class="team-card__age">32 years</p> -->
-                    <p class="team-card__location">Kyiv, Ukraine</p>
-                  </div>
-
-                  <div class="team-card__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Instagram">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
+                    <!-- Role Badge -->
+                    <ul class="badges badges--top-right" aria-label="Team role">
+                      <li class="badges__item badges__item--role">
+                        <a class="badges__link" href="pages/athletes/?roles=head-coach" data-roles="head-coach"
+                          >Head Coach</a
+                        >
                       </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="X (Twitter)">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Facebook">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="LinkedIn">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </ul>
+
+                    <!-- Country Badge -->
+                    <ul class="badges badges--top-left" aria-label="Country badge">
+                      <li class="badges__item badges__item--country">
+                        <a
+                          class="badges__link"
+                          href="pages/athletes/?country=ua"
+                          data-country="ua"
+                          aria-label="Filter by country: Ukraine">
+                          <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                            <use href="assets/icons/flags/sprite-flags.svg#flag-icon-ua"></use>
                           </svg>
                         </a>
                       </li>
                     </ul>
                   </div>
 
-                  <!-- Disciplines -->
-                  <!-- <span>Disciplines:</span> -->
-                  <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
-                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
-                  </ul> -->
-                </div>
-              </article>
-            </li>
+                  <!-- CONTENT -->
+                  <div class="team-card__content">
+                    <!-- Meta -->
+                    <div class="team-card__meta">
+                      <h3 class="team-card__name">
+                        <a class="team-card__name-link" href="pages/athletes/"> Serhii Kulish </a>
+                      </h3>
+                      <!-- <p class="team-card__age">32 years</p> -->
+                      <p class="team-card__location">Kyiv, Ukraine</p>
+                    </div>
 
-            <li class="our-team__item">
-              <article class="team-card" data-roles="athlete">
-                <!-- MEDIA -->
-                <div class="team-card__media">
-                  <!-- Thumbnail / Image -->
-                  <picture class="team-card__thumbnail">
+                    <div class="team-card__social social">
+                      <ul class="social__list">
+                        <li>
+                          <a class="social__link" href="" aria-label="Instagram">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="social__link" href="" aria-label="X (Twitter)">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="social__link" href="" aria-label="Facebook">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="social__link" href="" aria-label="LinkedIn">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Disciplines -->
+                    <!-- <span>Disciplines:</span> -->
+                    <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
+                      <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                    </ul> -->
+                  </div>
+                </article>
+              </li>
+
+              <li class="section__card-item">
+                <article class="team-card" data-roles="athlete">
+                  <!-- MEDIA -->
+                  <div class="team-card__thumbnail">
                     <img
                       class="team-card__image"
                       loading="lazy"
@@ -557,97 +535,96 @@
                       alt="Athlete Sheng Lihao"
                       width="160"
                       height="160" />
-                  </picture>
 
-                  <!-- Role Badge -->
-                  <ul class="badges badges--position-top-right" aria-label="Team role">
-                    <li class="badges__item badges__item--role">
-                      <a class="badges__link" href="pages/team/?roles=manager" data-roles="manager">Team Manager</a>
-                    </li>
-                  </ul>
-
-                  <!-- Country Badge -->
-                  <ul class="badges badges--position-top-left" aria-label="Country badge">
-                    <li class="badges__item badges__item--country">
-                      <a
-                        class="badges__link"
-                        href="pages/team/?country=az"
-                        data-country="az"
-                        aria-label="Filter by country: Azerbaijan">
-                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-tr"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="team-card__content">
-                  <!-- Meta -->
-                  <div class="team-card__meta">
-                    <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/team/ath-lihao-sheng/"> Lihao Sheng </a>
-                    </h3>
-                    <!-- <p class="team-card__age">21 years</p> -->
-                    <p class="team-card__location">Jiangsu, China</p>
-                  </div>
-
-                  <div class="team-card__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Instagram">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
+                    <!-- Role Badge -->
+                    <ul class="badges badges--top-right" aria-label="Team role">
+                      <li class="badges__item badges__item--role">
+                        <a class="badges__link" href="pages/athletes/?roles=manager" data-roles="manager"
+                          >Team Manager</a
+                        >
                       </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="X (Twitter)">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Facebook">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="LinkedIn">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </ul>
+
+                    <!-- Country Badge -->
+                    <ul class="badges badges--top-left" aria-label="Country badge">
+                      <li class="badges__item badges__item--country">
+                        <a
+                          class="badges__link"
+                          href="pages/athletes/?country=az"
+                          data-country="az"
+                          aria-label="Filter by country: Azerbaijan">
+                          <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                            <use href="assets/icons/flags/sprite-flags.svg#flag-icon-tr"></use>
                           </svg>
                         </a>
                       </li>
                     </ul>
                   </div>
 
-                  <!-- Disciplines -->
-                  <!-- <span>Disciplines:</span> -->
-                  <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
-                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
-                  </ul> -->
-                </div>
-              </article>
-            </li>
+                  <!-- CONTENT -->
+                  <div class="team-card__content">
+                    <!-- Meta -->
+                    <div class="team-card__meta">
+                      <h3 class="team-card__name">
+                        <a class="team-card__name-link" href="pages/athletes/"> Lihao Sheng </a>
+                      </h3>
+                      <!-- <p class="team-card__age">21 years</p> -->
+                      <p class="team-card__location">Jiangsu, China</p>
+                    </div>
 
-            <li class="our-team__item">
-              <article class="team-card" data-roles="athlete">
-                <!-- MEDIA -->
-                <div class="team-card__media">
-                  <!-- Thumbnail / Image -->
-                  <picture class="team-card__thumbnail">
+                    <div class="team-card__social social">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Instagram">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="X (Twitter)">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Facebook">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="LinkedIn">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Disciplines -->
+                    <!-- <span>Disciplines:</span> -->
+                    <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
+                      <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                    </ul> -->
+                  </div>
+                </article>
+              </li>
+
+              <li class="section__card-item">
+                <article class="team-card" data-roles="athlete">
+                  <!-- MEDIA -->
+                  <div class="team-card__thumbnail">
                     <img
                       class="team-card__image"
                       loading="lazy"
@@ -655,86 +632,81 @@
                       alt="Athlete Sheng Lihao"
                       width="160"
                       height="160" />
-                  </picture>
 
-                  <!-- Role Badge -->
-                  <ul class="badges badges--position-top-right" aria-label="Team role">
-                    <li class="badges__item badges__item--role">
-                      <a class="badges__link" href="pages/team/?roles=doctor" data-roles="doctor">Team Doctor</a>
-                    </li>
-                  </ul>
-
-                  <!-- Country Badge -->
-                  <ul class="badges badges--position-top-left" aria-label="Country badge">
-                    <li class="badges__item badges__item--country">
-                      <a
-                        class="badges__link"
-                        href="pages/team/?country=az"
-                        data-country="az"
-                        aria-label="Filter by country: Azerbaijan">
-                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="team-card__content">
-                  <!-- Meta -->
-                  <div class="team-card__meta">
-                    <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/team/ath-meftahetdinova-zemfira/"
-                        >Meftahetdinova Zemfira</a
-                      >
-                    </h3>
-                    <!-- <p class="team-card__age">62 years</p> -->
-                    <p class="team-card__location">Baku, Azerbaijan</p>
-                  </div>
-
-                  <div class="team-card__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Instagram">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
+                    <!-- Role Badge -->
+                    <ul class="badges badges--top-right" aria-label="Team role">
+                      <li class="badges__item badges__item--role">
+                        <a class="badges__link" href="pages/athletes/?roles=doctor" data-roles="doctor">Team Doctor</a>
                       </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="X (Twitter)">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Facebook">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="LinkedIn">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </ul>
+
+                    <!-- Country Badge -->
+                    <ul class="badges badges--top-left" aria-label="Country badge">
+                      <li class="badges__item badges__item--country">
+                        <a
+                          class="badges__link"
+                          href="pages/athletes/?country=az"
+                          data-country="az"
+                          aria-label="Filter by country: Azerbaijan">
+                          <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                            <use href="assets/icons/flags/sprite-flags.svg#flag-icon-az"></use>
                           </svg>
                         </a>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-            </li>
 
-            <li class="our-team__item">
-              <article class="team-card" data-roles="athlete">
-                <!-- MEDIA -->
-                <div class="team-card__media">
-                  <!-- Thumbnail / Image -->
-                  <picture class="team-card__thumbnail">
+                  <!-- CONTENT -->
+                  <div class="team-card__content">
+                    <!-- Meta -->
+                    <div class="team-card__meta">
+                      <h3 class="team-card__name">
+                        <a class="team-card__name-link" href="pages/athletes/">Meftahetdinova Zemfira</a>
+                      </h3>
+                      <!-- <p class="team-card__age">62 years</p> -->
+                      <p class="team-card__location">Baku, Azerbaijan</p>
+                    </div>
+
+                    <div class="team-card__social social">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Instagram">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="X (Twitter)">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Facebook">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="LinkedIn">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="section__card-item">
+                <article class="team-card" data-roles="athlete">
+                  <!-- MEDIA -->
+                  <div class="team-card__thumbnail">
                     <img
                       class="team-card__image"
                       loading="lazy"
@@ -742,97 +714,94 @@
                       alt="Athlete Sheng Lihao"
                       width="160"
                       height="160" />
-                  </picture>
 
-                  <!-- Role Badge -->
-                  <ul class="badges badges--position-top-right" aria-label="Team role">
-                    <li class="badges__item badges__item--role">
-                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
-                    </li>
-                  </ul>
-
-                  <!-- Country Badge -->
-                  <ul class="badges badges--position-top-left" aria-label="Country badge">
-                    <li class="badges__item badges__item--country">
-                      <a
-                        class="badges__link"
-                        href="pages/team/?country=az"
-                        data-country="az"
-                        aria-label="Filter by country: Azerbaijan">
-                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-de"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="team-card__content">
-                  <!-- Meta -->
-                  <div class="team-card__meta">
-                    <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/competitions/competition-1/"> Jon-Hermann HEGG </a>
-                    </h3>
-                    <!-- <p class="team-card__age">26 years</p> -->
-                    <p class="team-card__location">Norway</p>
-                  </div>
-
-                  <div class="team-card__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Instagram">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
+                    <!-- Role Badge -->
+                    <ul class="badges badges--top-right" aria-label="Team role">
+                      <li class="badges__item badges__item--role">
+                        <a class="badges__link" href="pages/athletes/?roles=athlete" data-roles="athlete">Athlete</a>
                       </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="X (Twitter)">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Facebook">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="LinkedIn">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </ul>
+
+                    <!-- Country Badge -->
+                    <ul class="badges badges--top-left" aria-label="Country badge">
+                      <li class="badges__item badges__item--country">
+                        <a
+                          class="badges__link"
+                          href="pages/athletes/?country=az"
+                          data-country="az"
+                          aria-label="Filter by country: Azerbaijan">
+                          <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                            <use href="assets/icons/flags/sprite-flags.svg#flag-icon-de"></use>
                           </svg>
                         </a>
                       </li>
                     </ul>
                   </div>
 
-                  <!-- Disciplines -->
-                  <!-- <span>Disciplines:</span> -->
-                  <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
-                    <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
-                    <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
-                  </ul> -->
-                </div>
-              </article>
-            </li>
+                  <!-- CONTENT -->
+                  <div class="team-card__content">
+                    <!-- Meta -->
+                    <div class="team-card__meta">
+                      <h3 class="team-card__name">
+                        <a class="team-card__name-link" href="pages/athletes/"> Jon-Hermann HEGG </a>
+                      </h3>
+                      <!-- <p class="team-card__age">26 years</p> -->
+                      <p class="team-card__location">Norway</p>
+                    </div>
 
-            <li class="our-team__item">
-              <article class="team-card" data-roles="athlete">
-                <!-- MEDIA -->
-                <div class="team-card__media">
-                  <!-- Thumbnail / Image -->
-                  <picture class="team-card__thumbnail">
+                    <div class="team-card__social social">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Instagram">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="X (Twitter)">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Facebook">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="LinkedIn">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Disciplines -->
+                    <!-- <span>Disciplines:</span> -->
+                    <!-- <ul class="team-card__disciplines" aria-label="Disciplines">
+                      <li><a href="pages/disciplines/?id=arm" class="team-card__discipline-link">ARM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=ar60" class="team-card__discipline-link">AR60</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=r3pm" class="team-card__discipline-link">R3PM</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr3x40" class="team-card__discipline-link">FR3X40</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=fr60pr" class="team-card__discipline-link">FR60PR</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armix" class="team-card__discipline-link">ARMIX</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=armt" class="team-card__discipline-link">ARMT</a>,&nbsp;</li>
+                      <li><a href="pages/disciplines/?id=arteamm" class="team-card__discipline-link">ARTEAMM</a></li>
+                    </ul> -->
+                  </div>
+                </article>
+              </li>
+
+              <li class="section__card-item">
+                <article class="team-card" data-roles="athlete">
+                  <!-- MEDIA -->
+                  <div class="team-card__thumbnail">
                     <img
                       class="team-card__image"
                       loading="lazy"
@@ -840,606 +809,599 @@
                       alt="Athlete Sheng Lihao"
                       width="160"
                       height="160" />
-                  </picture>
 
-                  <!-- Role Badge -->
-                  <ul class="badges badges--position-top-right" aria-label="Team role">
-                    <li class="badges__item badges__item--role">
-                      <a class="badges__link" href="pages/team/?roles=athlete" data-roles="athlete">Athlete</a>
-                    </li>
-                  </ul>
-
-                  <!-- Country Badge -->
-                  <ul class="badges badges--position-top-left" aria-label="Country badge">
-                    <li class="badges__item badges__item--country">
-                      <a
-                        class="badges__link"
-                        href="pages/team/?country=az"
-                        data-country="az"
-                        aria-label="Filter by country: Azerbaijan">
-                        <svg class="badges__icon" width="43" height="32" aria-hidden="true">
-                          <use href="assets/icons/flags/sprite-flags.svg#flag-icon-fr"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- CONTENT -->
-                <div class="team-card__content">
-                  <!-- Meta -->
-                  <div class="team-card__meta">
-                    <h3 class="team-card__name">
-                      <a class="team-card__name-link" href="pages/competitions/competition-1/">Samantha Simonton</a>
-                    </h3>
-                    <!-- <p class="team-card__age">26 years</p> -->
-                    <p class="team-card__location">Colorado Springs, CO, USA</p>
-                  </div>
-
-                  <div class="team-card__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Instagram">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
+                    <!-- Role Badge -->
+                    <ul class="badges badges--top-right" aria-label="Team role">
+                      <li class="badges__item badges__item--role">
+                        <a class="badges__link" href="pages/athletes/?roles=athlete" data-roles="athlete">Athlete</a>
                       </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="X (Twitter)">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="Facebook">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="" aria-label="LinkedIn">
-                          <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                            <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </ul>
+
+                    <!-- Country Badge -->
+                    <ul class="badges badges--top-left" aria-label="Country badge">
+                      <li class="badges__item badges__item--country">
+                        <a
+                          class="badges__link"
+                          href="pages/athletes/?country=az"
+                          data-country="az"
+                          aria-label="Filter by country: Azerbaijan">
+                          <svg class="badges__icon" width="43" height="32" aria-hidden="true">
+                            <use href="assets/icons/flags/sprite-flags.svg#flag-icon-fr"></use>
                           </svg>
                         </a>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-            </li>
-          </ul>
 
-          <footer class="our-team__footer">
-            <button class="our-team__btn" type="button">See More</button>
+                  <!-- CONTENT -->
+                  <div class="team-card__content">
+                    <!-- Meta -->
+                    <div class="team-card__meta">
+                      <h3 class="team-card__name">
+                        <a class="team-card__name-link" href="pages/athletes/">Samantha Simonton</a>
+                      </h3>
+                      <!-- <p class="team-card__age">26 years</p> -->
+                      <p class="team-card__location">Colorado Springs, CO, USA</p>
+                    </div>
+
+                    <div class="team-card__social social">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Instagram">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="X (Twitter)">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="Facebook">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="" aria-label="LinkedIn">
+                            <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                              <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <footer class="section__footer">
+            <button class="button our-team__btn section__load-more-btn" type="button">See More</button>
           </footer>
         </div>
       </section>
 
       <!-- Disciplines Section -->
-      <section class="disciplines section">
+      <section class="disciplines section section--disciplines">
         <div class="container">
-          <header class="section-header disciplines__header">
-            <h2 class="disciplines__title">Disciplines</h2>
+          <header class="section__header">
+            <h2 class="section__title">Disciplines</h2>
 
-            <a class="section-link-button disciplines__link" href="pages/disciplines/">
+            <a class="section__link" href="pages/disciplines/">
               See all
-              <span class="visually-hidden">disciplines</span>
-              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
+              <span class="u-visually-hidden">disciplines</span>
+              <svg class="section__link-icon" width="16" height="16" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
           </header>
-          <p class="disciplines__excerpt">
+
+          <p class="section__excerpt">
             Explore our diverse shooting disciplines and find the perfect training path for your skill level and goals.
           </p>
 
-          <ul class="disciplines__list">
-            <li class="disciplines__item">
-              <article class="discipline-card" aria-labelledby="discipline-pistol-title">
-                <!-- <div class="discipline-card__thumb">
-                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
-                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-pistol"></use>
-                  </svg>
-                </div> -->
+          <div class="section__body">
+            <ul class="section__card-set">
+              <li class="section__card-item">
+                <article class="discipline-card" aria-label="Shooting discipline: Pistol">
+                  <!-- <div class="discipline-card__thumb">
+                    <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-pistol"></use>
+                    </svg>
+                  </div> -->
 
-                <div class="discipline-card__content">
-                  <h3 class="discipline-card__title" id="discipline-pistol-title">Pistol</h3>
-                  <p class="discipline-card__description">
-                    Pistol shooting focuses on precision, control, and concentration. This discipline is ideal for
-                    developing accuracy and consistency, whether you are training recreationally or preparing for
-                    competitions.
-                  </p>
-                </div>
+                  <div class="discipline-card__body">
+                    <h3 class="discipline-card__title">Pistol</h3>
+                    <p class="discipline-card__description">
+                      Pistol shooting focuses on precision, control, and concentration. This discipline is ideal for
+                      developing accuracy and consistency, whether you are training recreationally or preparing for
+                      competitions.
+                    </p>
+                  </div>
 
-                <a class="discipline-card__link" href="">
-                  Learn more
-                  <span class="visually-hidden">about pistol shooting disciplines and training opportunities.</span>
-                </a>
-              </article>
-            </li>
+                  <div class="discipline-card__footer">
+                    <a class="discipline-card__link button-link" href="pages/disciplines/">
+                      Learn more
+                      <span class="u-visually-hidden">
+                        about pistol shooting disciplines and training opportunities.
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </li>
 
-            <li class="disciplines__item">
-              <article class="discipline-card" aria-labelledby="discipline-rifle-title">
-                <!-- <div class="discipline-card__thumb">
-                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
-                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-rifle"></use>
-                  </svg>
-                </div> -->
+              <li class="section__card-item">
+                <article class="discipline-card" aria-label="Shooting discipline: Rifle">
+                  <!-- <div class="discipline-card__thumb">
+                    <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-rifle"></use>
+                    </svg>
+                  </div> -->
 
-                <div class="discipline-card__content">
-                  <h3 class="discipline-card__title" id="discipline-rifle-title">Rifle</h3>
-                  <p class="discipline-card__description">
-                    Rifle shooting emphasizes stability, breathing technique, and long-range accuracy. It is suitable
-                    for shooters who want to master technical skills and improve their overall shooting discipline.
-                  </p>
-                </div>
+                  <div class="discipline-card__body">
+                    <h3 class="discipline-card__title">Rifle</h3>
+                    <p class="discipline-card__description">
+                      Rifle shooting emphasizes stability, breathing technique, and long-range accuracy. It is suitable
+                      for shooters who want to master technical skills and improve their overall shooting discipline.
+                    </p>
+                  </div>
 
-                <a class="discipline-card__link" href="">
-                  Learn more
-                  <span class="visually-hidden">about rifle shooting disciplines and long-range training.</span>
-                </a>
-              </article>
-            </li>
+                  <div class="discipline-card__footer">
+                    <a class="discipline-card__link button-link" href="pages/disciplines/">
+                      Learn more
+                      <span class="u-visually-hidden">about rifle shooting disciplines and long-range training.</span>
+                    </a>
+                  </div>
+                </article>
+              </li>
 
-            <li class="disciplines__item">
-              <article class="discipline-card" aria-labelledby="discipline-trap-title">
-                <!-- <div class="discipline-card__thumb">
-                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
-                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-trap"></use>
-                  </svg>
-                </div> -->
+              <li class="section__card-item">
+                <article class="discipline-card" aria-label="Shooting discipline: Trap">
+                  <!-- <div class="discipline-card__thumb">
+                    <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-trap"></use>
+                    </svg>
+                  </div> -->
 
-                <div class="discipline-card__content">
-                  <h3 class="discipline-card__title" id="discipline-trap-title">Trap</h3>
-                  <p class="discipline-card__description">
-                    Trap shooting is a dynamic shotgun discipline where targets are launched away from the shooter at
-                    varying angles. It helps improve reaction time, coordination, and shooting rhythm.
-                  </p>
-                </div>
+                  <div class="discipline-card__body">
+                    <h3 class="discipline-card__title">Trap</h3>
+                    <p class="discipline-card__description">
+                      Trap shooting is a dynamic shotgun discipline where targets are launched away from the shooter at
+                      varying angles. It helps improve reaction time, coordination, and shooting rhythm.
+                    </p>
+                  </div>
 
-                <a class="discipline-card__link" href="">
-                  Learn more
-                  <span class="visually-hidden">about trap shooting and clay target training.</span>
-                </a>
-              </article>
-            </li>
+                  <div class="discipline-card__footer">
+                    <a class="discipline-card__link button-link" href="pages/disciplines/">
+                      Learn more
+                      <span class="u-visually-hidden">about trap shooting and clay target training.</span>
+                    </a>
+                  </div>
+                </article>
+              </li>
 
-            <li class="disciplines__item">
-              <article class="discipline-card" aria-labelledby="discipline-skeet-title">
-                <!-- <div class="discipline-card__thumb">
-                  <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
-                    <use href="assets/icons/ui/sprite-ui.svg#ui-icon-skeet"></use>
-                  </svg>
-                </div> -->
+              <li class="section__card-item">
+                <article class="discipline-card" aria-label="Shooting discipline: Skeet">
+                  <!-- <div class="discipline-card__thumb">
+                    <svg class="discipline-card__icon" width="64" height="64" aria-hidden="true">
+                      <use href="assets/icons/ui/sprite-ui.svg#ui-icon-skeet"></use>
+                    </svg>
+                  </div> -->
 
-                <div class="discipline-card__content">
-                  <h3 class="discipline-card__title" id="discipline-skeet-title">Skeet</h3>
-                  <p class="discipline-card__description">
-                    Skeet shooting challenges shooters with fast-moving targets crossing from different directions. This
-                    discipline is perfect for developing timing, precision, and smooth shooting techniques.
-                  </p>
-                </div>
+                  <div class="discipline-card__body">
+                    <h3 class="discipline-card__title">Skeet</h3>
+                    <p class="discipline-card__description">
+                      Skeet shooting challenges shooters with fast-moving targets crossing from different directions.
+                      This discipline is perfect for developing timing, precision, and smooth shooting techniques.
+                    </p>
+                  </div>
 
-                <a class="discipline-card__link" href="">
-                  Learn more
-                  <span class="visually-hidden">about skeet shooting and moving target practice.</span>
-                </a>
-              </article>
-            </li>
-          </ul>
+                  <div class="discipline-card__footer">
+                    <a class="discipline-card__link button-link" href="pages/disciplines/">
+                      Learn more
+                      <span class="u-visually-hidden">about skeet shooting and moving target practice.</span>
+                    </a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Competitions Section -->
-      <section class="competitions section">
+      <section class="competitions section section--events">
         <div class="container">
-          <header class="section-header competitions__header">
-            <h2 class="competitions__title">Competitions</h2>
+          <header class="section__header">
+            <h2 class="section__title">Competitions</h2>
 
-            <a class="section-link-button competitions__link" href="pages/competitions/">
-              Show all
-              <span class="visually-hidden">shooting competitions</span>
-              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
+            <a class="section__link" href="pages/competitions/">
+              See all
+              <span class="u-visually-hidden">shooting competitions</span>
+              <svg class="section__link-icon" width="16" height="16" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
           </header>
-          <!-- <p class="competitions__excerpt">
-            Stay updated on upcoming shooting competitions and events – from local tournaments to international
+
+          <p class="section__excerpt">
+            Stay updated on upcoming shooting competitions and events - from local tournaments to international
             championships!
-          </p> -->
-          <ul class="competitions__list">
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <img
-                    class="competition-card__image"
-                    src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                    alt="Olympic Torch Relay Paris 2024"
-                    width="380"
-                    loading="lazy" />
+          </p>
 
-                  <!-- Overlay -->
-                  <div class="competition-card__overlay" aria-hidden="true">
-                    <a class="competition-card__overlay-link" href="pages/competitions/competition-1/">View event</a>
+          <div class="section__body">
+            <ul class="section__card-set competitions__list">
+              <li class="section__card-item">
+                <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                  <!-- MEDIA -->
+                  <div class="competition-card__media">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="180"
+                      loading="lazy" />
+
+                    <!-- Overlay -->
+                    <div class="competition-card__overlay" aria-hidden="true">
+                      <a class="competition-card__overlay-link" href="pages/competitions/">View event</a>
+                    </div>
+
+                    <!-- Competition Categories Badges -->
+                    <ul class="badges badges--top-right" aria-label="Competition categories">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                          >World Cup</a
+                        >
+                      </li>
+                    </ul>
+
+                    <!-- Competition Status Badges -->
+                    <ul class="badges badges--bottom-right" aria-label="Competition status">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=scheduled" data-status="scheduled"
+                          >Scheduled</a
+                        >
+                      </li>
+                    </ul>
                   </div>
 
-                  <!-- Competition Categories Badges -->
-                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
-                        >World Cup</a
-                      >
-                    </li>
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
+                  <!-- CONTENT -->
+                  <div class="competition-card__meta">
+                    <h3 class="competition-card__title">
+                      <a class="competition-card__title-link" href="pages/competitions/"> Olympic Torch Relay </a>
+                    </h3>
 
-                  <!-- Competition Status Badges -->
-                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
-                        >Ongoing</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                    <p class="competition-card__location">
+                      <a
+                        class="competition-card__location-link"
+                        href="pages/competitions/?city=paris&country=france"
+                        data-city="paris"
+                        data-country="france">
+                        Paris, France
+                      </a>
+                    </p>
 
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
+                    <p class="competition-card__date">
+                      <time datetime="2024-07-26">26 Jul</time> –
+                      <time datetime="2024-08-05">05 Aug 2024</time>
+                    </p>
+                  </div>
+                </article>
+              </li>
 
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
+              <li class="section__card-item">
+                <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                  <!-- MEDIA -->
+                  <div class="competition-card__media">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="180"
+                      loading="lazy" />
 
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
+                    <!-- Overlay -->
+                    <div class="competition-card__overlay" aria-hidden="true">
+                      <a class="competition-card__overlay-link" href="pages/competitions/">View event</a>
+                    </div>
 
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <img
-                    class="competition-card__image"
-                    src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                    alt="Olympic Torch Relay Paris 2024"
-                    width="380"
-                    loading="lazy" />
+                    <!-- Competition Categories Badges -->
+                    <ul class="badges badges--top-right" aria-label="Competition categories">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?type=national" data-type="national"
+                          >National Championship</a
+                        >
+                      </li>
+                    </ul>
 
-                  <!-- Overlay -->
-                  <div class="competition-card__overlay" aria-hidden="true">
-                    <a class="competition-card__overlay-link" href="pages/competitions/competition-1/">View event</a>
+                    <!-- Competition Status Badges -->
+                    <ul class="badges badges--bottom-right" aria-label="Competition status">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                          >Ongoing</a
+                        >
+                      </li>
+                    </ul>
                   </div>
 
-                  <!-- Competition Categories Badges -->
-                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
-                        >World Cup</a
-                      >
-                    </li>
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
+                  <!-- CONTENT -->
+                  <div class="competition-card__meta">
+                    <h3 class="competition-card__title">
+                      <a class="competition-card__title-link" href="pages/competitions/"> Olympic Torch Relay </a>
+                    </h3>
 
-                  <!-- Competition Status Badges -->
-                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
-                        >Ongoing</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                    <p class="competition-card__location">
+                      <a
+                        class="competition-card__location-link"
+                        href="pages/competitions/?city=paris&country=france"
+                        data-city="paris"
+                        data-country="france">
+                        Paris, France
+                      </a>
+                    </p>
 
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
+                    <p class="competition-card__date">
+                      <time datetime="2024-07-26">26 Jul</time> –
+                      <time datetime="2024-08-05">05 Aug 2024</time>
+                    </p>
+                  </div>
+                </article>
+              </li>
 
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
+              <li class="section__card-item">
+                <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                  <!-- MEDIA -->
+                  <div class="competition-card__media">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="180"
+                      loading="lazy" />
 
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
+                    <!-- Overlay -->
+                    <div class="competition-card__overlay" aria-hidden="true">
+                      <a class="competition-card__overlay-link" href="pages/competitions/">View event</a>
+                    </div>
 
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <img
-                    class="competition-card__image"
-                    src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                    alt="Olympic Torch Relay Paris 2024"
-                    width="380"
-                    loading="lazy" />
+                    <!-- Competition Categories Badges -->
+                    <ul class="badges badges--top-right" aria-label="Competition categories">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?type=grand-prix" data-type="grand-prix"
+                          >Grand Prix</a
+                        >
+                      </li>
+                    </ul>
 
-                  <!-- Overlay -->
-                  <div class="competition-card__overlay" aria-hidden="true">
-                    <a class="competition-card__overlay-link" href="pages/competitions/competition-1/">View event</a>
+                    <!-- Competition Status Badges -->
+                    <ul class="badges badges--bottom-right" aria-label="Competition status">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=completed" data-status="completed"
+                          >Completed</a
+                        >
+                      </li>
+                    </ul>
                   </div>
 
-                  <!-- Competition Categories Badges -->
-                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
-                        >World Cup</a
-                      >
-                    </li>
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
+                  <!-- CONTENT -->
+                  <div class="competition-card__meta">
+                    <h3 class="competition-card__title">
+                      <a class="competition-card__title-link" href="pages/competitions/"> Olympic Torch Relay </a>
+                    </h3>
 
-                  <!-- Competition Status Badges -->
-                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
-                        >Ongoing</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                    <p class="competition-card__location">
+                      <a
+                        class="competition-card__location-link"
+                        href="pages/competitions/?city=paris&country=france"
+                        data-city="paris"
+                        data-country="france">
+                        Paris, France
+                      </a>
+                    </p>
 
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
+                    <p class="competition-card__date">
+                      <time datetime="2024-07-26">26 Jul</time> –
+                      <time datetime="2024-08-05">05 Aug 2024</time>
+                    </p>
+                  </div>
+                </article>
+              </li>
 
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
+              <li class="section__card-item">
+                <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                  <!-- MEDIA -->
+                  <div class="competition-card__media">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="180"
+                      loading="lazy" />
 
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
+                    <!-- Overlay -->
+                    <div class="competition-card__overlay" aria-hidden="true">
+                      <a class="competition-card__overlay-link" href="pages/competitions/">View event</a>
+                    </div>
 
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <img
-                    class="competition-card__image"
-                    src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                    alt="Olympic Torch Relay Paris 2024"
-                    width="380"
-                    loading="lazy" />
+                    <!-- Competition Categories Badges -->
+                    <ul class="badges badges--top-right" aria-label="Competition categories">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?type=european" data-type="european"
+                          >European Championship</a
+                        >
+                      </li>
+                    </ul>
 
-                  <!-- Overlay -->
-                  <div class="competition-card__overlay" aria-hidden="true">
-                    <a class="competition-card__overlay-link" href="pages/competitions/competition-1/">View event</a>
+                    <!-- Competition Status Badges -->
+                    <ul class="badges badges--bottom-right" aria-label="Competition status">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=cancelled" data-status="cancelled"
+                          >Cancelled</a
+                        >
+                      </li>
+                    </ul>
                   </div>
 
-                  <!-- Competition Categories Badges -->
-                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
-                        >World Cup</a
-                      >
-                    </li>
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
+                  <!-- CONTENT -->
+                  <div class="competition-card__meta">
+                    <h3 class="competition-card__title">
+                      <a class="competition-card__title-link" href="pages/competitions/"> Olympic Torch Relay </a>
+                    </h3>
 
-                  <!-- Competition Status Badges -->
-                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
-                        >Ongoing</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                    <p class="competition-card__location">
+                      <a
+                        class="competition-card__location-link"
+                        href="pages/competitions/?city=paris&country=france"
+                        data-city="paris"
+                        data-country="france">
+                        Paris, France
+                      </a>
+                    </p>
 
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
+                    <p class="competition-card__date">
+                      <time datetime="2024-07-26">26 Jul</time> –
+                      <time datetime="2024-08-05">05 Aug 2024</time>
+                    </p>
+                  </div>
+                </article>
+              </li>
 
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
+              <li class="section__card-item">
+                <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                  <!-- MEDIA -->
+                  <div class="competition-card__media">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="180"
+                      loading="lazy" />
 
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
+                    <!-- Overlay -->
+                    <div class="competition-card__overlay" aria-hidden="true">
+                      <a class="competition-card__overlay-link" href="pages/competitions/">View event</a>
+                    </div>
 
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <img
-                    class="competition-card__image"
-                    src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                    alt="Olympic Torch Relay Paris 2024"
-                    width="380"
-                    loading="lazy" />
+                    <!-- Competition Categories Badges -->
+                    <ul class="badges badges--top-right" aria-label="Competition categories">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                          >World Cup</a
+                        >
+                      </li>
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      </li>
+                    </ul>
 
-                  <!-- Overlay -->
-                  <div class="competition-card__overlay" aria-hidden="true">
-                    <a class="competition-card__overlay-link" href="pages/competitions/competition-1/">View event</a>
+                    <!-- Competition Status Badges -->
+                    <ul class="badges badges--bottom-right" aria-label="Competition status">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                          >Ongoing</a
+                        >
+                      </li>
+                    </ul>
                   </div>
 
-                  <!-- Competition Categories Badges -->
-                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
-                        >World Cup</a
-                      >
-                    </li>
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
+                  <!-- CONTENT -->
+                  <div class="competition-card__meta">
+                    <h3 class="competition-card__title">
+                      <a class="competition-card__title-link" href="pages/competitions/"> Olympic Torch Relay </a>
+                    </h3>
 
-                  <!-- Competition Status Badges -->
-                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
-                        >Ongoing</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                    <p class="competition-card__location">
+                      <a
+                        class="competition-card__location-link"
+                        href="pages/competitions/?city=paris&country=france"
+                        data-city="paris"
+                        data-country="france">
+                        Paris, France
+                      </a>
+                    </p>
 
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
+                    <p class="competition-card__date">
+                      <time datetime="2024-07-26">26 Jul</time> –
+                      <time datetime="2024-08-05">05 Aug 2024</time>
+                    </p>
+                  </div>
+                </article>
+              </li>
 
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
+              <li class="section__card-item">
+                <article class="competition-card" data-status="ongoing" data-types="world-cup">
+                  <!-- MEDIA -->
+                  <div class="competition-card__media">
+                    <img
+                      class="competition-card__image"
+                      src="assets/images/competitions/comp-id-olympic-torch-relay/event-shooting-sports-1200-630.jpg"
+                      alt="Olympic Torch Relay Paris 2024"
+                      width="180"
+                      loading="lazy" />
 
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
+                    <!-- Overlay -->
+                    <div class="competition-card__overlay" aria-hidden="true">
+                      <a class="competition-card__overlay-link" href="pages/competitions/">View event</a>
+                    </div>
 
-            <li class="competitions__item">
-              <article class="competition-card" data-status="ongoing" data-types="world-cup">
-                <!-- MEDIA -->
-                <div class="competition-card__media">
-                  <img
-                    class="competition-card__image"
-                    src="assets/images/competitions/comp-id-olympic-torch-relay/test-img-1200-630.jpg"
-                    alt="Olympic Torch Relay Paris 2024"
-                    width="380"
-                    loading="lazy" />
+                    <!-- Competition Categories Badges -->
+                    <ul class="badges badges--top-right" aria-label="Competition categories">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
+                          >World Cup</a
+                        >
+                      </li>
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
+                      </li>
+                    </ul>
 
-                  <!-- Overlay -->
-                  <div class="competition-card__overlay" aria-hidden="true">
-                    <a class="competition-card__overlay-link" href="pages/competitions/competition-1/">View event</a>
+                    <!-- Competition Status Badges -->
+                    <ul class="badges badges--bottom-right" aria-label="Competition status">
+                      <li>
+                        <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
+                          >Ongoing</a
+                        >
+                      </li>
+                    </ul>
                   </div>
 
-                  <!-- Competition Categories Badges -->
-                  <ul class="badges badges--position-top-right" aria-label="Competition categories">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?type=world-cup" data-type="world-cup"
-                        >World Cup</a
-                      >
-                    </li>
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-stages="final">Final</a>
-                    </li>
-                  </ul>
+                  <!-- CONTENT -->
+                  <div class="competition-card__meta">
+                    <h3 class="competition-card__title">
+                      <a class="competition-card__title-link" href="pages/competitions/"> Olympic Torch Relay </a>
+                    </h3>
 
-                  <!-- Competition Status Badges -->
-                  <ul class="badges badges--position-bottom-right" aria-label="Competition status">
-                    <li>
-                      <a class="badges__link" href="pages/competitions/?status=ongoing" data-status="ongoing"
-                        >Ongoing</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                    <p class="competition-card__location">
+                      <a
+                        class="competition-card__location-link"
+                        href="pages/competitions/?city=paris&country=france"
+                        data-city="paris"
+                        data-country="france">
+                        Paris, France
+                      </a>
+                    </p>
 
-                <!-- CONTENT -->
-                <div class="competition-card__meta">
-                  <h3 class="competition-card__title">
-                    <a class="competition-card__meta-link" href="pages/competitions/competition-1/">
-                      Olympic Torch Relay
-                    </a>
-                  </h3>
+                    <p class="competition-card__date">
+                      <time datetime="2024-07-26">26 Jul</time> –
+                      <time datetime="2024-08-05">05 Aug 2024</time>
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
 
-                  <p class="competition-card__location">
-                    <a
-                      class="competition-card__meta-link"
-                      href="pages/competitions?city=paris&country=france"
-                      data-city="paris"
-                      data-country="france">
-                      Paris, France
-                    </a>
-                  </p>
-
-                  <p class="competition-card__date">
-                    <time datetime="2024-07-26">26 Jul</time> –
-                    <time datetime="2024-08-05">05 Aug 2024</time>
-                  </p>
-                </div>
-              </article>
-            </li>
-          </ul>
-
-          <footer class="competitions__footer">
-            <button class="competitions__see-more" type="button">See More</button>
+          <footer class="section__footer">
+            <button class="button competitions__btn section__load-more-btn" type="button">See More</button>
           </footer>
         </div>
       </section>
@@ -1447,367 +1409,408 @@
       <!-- World Ranking Section -->
       <section class="ranking section">
         <div class="container">
-          <h2 class="ranking__title">World Ranking</h2>
-          <p class="ranking__excerpt">
+          <header class="section__header">
+            <h2 class="section__title">World Ranking</h2>
+
+            <!-- <a class="section__link" href="pages/ranking/">
+              Show all
+              <span class="u-visually-hidden">world ranking</span>
+              <svg class="section__link-icon" width="16" height="16" aria-hidden="true">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
+              </svg>
+            </a> -->
+          </header>
+          <p class="section__excerpt">
             Explore the world rankings featuring top shooters from different disciplines across the globe.
           </p>
-          <div>World Ranking</div>
-          <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.2190570533717!2d49.7905617!3d40.413323600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40308707fd447613%3A0x7e0a4a6d2a6ad5a!2sBaku%20Shooting%20Center!5e1!3m2!1suk!2saz!4v1768043358472!5m2!1suk!2saz"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+          <div class="section__body">
+            <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.2190570533717!2d49.7905617!3d40.413323600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40308707fd447613%3A0x7e0a4a6d2a6ad5a!2sBaku%20Shooting%20Center!5e1!3m2!1suk!2saz!4v1768043358472!5m2!1suk!2saz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          </div>
+
+          <!-- <footer class="section__footer">
+            <button class="button ranking__btn" type="button">See More</button>
+          </footer> -->
         </div>
       </section>
 
       <!-- News Section -->
-      <section class="news section">
+      <section class="news section section--news">
         <div class="container">
-          <header class="section-header news__header">
-            <h2 class="news__title">Latest News</h2>
+          <header class="section__header">
+            <h2 class="section__title">Latest News</h2>
 
-            <a class="section-link-button news__link" href="pages/news/">
+            <a class="section__link" href="pages/news/">
               Show all
-              <span class="visually-hidden">news</span>
-              <svg class="section-link-button__icon" width="16" height="16" aria-hidden="true">
+              <span class="u-visually-hidden">news</span>
+              <svg class="section__link-icon" width="16" height="16" aria-hidden="true">
                 <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
               </svg>
             </a>
           </header>
-          <p class="news__excerpt">
+
+          <p class="section__excerpt">
             Stay on target with the latest shooting sports news — tournaments, athlete highlights, and exciting updates,
             all in one place!
           </p>
 
-          <ul class="news__set">
-            <li class="news__item">
-              <article
-                class="news-card"
-                aria-labelledby="news-card-issf-first-site-visit-la28-olympic-games-2028-title news-card-issf-first-site-visit-la28-olympic-games-2028-date">
-                <!-- News Card Thumbnail -->
-                <div class="news-card__thumbnail">
-                  <!-- News Card Image -->
-                  <img
-                    class="news-card__image"
-                    src="assets/images/news/issf-first-site-visit-la28-olympic-games-2028/first-visit-la-2028-olympic-games.jpg"
-                    alt="ISSF delegation members pose with representatives of the LA28 Organising Committee during the first site visit for the Los Angeles 2028 Olympic Games."
-                    width="260" />
+          <div class="section__body">
+            <ul class="news__list section__card-set">
+              <li class="section__card-item">
+                <article
+                  class="news-card"
+                  aria-labelledby="news-card-issf-first-site-visit-la28-olympic-games-2028-title news-card-issf-first-site-visit-la28-olympic-games-2028-date">
+                  <!-- News Card Thumbnail -->
+                  <div class="news-card__thumbnail">
+                    <!-- News Card Image -->
+                    <img
+                      class="news-card__image"
+                      src="assets/images/news/issf-first-site-visit-la28-olympic-games-2028/first-visit-la-2028-olympic-games.jpg"
+                      alt="ISSF delegation members pose with representatives of the LA28 Organising Committee during the first site visit for the Los Angeles 2028 Olympic Games."
+                      width="160" />
 
-                  <!-- News Card Overlay -->
-                  <div class="news-card__overlay">
-                    <!-- News Card Summary/Excerpt(уривок) -->
-                    <p class="news-card__summary">
-                      The ISSF has made its first site visit for the Los Angeles 2028 Olympic Games, bringing healthy
-                      cooperation between our team and the LA28 Organising Committee. ISSF Secretary General Alessandro
-                      Nicotra di San Giacomo led the delegation, supported by ISSF Senior Staff for IOC and NFs
-                      Relations, Doris Fischl; ISSF Sport Director Peter Underhill, ISSF Event Manager Jan Ketzel, ISSF
-                      Event Coordinator Roberta Cocozza di Montanara and ISSF Executive Assistant to the Secretary
-                      General, Eleonora Giustiniani.
-                    </p>
+                    <!-- News Card Overlay -->
+                    <div class="news-card__overlay">
+                      <!-- News Card Summary/Excerpt(уривок) -->
+                      <p class="news-card__summary">
+                        The ISSF has made its first site visit for the Los Angeles 2028 Olympic Games, bringing healthy
+                        cooperation between our team and the LA28 Organising Committee. ISSF Secretary General
+                        Alessandro Nicotra di San Giacomo led the delegation, supported by ISSF Senior Staff for IOC and
+                        NFs Relations, Doris Fischl; ISSF Sport Director Peter Underhill, ISSF Event Manager Jan Ketzel,
+                        ISSF Event Coordinator Roberta Cocozza di Montanara and ISSF Executive Assistant to the
+                        Secretary General, Eleonora Giustiniani.
+                      </p>
 
-                    <a class="news-card__readmore" href="">
-                      Read more...
-                      <span class="visually-hidden">
-                        about first site visit for the Los Angeles 2028 Olympic Games
-                      </span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- News Card Content + Meta -->
-                <div class="news-card__content">
-                  <div class="news-card__meta">
-                    <!-- News Card Post Date -->
-                    <time
-                      class="news-card__date"
-                      datetime="2025-03-10"
-                      id="news-card-issf-first-site-visit-la28-olympic-games-2028-date">
-                      <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
-                        <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
-                      </svg>
-                      <span class="news-card__date-text">19 January, 2026</span>
-                    </time>
-
-                    <!-- News Category Tag/Link -->
-                    <a
-                      class="news-card__category-link"
-                      href="pages/news/?category=issf-news"
-                      data-news-category="issf-news"
-                      aria-label="News category: ISSF News">
-                      ISSF News
-                    </a>
+                      <a class="news-card__readmore" href="pages/news/">
+                        Read more...
+                        <span class="u-visually-hidden">
+                          about first site visit for the Los Angeles 2028 Olympic Games
+                        </span>
+                      </a>
+                    </div>
                   </div>
 
-                  <!-- News Card Title -->
-                  <h3 class="news-card__title">
-                    <a
-                      class="news-card__title-link"
-                      href=""
-                      id="news-card-issf-first-site-visit-la28-olympic-games-2028-title">
-                      ISSF conducts first site visit for Los Angeles 2028 Olympic Games
-                    </a>
-                  </h3>
-                </div>
-              </article>
-            </li>
+                  <!-- News Card Content + Meta -->
+                  <div class="news-card__content">
+                    <div class="news-card__meta">
+                      <!-- News Card Post Date -->
+                      <time
+                        class="news-card__date"
+                        datetime="2025-03-10"
+                        id="news-card-issf-first-site-visit-la28-olympic-games-2028-date">
+                        <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
+                          <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
+                        </svg>
+                        <span class="news-card__date-text">19 January, 2026</span>
+                      </time>
 
-            <li class="news__item">
-              <article
-                class="news-card"
-                aria-labelledby="news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-title news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-date">
-                <!-- News Card Thumbnail -->
-                <div class="news-card__thumbnail">
-                  <!-- News Card Image -->
-                  <img
-                    class="news-card__image"
-                    src="assets/images/news/yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025/yang-ji-in-after-winning.jpg"
-                    alt="Athlete celebrates after winning the women's 25m pistol title at the 2025 ISSF World Championship Rifle/Pistol"
-                    width="260" />
+                      <!-- News Category Tag/Link -->
+                      <a
+                        class="news-card__category-link"
+                        href="pages/news/?category=issf-news"
+                        data-news-category="issf-news"
+                        aria-label="News category: ISSF News">
+                        ISSF News
+                      </a>
+                    </div>
 
-                  <!-- News Card Overlay -->
-                  <div class="news-card__overlay">
-                    <!-- News Card Summary/Excerpt(уривок) -->
-                    <p class="news-card__summary">
-                      Olympic champion Yang Ji-in claimed the crown today in the final of the women's 25m pistol,
-                      finishing strong after a tense tussle with China's Yao Qianxun for the win at the 2025 ISSF World
-                      Championship Rifle/Pistol in Cairo, Egypt.
-                    </p>
-
-                    <a class="news-card__readmore" href="">
-                      Read more...
-                      <span class="visually-hidden">
-                        about the women's 25m pistol final at the 2025 ISSF World Championship
-                      </span>
-                    </a>
+                    <!-- News Card Title -->
+                    <h3 class="news-card__title">
+                      <a
+                        class="news-card__title-link"
+                        href="pages/news/"
+                        id="news-card-issf-first-site-visit-la28-olympic-games-2028-title">
+                        ISSF conducts first site visit for Los Angeles 2028 Olympic Games
+                      </a>
+                    </h3>
                   </div>
-                </div>
+                </article>
+              </li>
 
-                <!-- News Card Content + Meta -->
-                <div class="news-card__content">
-                  <div class="news-card__meta">
-                    <!-- News Card Post Date -->
-                    <time
-                      class="news-card__date"
-                      datetime="2025-03-10"
-                      id="news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-date">
-                      <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
-                        <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
-                      </svg>
-                      <span class="news-card__date-text">14 November, 2025</span>
-                    </time>
+              <li class="section__card-item">
+                <article
+                  class="news-card"
+                  aria-labelledby="news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-title news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-date">
+                  <!-- News Card Thumbnail -->
+                  <div class="news-card__thumbnail">
+                    <!-- News Card Image -->
+                    <img
+                      class="news-card__image"
+                      src="assets/images/news/yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025/yang-ji-in-after-winning.jpg"
+                      alt="Athlete celebrates after winning the women's 25m pistol title at the 2025 ISSF World Championship Rifle/Pistol"
+                      width="160" />
 
-                    <!-- News Category Tag/Link -->
-                    <a
-                      class="news-card__category-link"
-                      href="pages/news/?category=issf-news"
-                      data-news-category="results"
-                      aria-label="News category: Results">
-                      Results
-                    </a>
-                  </div>
+                    <!-- News Card Overlay -->
+                    <div class="news-card__overlay">
+                      <!-- News Card Summary/Excerpt(уривок) -->
+                      <p class="news-card__summary">
+                        Olympic champion Yang Ji-in claimed the crown today in the final of the women's 25m pistol,
+                        finishing strong after a tense tussle with China's Yao Qianxun for the win at the 2025 ISSF
+                        World Championship Rifle/Pistol in Cairo, Egypt.
+                      </p>
 
-                  <!-- News Card Title -->
-                  <h3 class="news-card__title">
-                    <a
-                      class="news-card__title-link"
-                      href=""
-                      id="news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-title">
-                      Yang edges out Yao for women's 25m pistol title at 2025 ISSF World Championship Rifle/Pistol
-                    </a>
-                  </h3>
-                </div>
-              </article>
-            </li>
-
-            <li class="news__item">
-              <article
-                class="news-card"
-                aria-labelledby="news-card-aze-wins-gold-issf-world-cup-baku-2024-title news-card-aze-wins-gold-issf-world-cup-baku-2024-date">
-                <!-- News Card Thumbnail -->
-                <div class="news-card__thumbnail">
-                  <!-- News Card Image -->
-                  <img
-                    class="news-card__image"
-                    src="assets/images/news/azerbaijan-wins-gold-issf-world-cup-baku-2024/aze-wins-gold.jpg"
-                    alt="Azerbaijan shooting team on the podium after winning the gold medal at the ISSF World Cup in Baku"
-                    width="260" />
-
-                  <!-- News Card Overlay -->
-                  <div class="news-card__overlay">
-                    <!-- News Card Summary/Excerpt(уривок) -->
-                    <p class="news-card__summary">
-                      The Azerbaijan Shooting Federation team achieved a remarkable victory at the international air
-                      pistol competition held this weekend. Athletes demonstrated excellent performance, discipline, and
-                      precision, securing the gold medal among strong international competitors.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- News Card Content + Meta -->
-                <div class="news-card__content">
-                  <div class="news-card__meta">
-                    <!-- News Card Post Date -->
-                    <time
-                      class="news-card__date"
-                      datetime="2025-03-10"
-                      id="news-card-aze-wins-gold-issf-world-cup-baku-2024-date">
-                      <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
-                        <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
-                      </svg>
-                      <span class="news-card__date-text">10 March, 2025</span>
-                    </time>
-
-                    <!-- News Category Tag/Link -->
-                    <a
-                      class="news-card__category-link"
-                      href="pages/news/?category=results"
-                      data-news-category="results"
-                      aria-label="News category: Results">
-                      Results
-                    </a>
+                      <a class="news-card__readmore" href="pages/news/">
+                        Read more...
+                        <span class="u-visually-hidden">
+                          about the women's 25m pistol final at the 2025 ISSF World Championship
+                        </span>
+                      </a>
+                    </div>
                   </div>
 
-                  <!-- News Card Title -->
-                  <h3 class="news-card__title">
-                    <a class="news-card__title-link" href="" id="news-card-aze-wins-gold-issf-world-cup-baku-2024-title"
-                      >Azerbaijan team wins gold at international competition</a
-                    >
-                  </h3>
-                </div>
-              </article>
-            </li>
+                  <!-- News Card Content + Meta -->
+                  <div class="news-card__content">
+                    <div class="news-card__meta">
+                      <!-- News Card Post Date -->
+                      <time
+                        class="news-card__date"
+                        datetime="2025-03-10"
+                        id="news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-date">
+                        <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
+                          <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
+                        </svg>
+                        <span class="news-card__date-text">14 November, 2025</span>
+                      </time>
 
-            <li class="news__item">
-              <article
-                class="news-card"
-                aria-labelledby="news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-title news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-date">
-                <!-- News Card Thumbnail -->
-                <div class="news-card__thumbnail">
-                  <!-- News Card Image -->
-                  <img
-                    class="news-card__image"
-                    src="assets/images/news/issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup/azerbaijan-officials-meets-baku.jpg"
-                    alt="ISSF leadership meeting Azerbaijani officials in Baku ahead of the ISSF World Cup"
-                    width="260" />
+                      <!-- News Category Tag/Link -->
+                      <a
+                        class="news-card__category-link"
+                        href="pages/news/?category=issf-news"
+                        data-news-category="results"
+                        aria-label="News category: Results">
+                        Results
+                      </a>
+                    </div>
 
-                  <!-- News Card Overlay -->
-                  <div class="news-card__overlay">
-                    <!-- News Card Summary/Excerpt(уривок) -->
-                    <p class="news-card__summary">
-                      ISSF President Luciano Rossi and General Secretary Alessandro Nicotra di San Giacomo met the
-                      Minister of the Interior & President of the Azerbaijan Shooting Federation Vilayat Eyvazov and
-                      Deputy Minister of the Interior Ismat Alijev ahead of the ISSF World Cup in Baku.
-                    </p>
-
-                    <a class="news-card__readmore" href="">
-                      Read more...
-                      <span class="visually-hidden">
-                        about the ISSF President and General Secretary meeting Azerbaijani officials ahead of the ISSF
-                        World Cup in Baku
-                      </span>
-                    </a>
+                    <!-- News Card Title -->
+                    <h3 class="news-card__title">
+                      <a
+                        class="news-card__title-link"
+                        href="pages/news/"
+                        id="news-card-yang-ji-in-wins-womens-25m-pistol-issf-world-championship-cairo-2025-title">
+                        Yang edges out Yao for women's 25m pistol title at 2025 ISSF World Championship Rifle/Pistol
+                      </a>
+                    </h3>
                   </div>
-                </div>
+                </article>
+              </li>
 
-                <!-- News Card Content + Meta -->
-                <div class="news-card__content">
-                  <div class="news-card__meta">
-                    <!-- News Card Post Date -->
-                    <time
-                      class="news-card__date"
-                      datetime="2024-05-02"
-                      id="news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-date">
-                      <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
-                        <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
-                      </svg>
-                      <span class="news-card__date-text">02 May, 2024</span>
-                    </time>
+              <li class="section__card-item">
+                <article
+                  class="news-card"
+                  aria-labelledby="news-card-aze-wins-gold-issf-world-cup-baku-2024-title news-card-aze-wins-gold-issf-world-cup-baku-2024-date">
+                  <!-- News Card Thumbnail -->
+                  <div class="news-card__thumbnail">
+                    <!-- News Card Image -->
+                    <img
+                      class="news-card__image"
+                      src="assets/images/news/azerbaijan-wins-gold-issf-world-cup-baku-2024/aze-wins-gold.jpg"
+                      alt="Azerbaijan shooting team on the podium after winning the gold medal at the ISSF World Cup in Baku"
+                      width="160" />
 
-                    <!-- News Category Tag/Link -->
-                    <a
-                      class="news-card__category-link"
-                      href="pages/news/?category=press"
-                      data-news-category="press"
-                      aria-label="News category: Press Releases">
-                      Press Releases
-                    </a>
+                    <!-- News Card Overlay -->
+                    <div class="news-card__overlay">
+                      <!-- News Card Summary/Excerpt(уривок) -->
+                      <p class="news-card__summary">
+                        The Azerbaijan Shooting Federation team achieved a remarkable victory at the international air
+                        pistol competition held this weekend. Athletes demonstrated excellent performance, discipline,
+                        and precision, securing the gold medal among strong international competitors.
+                      </p>
+                    </div>
                   </div>
 
-                  <!-- News Card Title -->
-                  <h3 class="news-card__title">
-                    <a
-                      class="news-card__title-link"
-                      href=""
-                      id="news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-title"
-                      >Official meeting between ISSF officials and Azerbaijani representatives in Baku</a
-                    >
-                  </h3>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <footer class="news__footer">
-            <button class="news__load-more load-more-btn" type="button">See More</button>
+                  <!-- News Card Content + Meta -->
+                  <div class="news-card__content">
+                    <div class="news-card__meta">
+                      <!-- News Card Post Date -->
+                      <time
+                        class="news-card__date"
+                        datetime="2025-03-10"
+                        id="news-card-aze-wins-gold-issf-world-cup-baku-2024-date">
+                        <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
+                          <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
+                        </svg>
+                        <span class="news-card__date-text">10 March, 2025</span>
+                      </time>
+
+                      <!-- News Category Tag/Link -->
+                      <a
+                        class="news-card__category-link"
+                        href="pages/news/?category=results"
+                        data-news-category="results"
+                        aria-label="News category: Results">
+                        Results
+                      </a>
+                    </div>
+
+                    <!-- News Card Title -->
+                    <h3 class="news-card__title">
+                      <a
+                        class="news-card__title-link"
+                        href="pages/news/"
+                        id="news-card-aze-wins-gold-issf-world-cup-baku-2024-title"
+                        >Azerbaijan team wins gold at international competition</a
+                      >
+                    </h3>
+                  </div>
+                </article>
+              </li>
+
+              <li class="section__card-item">
+                <article
+                  class="news-card"
+                  aria-labelledby="news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-title news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-date">
+                  <!-- News Card Thumbnail -->
+                  <div class="news-card__thumbnail">
+                    <!-- News Card Image -->
+                    <img
+                      class="news-card__image"
+                      src="assets/images/news/issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup/azerbaijan-officials-meets-baku.jpg"
+                      alt="ISSF leadership meeting Azerbaijani officials in Baku ahead of the ISSF World Cup"
+                      width="160" />
+
+                    <!-- News Card Overlay -->
+                    <div class="news-card__overlay">
+                      <!-- News Card Summary/Excerpt(уривок) -->
+                      <p class="news-card__summary">
+                        ISSF President Luciano Rossi and General Secretary Alessandro Nicotra di San Giacomo met the
+                        Minister of the Interior & President of the Azerbaijan Shooting Federation Vilayat Eyvazov and
+                        Deputy Minister of the Interior Ismat Alijev ahead of the ISSF World Cup in Baku.
+                      </p>
+
+                      <a class="news-card__readmore" href="pages/news/">
+                        Read more...
+                        <span class="u-visually-hidden">
+                          about the ISSF President and General Secretary meeting Azerbaijani officials ahead of the ISSF
+                          World Cup in Baku
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- News Card Content + Meta -->
+                  <div class="news-card__content">
+                    <div class="news-card__meta">
+                      <!-- News Card Post Date -->
+                      <time
+                        class="news-card__date"
+                        datetime="2024-05-02"
+                        id="news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-date">
+                        <svg class="news-card__date-icon" aria-hidden="true" width="16" height="16">
+                          <use href="assets/icons/ui/sprite-ui.svg#ui-icon-calendar"></use>
+                        </svg>
+                        <span class="news-card__date-text">02 May, 2024</span>
+                      </time>
+
+                      <!-- News Category Tag/Link -->
+                      <a
+                        class="news-card__category-link"
+                        href="pages/news/?category=press"
+                        data-news-category="press"
+                        aria-label="News category: Press Releases">
+                        Press Releases
+                      </a>
+                    </div>
+
+                    <!-- News Card Title -->
+                    <h3 class="news-card__title">
+                      <a
+                        class="news-card__title-link"
+                        href="pages/news/"
+                        id="news-card-issf-leadership-meets-azerbaijan-officials-ahead-baku-world-cup-title"
+                        >Official meeting between ISSF officials and Azerbaijani representatives in Baku</a
+                      >
+                    </h3>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <footer class="section__footer">
+            <button class="button news__btn section__load-more-btn" type="button">See More</button>
           </footer>
         </div>
       </section>
 
       <!-- Partners Section -->
-      <section class="partners section">
+      <section class="partners section section--partners">
         <div class="container">
-          <h2 class="partners__title">Partners</h2>
-          <!-- <p class="partners__excerpt">Trusted partnerships that support the progress of shooting sports.</p> -->
-          <p class="partners__excerpt">
+          <header class="section__header">
+            <h2 class="section__title">Partners</h2>
+
+            <a class="section__link" href="pages/partners/">
+              Show all
+              <span class="u-visually-hidden">partners</span>
+              <svg class="section__link-icon" width="16" height="16" aria-hidden="true">
+                <use href="assets/icons/ui/sprite-ui.svg#ui-icon-arrow-right-ios"></use>
+              </svg>
+            </a>
+          </header>
+
+          <!-- <p class="section__excerpt">Trusted partnerships that support the progress of shooting sports.</p> -->
+          <p class="section__excerpt">
             Our partners play a vital role in supporting the growth of shooting sports and the development of athletes
             at every level.
           </p>
 
-          <ul class="partners__list">
-            <li class="partners__item">
-              <div class="partner-logo">
-                <a class="partner-logo__link" href="" aria-label="Ministry of Youth and Sports">
-                  <svg width="120" height="60">
-                    <use href="assets/icons/logos/sprite-logos.svg#logo-aze-moyas"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
+          <div class="section__body">
+            <ul class="partners__list section__card-set">
+              <li class="section__card-item">
+                <div class="partner-card">
+                  <a class="partner-card__link" href="" aria-label="Ministry of Youth and Sports">
+                    <svg class="partner-card__logo" width="120" height="60" aria-hidden="true">
+                      <use href="assets/icons/logos/sprite-logos.svg#logo-aze-moyas"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
 
-            <li class="partners__item">
-              <div class="partner-logo">
-                <a class="partner-logo__link" href="" aria-label="National Olympic Committee">
-                  <svg width="60" height="60">
-                    <use href="assets/icons/logos/sprite-logos.svg#logo-nocar"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
+              <li class="section__card-item">
+                <div class="partner-card">
+                  <a class="partner-card__link" href="" aria-label="National Olympic Committee">
+                    <svg class="partner-card__logo" width="60" height="60">
+                      <use href="assets/icons/logos/sprite-logos.svg#logo-nocar"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
 
-            <li class="partners__item">
-              <div class="partner-logo">
-                <a class="partner-logo__link" href="" aria-label="International Shooting Sport Federation">
-                  <svg width="60" height="60">
-                    <use href="assets/icons/logos/sprite-logos.svg#logo-issf"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
+              <li class="section__card-item">
+                <div class="partner-card">
+                  <a class="partner-card__link" href="" aria-label="International Shooting Sport Federation">
+                    <svg class="partner-card__logo" width="60" height="60">
+                      <use href="assets/icons/logos/sprite-logos.svg#logo-issf"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
 
-            <li class="partners__item">
-              <div class="partner-logo">
-                <a class="partner-logo__link" href="" aria-label="Azerbaijan National Anti-Doping Agency">
-                  <svg width="120" height="60">
-                    <use href="assets/icons/logos/sprite-logos.svg#logo-amada"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-          </ul>
+              <li class="section__card-item">
+                <div class="partner-card">
+                  <a class="partner-card__link" href="" aria-label="Azerbaijan National Anti-Doping Agency">
+                    <svg class="partner-card__logo" width="120" height="60">
+                      <use href="assets/icons/logos/sprite-logos.svg#logo-amada"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <footer class="section__footer">
+            <button class="button partners__btn" type="button">See More</button>
+          </footer> -->
         </div>
       </section>
+      <!-- <ul class="test-container"></ul> -->
     </main>
 
     <!-- Page Footer -->
@@ -1821,17 +1824,14 @@
               <svg class="brand-logo__image" width="48" height="48">
                 <use href="assets/icons/logos/sprite-logos.svg#logo-asf"></use>
               </svg>
-              <p class="brand-logo__text">
-                <span class="brand-logo__title">
-                  Shooting<br />
-                  Sports
-                </span>
-                <span class="brand-logo__tagline">Federation</span>
-              </p>
+              <span class="brand-logo__text">
+                Shooting<br />
+                Sports
+              </span>
             </a>
 
             <!-- Intro in FOOTER -->
-            <p>Supporting athletes, celebrating achievements, and advancing the sport of shooting.</p>
+            <p>Supporting athletes, celebrating<br />achievements, and advancing<br />the sport of shooting.</p>
 
             <!-- Contact List in FOOTER-->
             <!-- <address class="page-footer__contacts">
@@ -1869,53 +1869,55 @@
           </div>
 
           <!-- Social Media in FOOTER -->
-          <div class="page-footer__social social">
-            <h3 class="social__title">Social media</h3>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="" aria-label="Instagram">
-                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                    <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" aria-label="X (Twitter)">
-                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                    <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" aria-label="Facebook">
-                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                    <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" aria-label="LinkedIn">
-                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                    <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" aria-label="YouTube">
-                  <svg class="social__icon" width="20" height="20" aria-hidden="true">
-                    <use href="assets/icons/social/sprite-social.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="page-footer__social">
+            <div class="social">
+              <b class="social__title">Social media</b>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Instagram">
+                    <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                      <use href="assets/icons/social/sprite-social.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="X (Twitter)">
+                    <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                      <use href="assets/icons/social/sprite-social.svg#icon-x-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Facebook">
+                    <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                      <use href="assets/icons/social/sprite-social.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="LinkedIn">
+                    <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                      <use href="assets/icons/social/sprite-social.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="YouTube">
+                    <svg class="social__icon" width="20" height="20" aria-hidden="true">
+                      <use href="assets/icons/social/sprite-social.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <!-- Newsletter subscription in FOOTER -->
           <div class="page-footer__newsletter newsletter">
-            <h3 class="newsletter__call-to-action">Subscribe</h3>
+            <b class="newsletter__call-to-action">Subscribe</b>
 
             <form class="js-speaker-form-2 newsletter__form" action="" autocomplete="off">
-              <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <label for="newsletter-email" class="u-visually-hidden">Email address</label>
 
               <input
                 class="newsletter__input"
@@ -1928,8 +1930,8 @@
                 required />
 
               <button class="newsletter__btn btn" type="submit">
-                Subscribe
-                <svg class="newsletter__btn-icon" width="16" height="16" aria-hidden="true">
+                <span class="btn__text">Subscribe</span>
+                <svg class="btn__icon" width="16" height="16" aria-hidden="true">
                   <use href="assets/icons/ui/sprite-ui.svg#ui-icon-send"></use>
                 </svg>
               </button>
@@ -1951,7 +1953,7 @@
       <div class="modal" role="dialog" aria-modal="true">
         <!-- Modal Close Button -->
         <button type="button" class="modal__close-btn" data-modal-close aria-label="Modal close button">
-          <svg width="16" height="16">
+          <svg class="modal__close-icon" width="16" height="16">
             <use href="assets/icons/ui/sprite-ui.svg#ui-icon-close"></use>
           </svg>
         </button>

@@ -1,0 +1,16 @@
+/// Помічник для встановлення розміру
+/// @param {Length} $width
+/// @param {Length} $height
+///
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}

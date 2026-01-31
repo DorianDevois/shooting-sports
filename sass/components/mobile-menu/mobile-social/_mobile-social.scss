@@ -1,0 +1,30 @@
+@use '../../../abstracts/mixins/reset';
+
+.mobile-social {
+  @include reset.list-reset;
+
+  display: flex;
+}
+
+.mobile-social__item {
+  &:not(:first-child) {
+    padding-left: var(--space-md);
+  }
+
+  &:not(:last-child) {
+    padding-right: var(--space-md);
+    border-right: 1px solid var(--color-divider);
+  }
+}
+
+.mobile-social__link {
+  @include reset.link-reset;
+
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-accent);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
