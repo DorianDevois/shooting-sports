@@ -54,7 +54,7 @@ function createMarkup(event) {
       loading="lazy"
     />
 
-    <div class="competition-card__overlay" aria-hidden="true">
+    <div class="competition-card__overlay">
       <a class="competition-card__overlay-link" href="${event.link}">View event</a>
     </div>
 
